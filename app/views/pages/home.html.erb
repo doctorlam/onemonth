@@ -1,4 +1,10 @@
 <div class ="jumbotron">
-<h1>Welcome Home</h1>
-<p>Click here to <%= link_to"propose a project", "#", class: "btn btn-primary" %>.</p>
+<h1>Welcome to the client project proposal system</h1>
+	<% if user_signed_in? %>
+		#do something
+	<% else %>
+	<p><%= link_to"Register", new_user_registration_path, class: "btn btn-primary" %></p>
+	<p><%= link_to"Sign in", new_user_session_path, class: "btn btn-primary" %></p>
+	<% end %>
+
 </div>
