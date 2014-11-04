@@ -1,6 +1,8 @@
 class ProposalsController < ApplicationController
     respond_to :html, :xml, :json
+    before_action :authenticate_user!, except: [:index, :show]       
     before_action :set_proposal, only: [:show, :edit, :update, :destroy]
+    before_action :correct_user, only: [:edit, :update, :destroy] 
 
   def index
     @proposals = Proposal.all
@@ -12,7 +14,7 @@ class ProposalsController < ApplicationController
   end
 
   def new
-    @proposal = Proposal.new
+    @proposal = current_user.proposals.build
     respond_with(@proposal)
   end
 
@@ -20,7 +22,7 @@ class ProposalsController < ApplicationController
   end
 
   def create
-    @proposal = Proposal.new(proposal_params)
+    @proposal = current_user.proposals.build(proposal_params)
     @proposal.save
     respond_with(@proposal)
   end
@@ -40,6 +42,10 @@ class ProposalsController < ApplicationController
       @proposal = Proposal.find(params[:id])
     end
 
+    def correct_user
+      @pin = current_user.proposals.find_by(id: params[:id])
+      redirect_to proposals_path, notice: "Not authorized to edit this pin" if @proposal.nil?
+    end
     def proposal_params
       params.require(:proposal).permit(:title)
     end

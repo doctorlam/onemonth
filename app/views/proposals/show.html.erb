@@ -4,6 +4,7 @@
   <strong>Title:</strong>
   <%= @proposal.title %>
 </p>
-
-<%= link_to 'Edit', edit_proposal_path(@proposal) %> |
-<%= link_to 'Back', proposals_path %>
+<% if @proposal.user == current_user %>	
+	<%= link_to 'Edit', edit_proposal_path(@proposal) %> |
+<% end %>
+	<%= link_to 'Back', proposals_path %>
