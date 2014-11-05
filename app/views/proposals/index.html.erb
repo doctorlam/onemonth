@@ -3,9 +3,9 @@
 <table>
   <thead>
     <tr>
-      <th>Image</th>
       <th>Title</th>
       <th>Email</th>
+      <th>Resume</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -13,9 +13,9 @@
   <tbody>
     <% @proposals.each do |proposal| %>
       <tr>
-        <td><%= image_tag proposal.image.url(:medium) %></td>
         <td><%= proposal.title %></td>
         <td><%= proposal.user.email if proposal.user %></td>
+        <td><%= link_to "PDF", proposal.document.url %></td>
         <td><%= link_to 'Show', proposal %></td>
         <% if proposal.user == current_user %>
           <td><%= link_to 'Edit', edit_proposal_path(proposal) %></td>
