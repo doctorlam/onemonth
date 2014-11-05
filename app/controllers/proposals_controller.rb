@@ -43,10 +43,13 @@ class ProposalsController < ApplicationController
     end
 
     def correct_user
-      @pin = current_user.proposals.find_by(id: params[:id])
-      redirect_to proposals_path, notice: "Not authorized to edit this pin" if @proposal.nil?
+      @proposal = current_user.proposals.find_by(id: params[:id])
+      redirect_to proposals_path, notice: "Not authorized to edit this proposal" if @proposal.nil?
     end
     def proposal_params
-      params.require(:proposal).permit(:title)
+      
+      params.require(:proposal).permit(:title, :image)
+
+
     end
 end

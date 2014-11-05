@@ -1,5 +1,10 @@
-$body-bg: 	#16a085;
-$navbar-default-bg: #bdc3c7;
+$body-bg: 	white;
 
+$navbar-default-bg: white;
+$navbar-height: 100px;
+
+.container {
+	width: 100%;
+}
 @import 'bootstrap';
 
