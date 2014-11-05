@@ -11,6 +11,7 @@ gem "bootstrap-sass"
 gem 'sdoc', '~> 0.4.0'      
 gem 'devise'
 gem 'paperclip'
+gem 'tzinfo-data', '~> 1.2014.9'
 
 group :development, :test do 
 	gem 'sqlite3'

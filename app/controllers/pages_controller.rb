@@ -9,5 +9,7 @@ class PagesController < ApplicationController
   end
 
   def dashboard
+  	 @proposals = Proposal.all
+  
   end
 end
