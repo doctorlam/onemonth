@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141105002321) do
+ActiveRecord::Schema.define(version: 20141106215853) do
 
   create_table "pins", force: true do |t|
     t.string   "descrption"
@@ -32,6 +32,13 @@ ActiveRecord::Schema.define(version: 20141105002321) do
     t.string   "document_content_type"
     t.integer  "document_file_size"
     t.datetime "document_updated_at"
+    t.string   "semester_id"
+    t.text     "abstract"
+    t.string   "course_id"
+    t.boolean  "course_type"
+    t.text     "deliverables"
+    t.string   "subject"
+    t.text     "narrative"
   end
 
   add_index "proposals", ["user_id"], name: "index_proposals_on_user_id"

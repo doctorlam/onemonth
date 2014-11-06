@@ -1,9 +1,8 @@
-<div class ="col-md-4">
-	<h1>My Proposals</h1>
-</div>
-<div class ="col-md-8">
-	<h1>All proposals</h1>
-	<table>
+	<h1>My proposals</h1>
+  <% if user_signed_in? %>
+  <%= link_to 'Start a New Proposal!', new_proposal_path, class: "btn btn-default" %>
+<% end %>
+	<table class ="table">
   <thead>
     <tr>
       <th>Title</th>
@@ -18,7 +17,7 @@
       <tr>
         <td><%= proposal.title %></td>
         <td><%= proposal.user.email if proposal.user %></td>
-        <td><%= link_to "PDF", proposal.document.url %></td>
+        <!-- <td><%= link_to "PDF", proposal.document.url %></td> -->
         <td><%= link_to 'Show', proposal %></td>
         <% if proposal.user == current_user %>
           <td><%= link_to 'Edit', edit_proposal_path(proposal) %></td>
@@ -30,8 +29,4 @@
 </table>
 
 <br>
-
-<% if user_signed_in? %>
-  <%= link_to 'New Proposal', new_proposal_path %>
-<% end %>
 </div>

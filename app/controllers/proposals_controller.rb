@@ -4,6 +4,7 @@ class ProposalsController < ApplicationController
     before_action :correct_user, only: [:edit, :update, :destroy] 
     before_action :set_proposal, only: [:show, :edit, :update, :destroy]
 
+
   def index
     @proposals = Proposal.all
     respond_with(@proposals)
@@ -16,6 +17,7 @@ class ProposalsController < ApplicationController
   def new
     @proposal = current_user.proposals.build
     respond_with(@proposal)
+    
   end
 
   def edit
@@ -48,8 +50,7 @@ class ProposalsController < ApplicationController
     end
     def proposal_params
       
-      params.require(:proposal).permit(:title, :image, :document)
-
+      params.require(:proposal).permit(:title, :abstract, :semester_id)
 
     end
 end

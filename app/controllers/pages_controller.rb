@@ -9,7 +9,6 @@ class PagesController < ApplicationController
   end
 
   def dashboard
-  	 @proposals = Proposal.all
-  
+  	 @proposals = current_user.proposals
   end
 end

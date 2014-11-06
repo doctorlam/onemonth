@@ -1,5 +1,5 @@
-<%= link_to 'PDF', @proposal.document.url %>
-<%= image_tag @proposal.image.url %>
+<!--<%= link_to 'PDF', @proposal.document.url %>
+<%= image_tag @proposal.image.url %>-->
 <p>
   <strong>Title:</strong>
   <%= @proposal.title %>
@@ -7,4 +7,4 @@
 <% if @proposal.user == current_user %>	
 	<%= link_to 'Edit', edit_proposal_path(@proposal) %> |
 <% end %>
-	<%= link_to 'Back', proposals_path %>
+	<%= link_to 'Back', dashboard_path %>

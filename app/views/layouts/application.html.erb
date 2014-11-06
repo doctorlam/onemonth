@@ -10,12 +10,17 @@
 </head>
 <body>
     <%= render "layouts/header" %>
-<div class="container">
 
+  <div class="container-fluid">
 	<% flash.each do |name, msg| %>
 		<%= content_tag(:div, msg, class: "alert alert-info") %>
 	<% end %>
-	<%= yield %>
+  <div class ="content">
+	 <%= yield %>
+  </div>
+  <footer class ="panel-footer">
+      Designed and built by Chris Lam using Ruby on Rails and Bootstrap CSS
+  </footer>
 </div>
 </body>
 </html>
