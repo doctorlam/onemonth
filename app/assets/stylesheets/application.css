@@ -20,15 +20,23 @@
 .content {
 	padding-right:40px;
 	padding-left:40px;
+	min-height:500px;
+	font-family: open sans;
+}
+
+.navbar-brand {
+	font-size: 24px;
+	text-transform:uppercase;
+	margin-left: 30px;
+	font-family:open sans;
 }
 .panel-footer {
 	width: 100%;
 	bottom: 0px;
 	min-height: 100px;
-	position:fixed;
 }
 .heading-banner {
-	background: #03A678;
+	background: #34495e;
 	padding-top: 100px;
 	color: white;
 	text-align: center;
