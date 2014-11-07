@@ -1,7 +1,6 @@
-<h2>Log in</h2>
-
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="form-group">
+    <h3>Log in</h3>
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, class: "form-control" %>
   </div>
@@ -18,10 +17,11 @@
     </div>
   <% end -%>
 
-  <div class="actions">
+  <div class="form-group">
     <%= f.submit "Log in", class: "btn btn-default" %>
-  </div>
 <% end %>
-
+</div>
+<div class ="form-group">
 <%= render "devise/shared/links" %>
 </div>
+

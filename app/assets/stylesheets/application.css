@@ -17,7 +17,7 @@
 	padding: 0;
 
 }
-.content {
+.col-lg-12 {
 	
 	min-height:500px;
 	font-family: open sans;
@@ -26,7 +26,6 @@
 .navbar-brand {
 	font-size: 24px;
 	text-transform:uppercase;
-	margin-left: 30px;
 	font-family:open sans;
 }
 .panel-footer {
@@ -48,6 +47,4 @@ li.home-button {
 	text-decoration: none;
 	margin-right: 20px;
 }
-.form-group {
-	margin-left: 50px;
-}
+

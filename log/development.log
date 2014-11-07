@@ -44709,3 +44709,3745 @@ Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 18:40:22 -
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 18:40:22 -0600
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2014-11-06 18:47:01 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (50.0ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2014-11-06 18:47:02 -0600
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (31.4ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2014-11-06 18:47:04 -0600
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (31.3ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2014-11-06 18:47:05 -0600
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.0ms)
+
+
+Started GET "/users/" for 127.0.0.1 at 2014-11-06 18:47:05 -0600
+
+ActionController::RoutingError (No route matches [GET] "/users"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (54.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (87.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 18:47:08 -0600
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 46ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2014-11-06 18:47:08 -0600
+Processing by PagesController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mProposal Load (0.3ms)[0m  SELECT "proposals".* FROM "proposals"  WHERE "proposals"."user_id" = ?  [["user_id", 1]]
+  Rendered pages/dashboard.html.erb within layouts/application (28.6ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 302ms (Views: 270.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 18:47:08 -0600
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2014-11-06 18:47:08 -0600
+Processing by PagesController#dashboard as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mProposal Load (0.1ms)[0m  [1mSELECT "proposals".* FROM "proposals"  WHERE "proposals"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered pages/dashboard.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 134ms (Views: 131.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 18:47:08 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 18:47:08 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 18:47:08 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 18:47:08 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 18:47:08 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 18:47:08 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 18:47:08 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 18:47:08 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 18:47:08 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 18:47:08 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 18:47:08 -0600
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-11-06 18:47:10 -0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WaVxH70dd8S7F701xFvvLIvq+KivYh9BWPHObrvsck8="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 20ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 18:47:10 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 140ms (Views: 125.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 18:47:10 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 18:47:10 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 18:47:10 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 18:47:10 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 18:47:10 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 18:47:10 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 18:47:10 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 18:47:10 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 18:47:10 -0600
+
+
+Started GET "/assets/image1.jpg" for 127.0.0.1 at 2014-11-06 18:47:10 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 18:47:13 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (49.8ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 228ms (Views: 206.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2014-11-06 18:47:47 -0600
+Processing by PagesController#dashboard as HTML
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `proposals' for nil:NilClass):
+  app/controllers/pages_controller.rb:12:in `dashboard'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.4ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 18:48:58 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 86ms (Views: 84.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 18:48:58 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 18:48:58 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 18:48:58 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 18:48:58 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 18:48:58 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 18:48:58 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 18:48:58 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 18:48:58 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 18:48:58 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 18:48:58 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 18:48:58 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 18:50:28 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 145ms (Views: 143.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 18:50:28 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 18:50:28 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 18:50:28 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 18:50:28 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 18:50:28 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 18:50:28 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 18:50:28 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 18:50:28 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 18:50:28 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 18:50:28 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 18:50:28 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 18:51:01 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 150ms (Views: 147.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 18:51:02 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 18:51:02 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 18:51:02 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 18:51:02 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 18:51:02 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 18:51:02 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 18:51:02 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 18:51:02 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 18:51:02 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 18:51:02 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 18:51:02 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 18:51:21 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 82ms (Views: 79.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 18:51:21 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 18:51:21 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 18:51:21 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 18:51:21 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 18:51:21 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 18:51:21 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 18:51:21 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 18:51:21 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 18:51:21 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 18:51:21 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 18:51:21 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 18:51:34 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 132ms (Views: 129.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 18:51:34 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 18:51:34 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 18:51:34 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 18:51:34 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 18:51:34 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 18:51:34 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 18:51:34 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 18:51:34 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 18:51:34 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 18:51:34 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 18:51:34 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 18:52:17 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 196ms (Views: 194.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/image1.jpg" for 127.0.0.1 at 2014-11-06 18:52:17 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 18:52:22 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 88ms (Views: 86.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in?utf8=%E2%9C%93&authenticity_token=oFzOhvnqcczN7znoVIIuXY%2BJpNRYzqXOVhbCBPH0KIk%3D&user%5Bemail%5D=chris.lam.unt%40gmail.com&user%5Bpassword%5D=[FILTERED]&user%5Bremember_me%5D=0&commit=Log+in" for 127.0.0.1 at 2014-11-06 18:52:25 -0600
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oFzOhvnqcczN7znoVIIuXY+JpNRYzqXOVhbCBPH0KIk=", "user"=>{"email"=>"chris.lam.unt@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 241ms (Views: 145.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 18:52:25 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 18:52:25 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 18:52:25 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:25 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:25 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:25 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:25 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 18:52:25 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:25 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:25 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:25 -0600
+
+
+Started GET "/users/sign_in?utf8=%E2%9C%93&authenticity_token=oFzOhvnqcczN7znoVIIuXY%2BJpNRYzqXOVhbCBPH0KIk%3D&user%5Bemail%5D=chris.lam.unt%40gmail.com&user%5Bpassword%5D=[FILTERED]&user%5Bremember_me%5D=0&commit=Log+in" for 127.0.0.1 at 2014-11-06 18:52:30 -0600
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oFzOhvnqcczN7znoVIIuXY+JpNRYzqXOVhbCBPH0KIk=", "user"=>{"email"=>"chris.lam.unt@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 170ms (Views: 76.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 18:52:30 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 18:52:30 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 18:52:30 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:30 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:30 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 18:52:30 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:31 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:31 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:31 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:31 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:31 -0600
+
+
+Started GET "/users/sign_in?utf8=%E2%9C%93&authenticity_token=oFzOhvnqcczN7znoVIIuXY%2BJpNRYzqXOVhbCBPH0KIk%3D&user%5Bemail%5D=chris.lam.unt%40gmail.com&user%5Bpassword%5D=[FILTERED]&user%5Bremember_me%5D=0&commit=Log+in" for 127.0.0.1 at 2014-11-06 18:52:36 -0600
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oFzOhvnqcczN7znoVIIuXY+JpNRYzqXOVhbCBPH0KIk=", "user"=>{"email"=>"chris.lam.unt@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 221ms (Views: 124.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 18:52:36 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 18:52:36 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:36 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:36 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 18:52:36 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:36 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 18:52:36 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:36 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:36 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:36 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:36 -0600
+
+
+Started GET "/users/sign_in?utf8=%E2%9C%93&authenticity_token=oFzOhvnqcczN7znoVIIuXY%2BJpNRYzqXOVhbCBPH0KIk%3D&user%5Bemail%5D=test%40email.com&user%5Bpassword%5D=[FILTERED]&user%5Bremember_me%5D=0&commit=Log+in" for 127.0.0.1 at 2014-11-06 18:52:42 -0600
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oFzOhvnqcczN7znoVIIuXY+JpNRYzqXOVhbCBPH0KIk=", "user"=>{"email"=>"test@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 294ms (Views: 185.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 18:52:42 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 18:52:42 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:42 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 18:52:42 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 18:52:42 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:42 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:42 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:42 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:42 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:42 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:42 -0600
+
+
+Started GET "/users/sign_in?utf8=%E2%9C%93&authenticity_token=oFzOhvnqcczN7znoVIIuXY%2BJpNRYzqXOVhbCBPH0KIk%3D&user%5Bemail%5D=test%40email.com&user%5Bpassword%5D=[FILTERED]&user%5Bremember_me%5D=0&commit=Log+in" for 127.0.0.1 at 2014-11-06 18:52:45 -0600
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oFzOhvnqcczN7znoVIIuXY+JpNRYzqXOVhbCBPH0KIk=", "user"=>{"email"=>"test@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 168ms (Views: 75.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 18:52:45 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 18:52:45 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 18:52:45 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:45 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:45 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 18:52:45 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:45 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:45 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:45 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:45 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:45 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 18:52:47 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 135ms (Views: 132.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in?utf8=%E2%9C%93&authenticity_token=oFzOhvnqcczN7znoVIIuXY%2BJpNRYzqXOVhbCBPH0KIk%3D&user%5Bemail%5D=test%40email.com&user%5Bpassword%5D=[FILTERED]&user%5Bremember_me%5D=0&commit=Log+in" for 127.0.0.1 at 2014-11-06 18:52:50 -0600
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oFzOhvnqcczN7znoVIIuXY+JpNRYzqXOVhbCBPH0KIk=", "user"=>{"email"=>"test@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 184ms (Views: 87.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 18:52:50 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 18:52:51 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 18:52:51 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 18:52:51 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:51 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:51 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:51 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:51 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:51 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:51 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 18:52:51 -0600
+
+
+Started GET "/about" for 127.0.0.1 at 2014-11-06 18:52:52 -0600
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 136ms (Views: 135.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 18:52:53 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 75ms (Views: 74.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/image1.jpg" for 127.0.0.1 at 2014-11-06 18:52:53 -0600
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-06 18:52:56 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 77ms (Views: 75.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-11-06 18:53:06 -0600
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oFzOhvnqcczN7znoVIIuXY+JpNRYzqXOVhbCBPH0KIk=", "user"=>{"email"=>"test2@email.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'test2@email.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-11-07 00:53:06.815189"], ["email", "test2@email.com"], ["encrypted_password", "$2a$10$SCSkhBARZ2H4y5d06ryjo.2pe9wCBGGjl7QSxCB6pbsvEsq5uVPba"], ["updated_at", "2014-11-07 00:53:06.815189"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `current_sign_in_ip`
+Binary data inserted for `string` type on column `last_sign_in_ip`
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 4  [["current_sign_in_at", "2014-11-07 00:53:06.819293"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_at", "2014-11-07 00:53:06.819293"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2014-11-07 00:53:06.820429"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 115ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 18:53:06 -0600
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 4  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2014-11-06 18:53:06 -0600
+Processing by PagesController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 4  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mProposal Load (0.1ms)[0m  SELECT "proposals".* FROM "proposals"  WHERE "proposals"."user_id" = ?  [["user_id", 4]]
+  Rendered pages/dashboard.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 140ms (Views: 137.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 18:53:07 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 18:53:07 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 18:53:07 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 18:53:07 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 18:53:07 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 18:53:07 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 18:53:07 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 18:53:07 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 18:53:07 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 18:53:07 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 18:53:07 -0600
+
+
+Started GET "/proposals" for 127.0.0.1 at 2014-11-06 18:53:09 -0600
+Processing by ProposalsController#index as HTML
+  [1m[36mProposal Load (0.2ms)[0m  [1mSELECT "proposals".* FROM "proposals"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 4  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered proposals/index.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 94ms (Views: 92.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/proposals/24" for 127.0.0.1 at 2014-11-06 18:53:12 -0600
+Processing by ProposalsController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[35mProposal Load (0.3ms)[0m  SELECT  "proposals".* FROM "proposals"  WHERE "proposals"."id" = ? LIMIT 1  [["id", 24]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 4  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered proposals/show.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 182ms (Views: 178.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2014-11-06 18:53:14 -0600
+Processing by PagesController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 4  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mProposal Load (0.1ms)[0m  SELECT "proposals".* FROM "proposals"  WHERE "proposals"."user_id" = ?  [["user_id", 4]]
+  Rendered pages/dashboard.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 116ms (Views: 113.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 18:53:27 -0600
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 4  ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2014-11-06 18:53:27 -0600
+Processing by PagesController#dashboard as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 4  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mProposal Load (0.1ms)[0m  [1mSELECT "proposals".* FROM "proposals"  WHERE "proposals"."user_id" = ?[0m  [["user_id", 4]]
+  Rendered pages/dashboard.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 142ms (Views: 140.3ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-11-06 18:53:29 -0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"oFzOhvnqcczN7znoVIIuXY+JpNRYzqXOVhbCBPH0KIk="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 4  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 18:53:29 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 76ms (Views: 74.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 18:53:29 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 18:53:29 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 18:53:29 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 18:53:29 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 18:53:29 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 18:53:29 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 18:53:29 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 18:53:29 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 18:53:29 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 18:53:29 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 18:53:29 -0600
+
+
+Started GET "/assets/image1.jpg" for 127.0.0.1 at 2014-11-06 18:53:29 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 18:55:02 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 135ms (Views: 133.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 18:55:02 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 18:55:02 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 18:55:02 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 18:55:02 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 18:55:02 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 18:55:02 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 18:55:03 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 18:55:03 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 18:55:03 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 18:55:03 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 18:55:03 -0600
+
+
+Started GET "/assets/image1.jpg" for 127.0.0.1 at 2014-11-06 18:55:03 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 18:55:14 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 191ms (Views: 190.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 18:55:15 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 18:55:15 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 18:55:15 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 18:55:15 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 18:55:15 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 18:55:15 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 18:55:15 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 18:55:15 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 18:55:15 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 18:55:15 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 18:55:15 -0600
+
+
+Started GET "/assets/image1.jpg" for 127.0.0.1 at 2014-11-06 18:55:15 -0600
+
+
+Started GET "/about" for 127.0.0.1 at 2014-11-06 18:55:34 -0600
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 76ms (Views: 75.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 18:55:54 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 155ms (Views: 154.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/image1.jpg" for 127.0.0.1 at 2014-11-06 18:55:54 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 18:55:57 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 132ms (Views: 128.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 18:55:57 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 18:55:57 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 18:55:57 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 18:55:57 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 18:55:57 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 18:55:57 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 18:55:57 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 18:55:57 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 18:55:57 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 18:55:57 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 18:55:57 -0600
+
+
+Started GET "/assets/image1.jpg" for 127.0.0.1 at 2014-11-06 18:55:57 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 18:56:08 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 153ms (Views: 151.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 18:56:08 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 18:56:08 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 18:56:08 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 18:56:08 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 18:56:08 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 18:56:08 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 18:56:08 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 18:56:08 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 18:56:08 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 18:56:08 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 18:56:08 -0600
+
+
+Started GET "/assets/image1.jpg" for 127.0.0.1 at 2014-11-06 18:56:08 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 18:56:13 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 187ms (Views: 184.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 18:56:14 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 18:56:14 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 18:56:14 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 18:56:14 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 18:56:14 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 18:56:14 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 18:56:14 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 18:56:14 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 18:56:14 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 18:56:14 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 18:56:14 -0600
+
+
+Started GET "/assets/image1.jpg" for 127.0.0.1 at 2014-11-06 18:56:14 -0600
+
+
+Started GET "/about" for 127.0.0.1 at 2014-11-06 18:56:18 -0600
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 119ms (Views: 117.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-11-06 18:56:20 -0600
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 142ms (Views: 141.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 18:56:20 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 18:56:20 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 18:56:20 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 18:56:20 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 18:56:20 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 18:56:20 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 18:56:20 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 18:56:20 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 18:56:20 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 18:56:20 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 18:56:20 -0600
+
+
+Started GET "/about" for 127.0.0.1 at 2014-11-06 18:56:26 -0600
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 156ms (Views: 155.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 18:56:26 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 18:56:26 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 18:56:26 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 18:56:26 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 18:56:26 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 18:56:26 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 18:56:26 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 18:56:26 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 18:56:26 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 18:56:26 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 18:56:27 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 18:56:35 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 170ms (Views: 169.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 18:56:35 -0600
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 18:56:35 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 18:56:35 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 18:56:35 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 18:56:35 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 18:56:35 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 18:56:35 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 18:56:35 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 18:56:35 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 18:56:35 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 18:56:35 -0600
+
+
+Started GET "/assets/image1.jpg" for 127.0.0.1 at 2014-11-06 18:56:35 -0600
+
+
+Started GET "/about" for 127.0.0.1 at 2014-11-06 18:59:55 -0600
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 135ms (Views: 134.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 18:59:56 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 18:59:56 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 18:59:56 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 18:59:56 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 18:59:56 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 18:59:56 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 18:59:56 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 18:59:56 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 18:59:56 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 18:59:56 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 18:59:56 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 19:00:01 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 82ms (Views: 80.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 19:00:03 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 138ms (Views: 137.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/image1.jpg" for 127.0.0.1 at 2014-11-06 19:00:03 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 19:00:11 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 128ms (Views: 126.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 19:00:11 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 19:00:11 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 19:00:11 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 19:00:11 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 19:00:11 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 19:00:11 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 19:00:11 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 19:00:11 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 19:00:11 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 19:00:11 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 19:00:11 -0600
+
+
+Started GET "/assets/image1.jpg" for 127.0.0.1 at 2014-11-06 19:00:11 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 19:00:13 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 120ms (Views: 117.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 19:00:45 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 86ms (Views: 84.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 19:00:46 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 19:00:46 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 19:00:46 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 19:00:46 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 19:00:46 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 19:00:46 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 19:00:46 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 19:00:46 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 19:00:46 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 19:00:46 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 19:00:46 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 19:00:48 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 85ms (Views: 83.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/image1.jpg" for 127.0.0.1 at 2014-11-06 19:00:48 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 19:00:50 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 133ms (Views: 131.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 19:00:50 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 19:00:50 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 19:00:50 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 19:00:50 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 19:00:50 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 19:00:50 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 19:00:50 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 19:00:50 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 19:00:50 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 19:00:50 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 19:00:50 -0600
+
+
+Started GET "/assets/image1.jpg" for 127.0.0.1 at 2014-11-06 19:00:50 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 19:00:54 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 93ms (Views: 91.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 19:01:55 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 137ms (Views: 135.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 19:01:55 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 19:01:55 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 19:01:55 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 19:01:55 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 19:01:55 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 19:01:55 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 19:01:55 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 19:01:55 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 19:01:55 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 19:01:55 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 19:01:55 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 19:02:04 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 92ms (Views: 90.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/image1.jpg" for 127.0.0.1 at 2014-11-06 19:02:04 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 19:02:38 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 144ms (Views: 143.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 19:02:38 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 19:02:38 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 19:02:38 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 19:02:38 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 19:02:38 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 19:02:38 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 19:02:38 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 19:02:38 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 19:02:38 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 19:02:38 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 19:02:38 -0600
+
+
+Started GET "/assets/image1.jpg" for 127.0.0.1 at 2014-11-06 19:02:38 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 19:02:43 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 82ms (Views: 80.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 19:03:00 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 88ms (Views: 86.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 19:03:00 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 19:03:00 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 19:03:00 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 19:03:00 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 19:03:00 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 19:03:00 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 19:03:00 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 19:03:00 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 19:03:00 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 19:03:00 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 19:03:00 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 19:03:19 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 144ms (Views: 143.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 19:03:19 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 19:03:19 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 19:03:19 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 19:03:19 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 19:03:19 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 19:03:19 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 19:03:19 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 19:03:19 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 19:03:19 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 19:03:19 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 19:03:19 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 19:03:21 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 89ms (Views: 87.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 19:03:21 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 19:03:21 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 19:03:21 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 19:03:21 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 19:03:21 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 19:03:21 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 19:03:21 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 19:03:21 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 19:03:21 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 19:03:21 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 19:03:21 -0600
+
+
+Started GET "/assets/image1.jpg" for 127.0.0.1 at 2014-11-06 19:03:21 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 19:03:24 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 125ms (Views: 123.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 21:54:14 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (15.7ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 203ms (Views: 191.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/image1.jpg" for 127.0.0.1 at 2014-11-06 21:54:15 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 21:55:18 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 225ms (Views: 222.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 21:55:18 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 21:55:18 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 21:55:18 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 21:55:18 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 21:55:18 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 21:55:18 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 21:55:18 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 21:55:18 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 21:55:18 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 21:55:18 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 21:55:18 -0600
+
+
+Started GET "/assets/image1.jpg" for 127.0.0.1 at 2014-11-06 21:55:18 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 21:56:04 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 193ms (Views: 191.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 21:56:04 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 21:56:04 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 21:56:04 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 21:56:04 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 21:56:04 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 21:56:04 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 21:56:04 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 21:56:04 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 21:56:04 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 21:56:04 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 21:56:04 -0600
+
+
+Started GET "/assets/image1.jpg" for 127.0.0.1 at 2014-11-06 21:56:04 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 21:58:02 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 89ms (Views: 88.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 21:58:02 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 21:58:02 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 21:58:02 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 21:58:02 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 21:58:02 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 21:58:02 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 21:58:02 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 21:58:02 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 21:58:02 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 21:58:02 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 21:58:02 -0600
+
+
+Started GET "/assets/image1.jpg" for 127.0.0.1 at 2014-11-06 21:58:02 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 21:58:12 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 143ms (Views: 140.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 21:59:06 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 128ms (Views: 125.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 21:59:06 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 21:59:06 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 21:59:06 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 21:59:06 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 21:59:06 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 21:59:06 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 21:59:06 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 21:59:06 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 21:59:06 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 21:59:06 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 21:59:07 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 22:00:03 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 134ms (Views: 131.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 22:00:03 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 22:00:03 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 22:00:03 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 22:00:03 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 22:00:03 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 22:00:03 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 22:00:03 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 22:00:03 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 22:00:03 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 22:00:03 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 22:00:03 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 22:00:23 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 132ms (Views: 129.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 22:00:24 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 22:00:24 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 22:00:24 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 22:00:24 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 22:00:24 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 22:00:24 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 22:00:24 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 22:00:24 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 22:00:24 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 22:00:24 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 22:00:24 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 22:00:31 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 87ms (Views: 84.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 22:00:32 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 22:00:32 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 22:00:32 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 22:00:32 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 22:00:32 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 22:00:32 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 22:00:32 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 22:00:32 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 22:00:32 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 22:00:32 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 22:00:32 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 22:00:52 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 134ms (Views: 129.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 22:00:53 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 22:00:53 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 22:00:53 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 22:00:53 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 22:00:53 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 22:00:53 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 22:00:53 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 22:00:53 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 22:00:53 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 22:00:53 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 22:00:53 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 22:01:24 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 77ms (Views: 76.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/image1.jpg" for 127.0.0.1 at 2014-11-06 22:01:24 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 22:01:37 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 90ms (Views: 88.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in?utf8=%E2%9C%93&authenticity_token=DbV9z%2BcZvodcAQy8Icpb74nkIAn1sawlO6BlTWC1PtY%3D&user%5Bemail%5D=test2%40email.com&user%5Bpassword%5D=[FILTERED]&user%5Bremember_me%5D=0&commit=Log+in" for 127.0.0.1 at 2014-11-06 22:01:41 -0600
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DbV9z+cZvodcAQy8Icpb74nkIAn1sawlO6BlTWC1PtY=", "user"=>{"email"=>"test2@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 173ms (Views: 77.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 22:01:41 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 22:01:41 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 22:01:41 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 22:01:41 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 22:01:41 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 22:01:41 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 22:01:41 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 22:01:41 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 22:01:41 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 22:01:41 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 22:01:41 -0600
+
+
+Started GET "/users/sign_in?utf8=%E2%9C%93&authenticity_token=DbV9z%2BcZvodcAQy8Icpb74nkIAn1sawlO6BlTWC1PtY%3D&user%5Bemail%5D=chris.lam.unt%40gmail.com&user%5Bpassword%5D=[FILTERED]&user%5Bremember_me%5D=0&commit=Log+in" for 127.0.0.1 at 2014-11-06 22:01:55 -0600
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DbV9z+cZvodcAQy8Icpb74nkIAn1sawlO6BlTWC1PtY=", "user"=>{"email"=>"chris.lam.unt@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 170ms (Views: 76.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 22:01:55 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 22:01:55 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 22:01:55 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 22:01:55 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 22:01:55 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 22:01:55 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 22:01:55 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 22:01:55 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 22:01:55 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 22:01:55 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 22:01:55 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 22:02:00 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 147ms (Views: 145.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in?utf8=%E2%9C%93&authenticity_token=DbV9z%2BcZvodcAQy8Icpb74nkIAn1sawlO6BlTWC1PtY%3D&user%5Bemail%5D=chris.lam.unt%40gmail.com&user%5Bpassword%5D=[FILTERED]&user%5Bremember_me%5D=0&commit=Log+in" for 127.0.0.1 at 2014-11-06 22:02:04 -0600
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DbV9z+cZvodcAQy8Icpb74nkIAn1sawlO6BlTWC1PtY=", "user"=>{"email"=>"chris.lam.unt@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 248ms (Views: 141.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 22:02:04 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 22:02:04 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 22:02:04 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 22:02:04 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 22:02:04 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 22:02:04 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 22:02:04 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 22:02:04 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 22:02:05 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 22:02:05 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 22:02:05 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 22:02:05 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 203ms (Views: 201.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/image1.jpg" for 127.0.0.1 at 2014-11-06 22:02:06 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 22:02:07 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 125ms (Views: 123.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2014-11-06 22:02:13 -0600
+Processing by Devise::PasswordsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 136ms (Views: 134.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/password" for 127.0.0.1 at 2014-11-06 22:02:21 -0600
+Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DbV9z+cZvodcAQy8Icpb74nkIAn1sawlO6BlTWC1PtY=", "user"=>{"email"=>"chris.lam.unt@gmail.com"}, "commit"=>"Send me reset password instructions"}
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'chris.lam.unt@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."reset_password_token" = '77b7d0a67c942e673f411a8eed788bbd994f4935d3f193943f5dcc0e04704080'  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `reset_password_token`
+  [1m[35mSQL (0.6ms)[0m  UPDATE "users" SET "reset_password_sent_at" = ?, "reset_password_token" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["reset_password_sent_at", "2014-11-07 04:02:22.264447"], ["reset_password_token", "77b7d0a67c942e673f411a8eed788bbd994f4935d3f193943f5dcc0e04704080"], ["updated_at", "2014-11-07 04:02:22.265774"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  Rendered devise/mailer/reset_password_instructions.html.erb (1.9ms)
+
+Devise::Mailer#reset_password_instructions: processed outbound mail in 217.6ms
+
+Sent mail to chris.lam.unt@gmail.com (23.0ms)
+Date: Thu, 06 Nov 2014 22:02:22 -0600
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: chris.lam.unt@gmail.com
+Message-ID: <545c444e7d184_2e93fea9a6f4a547408b@Christophers-MacBook-Air.local.mail>
+Subject: Reset password instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hello chris.lam.unt@gmail.com!</p>
+
+<p>Someone has requested a link to change your password. You can do this through the link below.</p>
+
+<p><a href="http://localhost:3000/users/password/edit?reset_password_token=GL3ZCLquQtT-cLbbf1KG">Change my password</a></p>
+
+<p>If you didn't request this, please ignore this email.</p>
+<p>Your password won't change until you access the link above and create a new one.</p>
+
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 1349ms (ActiveRecord: 4.9ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 22:02:22 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 77ms (Views: 75.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 22:02:22 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 22:02:22 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 22:02:22 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 22:02:22 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 22:02:22 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 22:02:22 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 22:02:22 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 22:02:22 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 22:02:22 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 22:02:22 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 22:02:22 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 22:02:40 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 147ms (Views: 146.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/image1.jpg" for 127.0.0.1 at 2014-11-06 22:02:40 -0600
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-06 22:02:42 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 81ms (Views: 77.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-11-06 22:02:53 -0600
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DbV9z+cZvodcAQy8Icpb74nkIAn1sawlO6BlTWC1PtY=", "user"=>{"email"=>"anothertest@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'anothertest@gmail.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-11-07 04:02:53.588564"], ["email", "anothertest@gmail.com"], ["encrypted_password", "$2a$10$ToaGCGq55ngFmqmzqxfkx.sJghWoN.yGtsu6xcMnUph2Xmb19JsjO"], ["updated_at", "2014-11-07 04:02:53.588564"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `current_sign_in_ip`
+Binary data inserted for `string` type on column `last_sign_in_ip`
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 5[0m  [["current_sign_in_at", "2014-11-07 04:02:53.592645"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_at", "2014-11-07 04:02:53.592645"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2014-11-07 04:02:53.593150"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 111ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 22:02:53 -0600
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 5  ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2014-11-06 22:02:53 -0600
+Processing by PagesController#dashboard as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 5  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mProposal Load (0.1ms)[0m  [1mSELECT "proposals".* FROM "proposals"  WHERE "proposals"."user_id" = ?[0m  [["user_id", 5]]
+  Rendered pages/dashboard.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 87ms (Views: 85.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 22:02:53 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 22:02:53 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 22:02:53 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 22:02:53 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 22:02:53 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 22:02:53 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 22:02:53 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 22:02:53 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 22:02:53 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 22:02:53 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 22:02:53 -0600
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-11-06 22:02:56 -0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DbV9z+cZvodcAQy8Icpb74nkIAn1sawlO6BlTWC1PtY="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 5  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 22:02:56 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 76ms (Views: 75.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 22:02:56 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 22:02:56 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 22:02:56 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 22:02:56 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 22:02:56 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 22:02:56 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 22:02:56 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 22:02:56 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 22:02:56 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 22:02:56 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 22:02:56 -0600
+
+
+Started GET "/assets/image1.jpg" for 127.0.0.1 at 2014-11-06 22:02:56 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 22:02:57 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 126ms (Views: 124.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in?utf8=%E2%9C%93&authenticity_token=VgZbym7gcuUKyWxpcRk8Gsa9Nv4JdPcqKPL0X3JAg0k%3D&user%5Bemail%5D=anothertest%40gmail.com&user%5Bpassword%5D=[FILTERED]&user%5Bremember_me%5D=0&commit=Log+in" for 127.0.0.1 at 2014-11-06 22:02:59 -0600
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VgZbym7gcuUKyWxpcRk8Gsa9Nv4JdPcqKPL0X3JAg0k=", "user"=>{"email"=>"anothertest@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 180ms (Views: 86.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 22:02:59 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 22:02:59 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 22:02:59 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 22:02:59 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 22:02:59 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 22:02:59 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 22:02:59 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 22:02:59 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 22:02:59 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 22:02:59 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 22:02:59 -0600
+
+
+Started GET "/users/sign_in?utf8=%E2%9C%93&authenticity_token=VgZbym7gcuUKyWxpcRk8Gsa9Nv4JdPcqKPL0X3JAg0k%3D&user%5Bemail%5D=anothertest%40gmail.com&user%5Bpassword%5D=[FILTERED]&user%5Bremember_me%5D=0&commit=Log+in" for 127.0.0.1 at 2014-11-06 22:03:19 -0600
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VgZbym7gcuUKyWxpcRk8Gsa9Nv4JdPcqKPL0X3JAg0k=", "user"=>{"email"=>"anothertest@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 232ms (Views: 137.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 22:03:19 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 22:03:19 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 22:03:19 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 22:03:19 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 22:03:19 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 22:03:19 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 22:03:19 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 22:03:19 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 22:03:19 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 22:03:19 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 22:03:19 -0600
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-11-06 22:03:21 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VgZbym7gcuUKyWxpcRk8Gsa9Nv4JdPcqKPL0X3JAg0k=", "user"=>{"email"=>"anothertest@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'anothertest@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 5[0m  [["current_sign_in_at", "2014-11-07 04:03:21.298536"], ["sign_in_count", 2], ["updated_at", "2014-11-07 04:03:21.299251"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 109ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 22:03:21 -0600
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 5  ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2014-11-06 22:03:21 -0600
+Processing by PagesController#dashboard as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 5  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mProposal Load (0.1ms)[0m  [1mSELECT "proposals".* FROM "proposals"  WHERE "proposals"."user_id" = ?[0m  [["user_id", 5]]
+  Rendered pages/dashboard.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 84ms (Views: 81.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 22:03:21 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 22:03:21 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 22:03:21 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 22:03:21 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 22:03:21 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 22:03:21 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 22:03:21 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 22:03:21 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 22:03:21 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 22:03:21 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 22:03:21 -0600
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-11-06 22:03:23 -0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"TlOtZarnGxkz+f9C9n3yY/mKN5gwfMxFYimq0GE4D3w="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 5  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 22:03:23 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 77ms (Views: 75.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 22:03:23 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 22:03:23 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 22:03:24 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 22:03:24 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 22:03:24 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 22:03:24 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 22:03:24 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 22:03:24 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 22:03:24 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 22:03:24 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 22:03:24 -0600
+
+
+Started GET "/assets/image1.jpg" for 127.0.0.1 at 2014-11-06 22:03:24 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 22:03:25 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 134ms (Views: 132.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-11-06 22:03:27 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"alHHb6RyEOfrwb9o3/4QPKK8MYjMY+1RehPt8iNI/hM=", "user"=>{"email"=>"anothertest@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'anothertest@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 5[0m  [["current_sign_in_at", "2014-11-07 04:03:27.477297"], ["last_sign_in_at", "2014-11-07 04:03:21.298536"], ["sign_in_count", 3], ["updated_at", "2014-11-07 04:03:27.478072"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 111ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 22:03:27 -0600
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 5  ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2014-11-06 22:03:27 -0600
+Processing by PagesController#dashboard as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 5  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mProposal Load (0.1ms)[0m  [1mSELECT "proposals".* FROM "proposals"  WHERE "proposals"."user_id" = ?[0m  [["user_id", 5]]
+  Rendered pages/dashboard.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 83ms (Views: 81.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 22:03:27 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 22:03:27 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 22:03:27 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 22:03:27 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 22:03:27 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 22:03:27 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 22:03:27 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 22:03:27 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 22:03:27 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 22:03:27 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 22:03:27 -0600
+
+
+Started GET "/proposals" for 127.0.0.1 at 2014-11-06 22:03:29 -0600
+Processing by ProposalsController#index as HTML
+  [1m[35mProposal Load (0.2ms)[0m  SELECT "proposals".* FROM "proposals"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 5  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered proposals/index.html.erb within layouts/application (11.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 142ms (Views: 140.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2014-11-06 22:03:36 -0600
+Processing by PagesController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 5  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mProposal Load (0.1ms)[0m  SELECT "proposals".* FROM "proposals"  WHERE "proposals"."user_id" = ?  [["user_id", 5]]
+  Rendered pages/dashboard.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 84ms (Views: 81.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-11-06 22:03:38 -0600
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 5  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 134ms (Views: 133.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2014-11-06 22:03:40 -0600
+Processing by PagesController#dashboard as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 5  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mProposal Load (0.1ms)[0m  [1mSELECT "proposals".* FROM "proposals"  WHERE "proposals"."user_id" = ?[0m  [["user_id", 5]]
+  Rendered pages/dashboard.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 73ms (Views: 70.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/proposals/new" for 127.0.0.1 at 2014-11-06 22:03:41 -0600
+Processing by ProposalsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 5  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered proposals/_form.html.erb (3.6ms)
+  Rendered proposals/new.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 89ms (Views: 86.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 22:04:12 -0600
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 5  ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2014-11-06 22:04:12 -0600
+Processing by PagesController#dashboard as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 5  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mProposal Load (0.1ms)[0m  [1mSELECT "proposals".* FROM "proposals"  WHERE "proposals"."user_id" = ?[0m  [["user_id", 5]]
+  Rendered pages/dashboard.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 136ms (Views: 133.9ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-11-06 22:05:08 -0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4ZC/frvMTQHSkZg7hf9cS4vWVIzEbIh/XhlnSH3RCn0="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 5  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 22:05:08 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 120ms (Views: 119.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 22:05:08 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 22:05:08 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 22:05:08 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 22:05:08 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 22:05:08 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 22:05:08 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 22:05:08 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 22:05:08 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 22:05:08 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 22:05:08 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 22:05:08 -0600
+
+
+Started GET "/assets/image1.jpg" for 127.0.0.1 at 2014-11-06 22:05:08 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 22:05:10 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 88ms (Views: 86.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 22:05:13 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 85ms (Views: 82.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 22:05:14 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 22:05:14 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 22:05:14 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 22:05:14 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 22:05:14 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 22:05:14 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 22:05:14 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 22:05:14 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 22:05:14 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 22:05:14 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 22:05:14 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 22:05:26 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 84ms (Views: 82.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 22:05:26 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 22:05:26 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 22:05:26 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 22:05:26 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 22:05:26 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 22:05:26 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 22:05:26 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 22:05:26 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 22:05:26 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 22:05:26 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 22:05:26 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 22:05:37 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 171ms (Views: 169.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 22:05:38 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 22:05:38 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 22:05:38 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 22:05:38 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 22:05:38 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 22:05:38 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 22:05:38 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 22:05:38 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 22:05:38 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 22:05:38 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 22:05:38 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 22:07:41 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 191ms (Views: 189.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 22:07:41 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 22:07:41 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 22:07:41 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 22:07:41 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 22:07:41 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 22:07:41 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 22:07:41 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 22:07:41 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 22:07:41 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 22:07:41 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 22:07:41 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 22:07:58 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 187ms (Views: 185.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 22:07:58 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 22:07:58 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 22:07:58 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 22:07:58 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 22:07:58 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 22:07:58 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 22:07:58 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 22:07:59 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 22:07:59 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 22:07:59 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 22:07:59 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 22:08:02 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 169ms (Views: 167.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/image1.jpg" for 127.0.0.1 at 2014-11-06 22:08:02 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 22:08:19 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 171ms (Views: 170.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 22:08:19 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 22:08:19 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 22:08:19 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 22:08:19 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 22:08:19 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 22:08:19 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 22:08:19 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 22:08:19 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 22:08:19 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 22:08:19 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 22:08:19 -0600
+
+
+Started GET "/assets/image1.jpg" for 127.0.0.1 at 2014-11-06 22:08:19 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 22:08:23 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 76ms (Views: 74.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 22:08:35 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 193ms (Views: 192.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 22:08:35 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 22:08:35 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 22:08:35 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 22:08:35 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 22:08:35 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 22:08:35 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 22:08:35 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 22:08:35 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 22:08:35 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 22:08:35 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 22:08:35 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 22:08:50 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 175ms (Views: 172.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 22:08:51 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 22:08:51 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 22:08:51 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 22:08:51 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 22:08:51 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 22:08:51 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 22:08:51 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 22:08:51 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 22:08:51 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 22:08:51 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 22:08:51 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 22:09:19 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 174ms (Views: 172.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 22:09:19 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 22:09:19 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 22:09:19 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 22:09:19 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 22:09:19 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 22:09:19 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 22:09:19 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 22:09:20 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 22:09:20 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 22:09:20 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 22:09:20 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 22:09:53 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 159ms (Views: 156.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 22:09:53 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 22:09:53 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 22:09:53 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 22:09:53 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 22:09:53 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 22:09:53 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 22:09:53 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 22:09:53 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 22:09:53 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 22:09:53 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 22:09:53 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 22:11:04 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 135ms (Views: 133.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 22:11:05 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 22:11:05 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 22:11:05 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 22:11:05 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 22:11:05 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 22:11:05 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 22:11:05 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 22:11:05 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 22:11:05 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 22:11:05 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 22:11:05 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 22:11:28 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 152ms (Views: 150.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 22:11:29 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 22:11:29 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 22:11:29 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 22:11:29 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 22:11:29 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 22:11:29 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 22:11:29 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 22:11:29 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 22:11:29 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 22:11:29 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 22:11:29 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 22:11:44 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 108ms (Views: 106.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 22:11:44 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 22:11:44 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 22:11:44 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 22:11:44 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 22:11:44 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 22:11:44 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 22:11:44 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 22:11:44 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 22:11:44 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 22:11:44 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 22:11:44 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 22:11:54 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 95ms (Views: 94.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/image1.jpg" for 127.0.0.1 at 2014-11-06 22:11:54 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 22:12:13 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 175ms (Views: 174.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 22:12:13 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 22:12:13 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 22:12:13 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 22:12:13 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 22:12:13 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 22:12:13 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 22:12:13 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 22:12:13 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 22:12:13 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 22:12:13 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 22:12:13 -0600
+
+
+Started GET "/assets/image1.jpg" for 127.0.0.1 at 2014-11-06 22:12:13 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 22:12:28 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 128ms (Views: 126.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 22:12:53 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 160ms (Views: 157.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 22:12:53 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 22:12:53 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 22:12:53 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 22:12:53 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 22:12:53 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 22:12:53 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 22:12:53 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 22:12:53 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 22:12:53 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 22:12:53 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 22:12:53 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 22:13:00 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 157ms (Views: 155.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 22:13:00 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 22:13:00 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 22:13:00 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 22:13:00 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 22:13:00 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 22:13:00 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 22:13:00 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 22:13:00 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 22:13:00 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 22:13:00 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 22:13:00 -0600
+
+
+Started GET "/about" for 127.0.0.1 at 2014-11-06 22:13:21 -0600
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 178ms (Views: 177.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-06 22:13:23 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 75ms (Views: 73.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-11-06 22:13:25 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OHBuMBy1YlSOO1g1lOOHO4rJ+vOIDsaTmhcza7sHl1s=", "user"=>{"email"=>"chris.lam.unt@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'chris.lam.unt@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1[0m  [["current_sign_in_at", "2014-11-07 04:13:25.955168"], ["last_sign_in_at", "2014-11-07 00:40:21.878509"], ["sign_in_count", 28], ["updated_at", "2014-11-07 04:13:25.955909"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 105ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 22:13:25 -0600
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2014-11-06 22:13:25 -0600
+Processing by PagesController#dashboard as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mProposal Load (0.1ms)[0m  [1mSELECT "proposals".* FROM "proposals"  WHERE "proposals"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered pages/dashboard.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 138ms (Views: 136.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-06 22:13:26 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-06 22:13:26 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-06 22:13:26 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 22:13:26 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 22:13:26 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 22:13:26 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 22:13:26 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 22:13:26 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-06 22:13:26 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-06 22:13:26 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 22:13:26 -0600
+
+
+Started GET "/proposals/22/edit" for 127.0.0.1 at 2014-11-06 22:13:28 -0600
+Processing by ProposalsController#edit as HTML
+  Parameters: {"id"=>"22"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mProposal Load (0.2ms)[0m  [1mSELECT  "proposals".* FROM "proposals"  WHERE "proposals"."user_id" = ? AND "proposals"."id" = 22 LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mProposal Load (0.1ms)[0m  SELECT  "proposals".* FROM "proposals"  WHERE "proposals"."id" = ? LIMIT 1  [["id", 22]]
+  Rendered proposals/_form.html.erb (5.2ms)
+  Rendered proposals/edit.html.erb within layouts/application (7.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 146ms (Views: 141.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2014-11-06 22:13:38 -0600
+Processing by PagesController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mProposal Load (0.2ms)[0m  SELECT "proposals".* FROM "proposals"  WHERE "proposals"."user_id" = ?  [["user_id", 1]]
+  Rendered pages/dashboard.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 82ms (Views: 78.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 22:13:42 -0600
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2014-11-06 22:13:42 -0600
+Processing by PagesController#dashboard as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mProposal Load (0.1ms)[0m  [1mSELECT "proposals".* FROM "proposals"  WHERE "proposals"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered pages/dashboard.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 159ms (Views: 156.7ms | ActiveRecord: 0.3ms)
