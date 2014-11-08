@@ -1,9 +1,30 @@
 <!--<%= link_to 'PDF', @proposal.document.url %>
 <%= image_tag @proposal.image.url %>-->
 <p>
+  <strong>First Name:</strong>
+  <%= @proposal.first_name %>
+</p>
+<p>
+  <strong>Last Name:</strong>
+  <%= @proposal.last_name %>
+</p>
+<p>
+  <strong>Organization or Company Name:</strong>
+  <%= @proposal.organization %>
+</p>
+<p>
   <strong>Title:</strong>
   <%= @proposal.title %>
 </p>
+<p>
+  <strong>Semester:</strong>
+  <%= @proposal.semester_id %>
+</p>
+<p>
+  <strong>Abstract:</strong>
+  <%= @proposal.abstract %>
+</p>
+
 <% if @proposal.user == current_user %>	
 	<%= link_to 'Edit', edit_proposal_path(@proposal) %> |
 <% end %>

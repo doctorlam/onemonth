@@ -1,2 +1,4 @@
 module ProposalsHelper
-end
+	
+	end
+

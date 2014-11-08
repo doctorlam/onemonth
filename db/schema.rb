@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141107155432) do
+ActiveRecord::Schema.define(version: 20141107234700) do
 
   create_table "pins", force: true do |t|
     t.string   "descrption"
@@ -40,6 +40,8 @@ ActiveRecord::Schema.define(version: 20141107155432) do
     t.string   "subject"
     t.text     "narrative"
     t.string   "first_name"
+    t.string   "last_name"
+    t.string   "organization"
   end
 
   add_index "proposals", ["user_id"], name: "index_proposals_on_user_id"

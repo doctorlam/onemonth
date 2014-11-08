@@ -10,23 +10,32 @@
       </ul>
     </div>
   <% end %>
-<div class ="form-group">
+<div class ="form-inline">
    <%= f.label :first_name %><br>
     <%= f.text_field :first_name, class: "form-control" %>
   </div>
+  <div class ="form-inline">
+   <%= f.label :last_name %><br>
+    <%= f.text_field :last_name, class: "form-control" %>
+  </div>
+    <div class ="form-inline">
+   <%= f.label :organization, "Organization or Company Name" %><br>
+    <%= f.text_field :organization, class: "form-control" %>
+  </div>
+
 <div class="form-group">
     <%= f.label :title %><br>
     <%= f.text_field :title, class: "form-control" %>
   </div>
 
   <div class="form-group">
-    <%= f.label :semester_id %><br>
+    <%= f.label :semester_id, "Semester (e.g., Spring, 2014)" %><br>
     <%= f.text_field :semester_id, class: "form-control" %>
   </div>
 
   <div class="form-group">
-    <%= f.label :abstract %><br>
-    <%= f.text_field :abstract, class: "form-control" %>
+    <%= f.label :abstract, "Abstract (300-word summary of your project)" %><br>
+    <%= f.text_area :abstract, class: "form-control" %>
   </div>
 
 <div class="form-group">
