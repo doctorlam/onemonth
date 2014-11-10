@@ -19,26 +19,30 @@
 }
 .col-lg-12 {
 	
-	min-height:500px;
+	min-height:600px;
 	font-family: open sans;
+	margin-top: -20px;
+
 }
 
 .navbar-brand {
 	font-size: 24px;
 	text-transform:uppercase;
-	font-family:open sans;
+	font-family: open sans;
 }
 .panel-footer {
 	width: 100%;
-	bottom: 0px;
-	min-height: 100px;
+	clear: both;
+	min-height: 200px;
+	color: white;
+	font-family: open sans;
+	background: #22313F;
 }
 .heading-banner {
-	background: #34495e;
+	background: #5C97BF;
 	padding-top: 100px;
 	color: white;
 	text-align: center;
-	margin-top: -20px;
 	height:400px;
 	}
 li.home-button {
@@ -47,4 +51,17 @@ li.home-button {
 	text-decoration: none;
 	margin-right: 20px;
 }
+.thumbnail{
+	text-align: center;
+	background-color:#5C97BF;
+	border: none;
+	width: 100%;
+}
+.column-content {
+		background-color:#5C97BF;
+		padding: 20px;
 
+}
+p.thumbnail, h3.thumbnail {
+	color: white;
+}
