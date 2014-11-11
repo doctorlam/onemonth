@@ -80057,3 +80057,52 @@ Started GET "/assets/people.fw.png" for 127.0.0.1 at 2014-11-11 17:00:55 -0600
 
 
 Started GET "/assets/documents.fw.png" for 127.0.0.1 at 2014-11-11 17:00:55 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 17:01:35 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 204ms (Views: 202.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-11 17:01:35 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-11 17:01:35 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-11 17:01:35 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-11 17:01:35 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 17:01:35 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 17:01:35 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 17:01:35 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 17:01:35 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-11 17:01:35 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-11 17:01:35 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 17:01:35 -0600
+
+
+Started GET "/assets/code.fw.png" for 127.0.0.1 at 2014-11-11 17:01:35 -0600
+
+
+Started GET "/assets/people.fw.png" for 127.0.0.1 at 2014-11-11 17:01:35 -0600
+
+
+Started GET "/assets/documents.fw.png" for 127.0.0.1 at 2014-11-11 17:01:35 -0600
