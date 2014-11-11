@@ -12,6 +12,8 @@ gem 'sdoc', '~> 0.4.0'
 gem 'devise'
 gem 'paperclip'
 gem 'tzinfo-data', '~> 1.2014.9'
+gem 'filterrific'
+gem 'protected_attributes'
 
 group :development, :test do 
 	gem 'sqlite3'

@@ -8,6 +8,7 @@ class ProposalsController < ApplicationController
   def index
     @proposals = Proposal.all
     respond_with(@proposals)
+   
   end
 
   def show
@@ -50,7 +51,7 @@ class ProposalsController < ApplicationController
     end
     def proposal_params
       
-      params.require(:proposal).permit(:semester_id, :title, :abstract, :first_name, :last_name, :organization)
+      params.require(:proposal).permit(:semester_id, :time, :title, :abstract, :first_name, :last_name, :organization)
 
     end
 end

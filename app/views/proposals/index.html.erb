@@ -1,4 +1,12 @@
-<h1>Listing proposals</h1>
+<h1>All Proposals</h1>
+
+<% form_tag proposals_path do %>
+<p>    
+  <%= text_field_tag :search %>
+    <%= submit_tag "Search" %>
+  </p>
+<% end %>
+
 <div class ="table-responsive">
 <table class ="table table-striped table-hover">
   <thead>
@@ -7,6 +15,7 @@
       <th>Organization</th>
       <th>Title</th>
       <th>Semester</th>
+      <th>Project Length</th>
       <th>Email</th>
     </tr>
   </thead>
@@ -15,9 +24,10 @@
     <% @proposals.each do |proposal| %>
       <tr>
         <td><%= link_to [proposal.first_name, proposal.last_name].join(" "), proposal %></td>
-          <td><%= proposal.organization %></td>
+        <td><%= proposal.organization %></td>
         <td><%= proposal.title %></td>
-          <td><%= proposal.semester_id %></td>
+        <td><%= proposal.semester_id %></td>
+        <td><%= proposal.time %></td>
         <td><%= proposal.user.email if proposal.user %></td>
         <td><%= link_to 'Show', proposal %></td>
         <% if proposal.user == current_user %>

@@ -1,24 +1,22 @@
-<!--<%= link_to 'PDF', @proposal.document.url %>
-<%= image_tag @proposal.image.url %>-->
+<br>
+<div class="col-md-8">
+  <h2><%= @proposal.title %></h2>
+  <hr />
 <p>
-  <strong>First Name:</strong>
-  <%= @proposal.first_name %>
-</p>
-<p>
-  <strong>Last Name:</strong>
-  <%= @proposal.last_name %>
+  <strong>Name:</strong>
+  <%= @proposal.first_name %> <%= @proposal.last_name %>
 </p>
 <p>
   <strong>Organization or Company Name:</strong>
   <%= @proposal.organization %>
 </p>
 <p>
-  <strong>Title:</strong>
-  <%= @proposal.title %>
-</p>
-<p>
   <strong>Semester:</strong>
   <%= @proposal.semester_id %>
+</p>
+<p>
+  <strong>Project Length:</strong>
+  <%= @proposal.time %>
 </p>
 <p>
   <strong>Abstract:</strong>
@@ -29,3 +27,4 @@
 	<%= link_to 'Edit', edit_proposal_path(@proposal) %> |
 <% end %>
 	<%= link_to 'Back', dashboard_path %>
+</div>

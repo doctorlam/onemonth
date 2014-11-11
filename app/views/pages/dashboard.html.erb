@@ -11,8 +11,8 @@
       <th>Organization</th>
       <th>Semester</th>
       <th>Title</th>
+      <th>Project Length</th>
       <th>Email</th>
-      <th colspan="3"></th>
     </tr>
   </thead>
 
@@ -23,6 +23,7 @@
           <td><%= proposal.organization %></td>
           <td><%= proposal.semester_id %></td>
         <td><%= proposal.title %></td>
+        <td><%= proposal.time %></td>
         <td><%= proposal.user.email if proposal.user %></td>
         <!--<td><%= link_to "PDF", proposal.document.url %></td>-->
         <td></td>

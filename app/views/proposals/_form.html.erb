@@ -10,15 +10,16 @@
       </ul>
     </div>
   <% end %>
-<div class ="form-inline">
+  <div class ="form-group">
    <%= f.label :first_name %><br>
     <%= f.text_field :first_name, class: "form-control" %>
-  </div>
-  <div class ="form-inline">
-   <%= f.label :last_name %><br>
+
+</div>
+<div class ="form-group">
+   <%= f.label :last_name %>`<br>
     <%= f.text_field :last_name, class: "form-control" %>
-  </div>
-    <div class ="form-inline">
+</div>
+<div class ="form-group">
    <%= f.label :organization, "Organization or Company Name" %><br>
     <%= f.text_field :organization, class: "form-control" %>
   </div>
@@ -31,12 +32,16 @@
   <div class="form-group">
     <%= f.label :semester_id, "Semester (e.g., Spring, 2014)" %><br>
     <%= f.select(:semester_id, options_for_select([['Fall, 2015','Fall, 2015'], ['Spring, 2016',
-      'Spring, 2016'],['Summer, 2016','Summer, 2016']]))%>
+      'Spring, 2016'],['Summer, 2016','Summer, 2016']],:selected => :semester_id))%>
+  </div>
+  <div class="form-group">
+    <%= f.label :time, "Approximate length of project in weeks (A semester is 15 weeks)" %><br>
+   <%= f.select(:time, options_for_select([['2 weeks','2 weeks'], ['3 weeks','3 weeks'],['4 weeks','4 weeks'], ['5 weeks','5 weeks'], ['6 weeks','6 weeks'], ['7 weeks','7 weeks'],['8 weeks','8 weeks'],['9 weeks','9 weeks'],['10 weeks','10 weeks'],['11 weeks','11 weeks'],['12 weeks','12 weeks'],['13 weeks','13 weeks'],['14 weeks','14 weeks'],['15 weeks','15 weeks']]))%>
   </div>
 
   <div class="form-group">
-    <%= f.label :abstract, "Abstract (300-word summary of your project)" %><br>
-    <%= f.text_area :abstract, class: "form-control" %>
+    <%= f.label :abstract, "Abstract (Approximately 300-word summary of your project)" %><br>
+    <%= f.text_area :abstract, :rows => 10, class: "form-control" %>
   </div>
 
 <div class="form-group">
