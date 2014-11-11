@@ -1,16 +1,21 @@
 <div class ="heading-banner">
-<h1>Welcome to the Client Project System!</h1>
-<p>Connecting clients and university instructors.</p>
-	<% if user_signed_in? %>
+<div class="banner-content">
+<h1>Welcome to the Technical Communication Client Connector!</h1>
+<br>
 
-	<% else %>
+<p>This system was designed to connect clients with instructors of technical communication in hopes of creating a streamlined process for collaboration. Clients who have project work for undergraduate students can propose projects to be matched with instructors of technical communication.</p>
+
+  <% if user_signed_in? %>
+
+  <% else %>
   <br>
   <br>
-	<ul>
-		<li class="home-button"><%= link_to"Register", new_user_registration_path, class: "btn btn-default btn-lg" %></li>
-		<li class="home-button"><%= link_to"Sign in", new_user_session_path, class: "btn btn-default btn-lg" %></li>
-	</ul>
-	<% end %>
+  <ul>
+    <li class="home-button"><%= link_to"Register", new_user_registration_path, class: "btn btn-default btn-lg" %></li>
+    <li class="home-button"><%= link_to"Sign in", new_user_session_path, class: "btn btn-default btn-lg" %></li>
+  </ul>
+  <% end %>
+  </div>
 </div>
 <div class= "column-content">
 <div class="row">

@@ -20,7 +20,10 @@
 {
     overflow-x: auto;
 }
-
+.navbar {
+	font-family: raleway;
+	font-size: 16px;
+}
 .col-lg-12 {
 	
 	min-height:600px;
@@ -29,10 +32,10 @@
 
 }
 .navbar-brand {
-	font-size: 24px;
-	text-transform:uppercase;
-	font-family: open sans;
-}
+	font-size: 28px;
+	font-family: Raleway;
+	}
+
 .panel-footer {
 	width: 100%;
 	clear: both;
@@ -43,11 +46,17 @@
 }
 .heading-banner {
 	background: white;
-	padding-top: 100px;
 	text-align: center;
-	height:400px;
+	margin-top:60px;
 	border-bottom: dotted #383634 2px;
+
 	}
+.banner-content {
+	max-width: 800px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-bottom: 60px;
+}
 li.home-button {
 
 	display:inline;
@@ -62,8 +71,7 @@ li.home-button {
 }
 .column-content {
 		background-color:white;
-		padding-top: 75px;
-		padding-bottom: 50px;
+		margin-top: 60px;
 		color: #6C7A89;
 
 }

@@ -1,13 +1,17 @@
 $navbar-height: 100px;
 $navbar-font: open sans;
-$navbar-default-bg: #16A085;
+$navbar-default-bg: #D35400;
 $navbar-border-radius: 0;
 $navbar-default-color: white;
 $navbar-default-link-color: white;
-$navbar-default-link-hover-color: #5C97BF;
+
+$panel-footer-border-radius: 0;
+
 
 $btn-default-bg: white;
-$btn-default-color: #6C7A89;
+$btn-default-color: black;
+$btn-primary-bg: white;
+$btn-primary-color: black;
 
 
 @import 'bootstrap';
