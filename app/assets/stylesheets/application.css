@@ -13,9 +13,10 @@
  *= require_tree .
  *= require_self
  */
-.container-fluid {
-	padding: 0;
 
+.table-responsive
+{
+    overflow-x: auto;
 }
 .col-lg-12 {
 	
