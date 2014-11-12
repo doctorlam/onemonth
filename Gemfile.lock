@@ -67,7 +67,7 @@ GEM
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     mime-types (2.4.3)
-    minitest (5.4.2)
+    minitest (5.4.3)
     multi_json (1.10.1)
     orm_adapter (0.5.0)
     paperclip (4.2.0)
@@ -77,8 +77,6 @@ GEM
       mime-types
     pg (0.17.1)
     pg (0.17.1-x86-mingw32)
-    protected_attributes (1.0.8)
-      activemodel (>= 4.0.1, < 5.0)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -105,7 +103,7 @@ GEM
     rake (10.3.2)
     rdoc (4.1.2)
       json (~> 1.4)
-    responders (1.1.1)
+    responders (1.1.2)
       railties (>= 3.2, < 4.2)
     sass (3.2.19)
     sass-rails (4.0.4)
@@ -131,11 +129,11 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
-    turbolinks (2.5.1)
+    turbolinks (2.5.2)
       coffee-rails
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    tzinfo-data (1.2014.9)
+    tzinfo-data (1.2014.10)
       tzinfo (>= 1.0.0)
     uglifier (2.5.3)
       execjs (>= 0.3.0)
@@ -156,7 +154,6 @@ DEPENDENCIES
   jquery-rails
   paperclip
   pg
-  protected_attributes
   rails (= 4.1.7)
   rails_12factor
   sass-rails (~> 4.0.3)

@@ -13,7 +13,6 @@ gem 'devise'
 gem 'paperclip'
 gem 'tzinfo-data', '~> 1.2014.9'
 gem 'filterrific'
-gem 'protected_attributes'
 
 group :development, :test do 
 	gem 'sqlite3'
