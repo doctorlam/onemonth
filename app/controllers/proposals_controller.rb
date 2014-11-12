@@ -51,7 +51,7 @@ class ProposalsController < ApplicationController
     end
     def proposal_params
       
-      params.require(:proposal).permit(:semester_id, :time, :title, :abstract, :first_name, :last_name, :organization)
+      params.require(:proposal).permit(:subject, :course_id, :semester_id, :time, :title, :abstract, :first_name, :last_name, :organization)
 
     end
 end

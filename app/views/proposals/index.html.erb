@@ -1,10 +1,7 @@
 <h1>All Proposals</h1>
 
 <% form_tag proposals_path do %>
-<p>    
-  <%= text_field_tag :search %>
-    <%= submit_tag "Search" %>
-  </p>
+
 <% end %>
 
 <div class ="table-responsive">
@@ -34,6 +31,7 @@
           <td><%= link_to 'Edit', edit_proposal_path(proposal) %></td>
           <td><%= link_to 'Destroy', proposal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         <% end %>
+      
       </tr>
     <% end %>
   </tbody>
