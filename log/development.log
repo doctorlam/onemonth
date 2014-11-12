@@ -80106,3 +80106,155 @@ Started GET "/assets/people.fw.png" for 127.0.0.1 at 2014-11-11 17:01:35 -0600
 
 
 Started GET "/assets/documents.fw.png" for 127.0.0.1 at 2014-11-11 17:01:35 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-12 06:47:08 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (13.6ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 338ms (Views: 291.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-12 06:47:09 -0600
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-12 06:47:09 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-12 06:47:09 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-12 06:47:09 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-12 06:47:09 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-12 06:47:09 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 06:47:09 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 06:47:09 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-12 06:47:09 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-12 06:47:09 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-12 06:47:09 -0600
+
+
+Started GET "/assets/code.fw.png" for 127.0.0.1 at 2014-11-12 06:47:09 -0600
+
+
+Started GET "/assets/people.fw.png" for 127.0.0.1 at 2014-11-12 06:47:09 -0600
+
+
+Started GET "/assets/documents.fw.png" for 127.0.0.1 at 2014-11-12 06:47:09 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-12 06:47:24 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (93.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 212ms (Views: 194.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-11-12 06:47:27 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"riglLJ5nuM4aZy9pqKwrbxDR2r1uioiL/tDj2dXTGx8=", "user"=>{"email"=>"chris.lam.unt@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'chris.lam.unt@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["current_sign_in_at", "2014-11-12 12:47:27.775464"], ["last_sign_in_at", "2014-11-11 19:30:50.076124"], ["sign_in_count", 40], ["updated_at", "2014-11-12 12:47:27.777706"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 178ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-12 06:47:27 -0600
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2014-11-12 06:47:27 -0600
+Processing by PagesController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mProposal Load (1.2ms)[0m  SELECT "proposals".* FROM "proposals"  WHERE "proposals"."user_id" = ?  [["user_id", 1]]
+  Rendered pages/dashboard.html.erb within layouts/application (36.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 198ms (Views: 179.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-12 06:47:28 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-12 06:47:28 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 06:47:28 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-12 06:47:28 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-12 06:47:28 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 06:47:28 -0600
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-12 06:47:28 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-12 06:47:28 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-12 06:47:28 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-12 06:47:28 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-12 06:47:28 -0600
+
+
+Started GET "/proposals/53" for 127.0.0.1 at 2014-11-12 06:47:31 -0600
+Processing by ProposalsController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mProposal Load (0.2ms)[0m  [1mSELECT  "proposals".* FROM "proposals"  WHERE "proposals"."id" = ? LIMIT 1[0m  [["id", 53]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered proposals/show.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 138ms (Views: 135.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2014-11-12 06:47:34 -0600
+Processing by PagesController#dashboard as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mProposal Load (0.2ms)[0m  [1mSELECT "proposals".* FROM "proposals"  WHERE "proposals"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered pages/dashboard.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 150ms (Views: 147.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/proposals" for 127.0.0.1 at 2014-11-12 06:47:36 -0600
+Processing by ProposalsController#index as HTML
+  [1m[35mProposal Load (0.2ms)[0m  SELECT "proposals".* FROM "proposals"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered proposals/index.html.erb within layouts/application (9.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 144ms (Views: 142.2ms | ActiveRecord: 0.7ms)
