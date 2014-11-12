@@ -1,11 +1,13 @@
 class ProposalsController < ApplicationController
+
     respond_to :html, :xml, :json
     before_action :authenticate_user!, except: [:index, :show]  
     before_action :correct_user, only: [:edit, :update, :destroy] 
     before_action :set_proposal, only: [:show, :edit, :update, :destroy]
-
+   
 
   def index
+
     @proposals = Proposal.all
     respond_with(@proposals)
    

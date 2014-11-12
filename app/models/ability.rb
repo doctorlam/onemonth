@@ -31,7 +31,9 @@ class Ability
     user ||= User.new
 
     # Define a few sample abilities
-    can    :manage , proposal
-   
+    if user.admin?  
+        can :manage, :all
+    else
+        can :read, :all
   end
 end
