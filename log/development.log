@@ -91500,3 +91500,297 @@ Started GET "/assets/people.fw.png" for 127.0.0.1 at 2014-11-12 17:15:45 -0600
 
 
 Started GET "/assets/documents.fw.png" for 127.0.0.1 at 2014-11-12 17:15:45 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-12 18:11:42 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 7  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 79ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2014-11-12 18:11:43 -0600
+Processing by PagesController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 7  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mProposal Load (0.3ms)[0m  SELECT "proposals".* FROM "proposals"  WHERE "proposals"."user_id" = ?  [["user_id", 7]]
+  Rendered pages/dashboard.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 2310ms (Views: 2238.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-12 18:11:45 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-12 18:11:45 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 18:11:45 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 18:11:45 -0600
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-12 18:11:45 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-12 18:11:45 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-12 18:11:45 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-12 18:11:45 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-12 18:11:45 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-12 18:11:45 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-12 18:11:45 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-12 18:11:47 -0600
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 7  ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 57ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2014-11-12 18:11:47 -0600
+Processing by PagesController#dashboard as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 7  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mProposal Load (0.1ms)[0m  [1mSELECT "proposals".* FROM "proposals"  WHERE "proposals"."user_id" = ?[0m  [["user_id", 7]]
+  Rendered pages/dashboard.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 152ms (Views: 150.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-12 18:11:49 -0600
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 7  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2014-11-12 18:11:49 -0600
+Processing by PagesController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 7  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mProposal Load (0.1ms)[0m  SELECT "proposals".* FROM "proposals"  WHERE "proposals"."user_id" = ?  [["user_id", 7]]
+  Rendered pages/dashboard.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 145ms (Views: 143.1ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-11-12 18:11:50 -0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"jDBCQS5U87t8VSnNRo5WYLMl6BzN0nXf/jG6zyQwv94="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 7  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 22ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-12 18:11:51 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (10.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 193ms (Views: 179.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/documents.fw.png" for 127.0.0.1 at 2014-11-12 18:11:51 -0600
+
+
+Started GET "/assets/people.fw.png" for 127.0.0.1 at 2014-11-12 18:11:51 -0600
+
+
+Started GET "/assets/code.fw.png" for 127.0.0.1 at 2014-11-12 18:11:51 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-12 18:14:19 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 102ms (Views: 101.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-12 18:14:19 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-12 18:15:58 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 208ms (Views: 206.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-12 18:15:58 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-12 18:16:00 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (23.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 112ms (Views: 107.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-11-12 18:16:17 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tyMzafNaay+jyQYIAIGAeOUPkJM1E0gG9any7YB/GU4=", "user"=>{"email"=>"chris.lam.unt@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'chris.lam.unt@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["current_sign_in_at", "2014-11-13 00:16:17.153942"], ["last_sign_in_at", "2014-11-12 22:50:54.632616"], ["sign_in_count", 46], ["updated_at", "2014-11-13 00:16:17.156062"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 130ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-12 18:16:17 -0600
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2014-11-12 18:16:17 -0600
+Processing by PagesController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mProposal Load (0.2ms)[0m  SELECT "proposals".* FROM "proposals"  WHERE "proposals"."user_id" = ?  [["user_id", 1]]
+  Rendered pages/dashboard.html.erb within layouts/application (45.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 247ms (Views: 242.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-12 18:16:17 -0600
+
+
+Started GET "/proposals" for 127.0.0.1 at 2014-11-12 18:16:20 -0600
+Processing by ProposalsController#index as HTML
+  [1m[36mProposal Load (0.2ms)[0m  [1mSELECT "proposals".* FROM "proposals"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered proposals/index.html.erb within layouts/application (9.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 175ms (Views: 173.1ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-11-12 18:16:22 -0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"dWsCT7OVcm5p8/fJMrRZwpGZYJr9bFpAikeFpm8wqWk="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-12 18:16:22 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 94ms (Views: 92.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-12 18:16:22 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-12 18:16:24 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 141ms (Views: 139.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-11-12 18:16:30 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dtWtpguuI8tXAY5th3mc1NnuB+T/bDvnCMfSz8QFb7Y=", "user"=>{"email"=>"notadmin@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'notadmin@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 10[0m  [["current_sign_in_at", "2014-11-13 00:16:30.528580"], ["sign_in_count", 2], ["updated_at", "2014-11-13 00:16:30.529332"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 107ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-12 18:16:30 -0600
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 10  ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2014-11-12 18:16:30 -0600
+Processing by PagesController#dashboard as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 10  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mProposal Load (0.2ms)[0m  [1mSELECT "proposals".* FROM "proposals"  WHERE "proposals"."user_id" = ?[0m  [["user_id", 10]]
+  Rendered pages/dashboard.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 105ms (Views: 102.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-12 18:16:30 -0600
+
+
+Started GET "/proposals" for 127.0.0.1 at 2014-11-12 18:16:32 -0600
+Processing by ProposalsController#index as HTML
+  [1m[35mProposal Load (0.2ms)[0m  SELECT "proposals".* FROM "proposals"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 10  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered proposals/index.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 143ms (Views: 141.2ms | ActiveRecord: 0.7ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_admins_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_admins_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_admins_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_admins_on_email' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_proposals_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_proposals_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.4ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
