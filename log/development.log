@@ -91836,3 +91836,121 @@ Completed 200 OK in 143ms (Views: 141.2ms | ActiveRecord: 0.7ms)
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
 [0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-12 18:23:38 -0600
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 10  ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 16ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2014-11-12 18:23:38 -0600
+Processing by PagesController#dashboard as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 10  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mProposal Load (0.3ms)[0m  [1mSELECT "proposals".* FROM "proposals"  WHERE "proposals"."user_id" = ?[0m  [["user_id", 10]]
+  Rendered pages/dashboard.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 191ms (Views: 182.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-12 18:23:40 -0600
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 10  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2014-11-12 18:23:40 -0600
+Processing by PagesController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 10  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mProposal Load (0.1ms)[0m  SELECT "proposals".* FROM "proposals"  WHERE "proposals"."user_id" = ?  [["user_id", 10]]
+  Rendered pages/dashboard.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 128ms (Views: 125.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-12 18:23:40 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-12 18:23:40 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-12 18:23:40 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 18:23:40 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 18:23:40 -0600
+
+
+Started GET "/assets/proposals.css?body=1" for 127.0.0.1 at 2014-11-12 18:23:40 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-11-12 18:23:40 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-12 18:23:40 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-12 18:23:40 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-12 18:23:40 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-12 18:23:40 -0600
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-11-12 18:23:43 -0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rEHE9/YLsXxtxpEg0xFFfiR9hnOB/tcCI2cgzDroQz0="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 10  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-12 18:23:43 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 106ms (Views: 105.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/!bootstrap.css?body=1" for 127.0.0.1 at 2014-11-12 18:23:43 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-12 18:23:43 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 18:23:43 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-12 18:23:43 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-11-12 18:23:43 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 18:23:43 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-12 18:23:43 -0600
+
+
+Started GET "/assets/proposals.js?body=1" for 127.0.0.1 at 2014-11-12 18:23:43 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-12 18:23:43 -0600
+
+
+Started GET "/assets/code.fw.png" for 127.0.0.1 at 2014-11-12 18:23:43 -0600
+
+
+Started GET "/assets/documents.fw.png" for 127.0.0.1 at 2014-11-12 18:23:43 -0600
+
+
+Started GET "/assets/people.fw.png" for 127.0.0.1 at 2014-11-12 18:23:43 -0600
