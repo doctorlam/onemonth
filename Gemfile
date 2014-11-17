@@ -12,6 +12,7 @@ gem 'sdoc', '~> 0.4.0'
 gem 'devise'
 gem 'paperclip'
 gem 'cancan'
+gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
 group :development, :test do 
 	gem 'sqlite3'

@@ -27,14 +27,11 @@
         <td><%= proposal.time %></td>
         <td><%= proposal.user.email if proposal.user %></td>
         <td><%= link_to 'Show', proposal %></td>
-        <% if proposal.user == current_user %>
+        <% if can? :update, @proposal %>
           <td><%= link_to 'Edit', edit_proposal_path(proposal) %></td>
           <td><%= link_to 'Destroy', proposal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         <% end %>
-               <% if current_user.admin? %>
-               
-          <td>reject</td>
-        <% end %>
+            
       
       </tr>
     <% end %>
