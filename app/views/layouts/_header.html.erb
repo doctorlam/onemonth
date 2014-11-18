@@ -14,16 +14,23 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      
-      <ul class="nav navbar-nav navbar-right">
 
-      
+      <ul class="nav navbar-nav navbar-right">
 
         <!--Controlling the sign in and log out links in nav bar -->
         <% if user_signed_in? %>
-          <li><%= link_to "My Dashboard", dashboard_path %></li>
-          <li><%= link_to "Browse Proposals", proposals_path %></li>
+        <% if current_user.admin? %>
+          <p class="admin-welcome">Welcome, Admin!</p>
+          <li><%= link_to "My Proposals", dashboard_path %></li> 
+          <li><%= link_to "Manage Proposals", proposals_path %></li> 
           <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
+        <% else %>
+         <p class="admin-welcome">Welcome back <%= current_user.email %>!</p>
+       
+        <li><%= link_to "My Proposals", dashboard_path %></li>
+          <li><%= link_to "Browse all Proposals", proposals_path %></li>
+          <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
+        <% end %>
         <% else %>
           <li><%= link_to "Register", new_user_registration_path %></li>
           <li><%= link_to "Sign in", new_user_session_path %></li>

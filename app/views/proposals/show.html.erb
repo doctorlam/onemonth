@@ -1,7 +1,7 @@
+
 <br>
-<div class="col-md-8">
+<div class="col-md-6">
   <h2><%= @proposal.title %></h2>
-  <hr />
 <p>
   <strong>Name:</strong>
   <%= @proposal.first_name %> <%= @proposal.last_name %>
@@ -23,8 +23,43 @@
   <%= @proposal.abstract %>
 </p>
 
+<h2>Proposal Status</h2>
+<p>
+  <strong>Status:</strong>
+  <%= @proposal.status %> 
+</p>
+<p>
+  <strong>Course Match:</strong>
+  <%= @proposal.course %> 
+</p>
 <% if @proposal.user == current_user %>	
 	<%= link_to 'Edit', edit_proposal_path(@proposal) %> |
 <% end %>
-	<%= link_to 'Back', dashboard_path %>
+	<%= link_to 'Back', proposals_path %>
 </div>
+<div class ="col-md-4">
+
+<%= form_for @proposal, html: { multipart: true } do |f| %>  
+<% if can? :manage, @proposal %>   
+  <h2>Admin Action</h2>
+<div class="form-group">
+    <%= f.label :status, "Status" %><br>
+    <%= f.select(:status, options_for_select([['Pending','Pending'], ['Approved',
+      'Approved'],['Rejected','Rejected']],:selected => :status))%>
+
+  </div>
+  <div class="form-group">
+    <%= f.label :course, "Match proposal to course:" %><br>
+    <%= f.select(:course, options_for_select([['TECM 3000','TECM 3000'],['TECM 3100','TECM 3100'],['TECM 3200','TECM 3200'],['TECM 4100','TECM 4100'],['TECM 4180','TECM 4180'],['TECM 4190','TECM 4190'],['TECM 4200','TECM 4200'],['TECM 4250','TECM 4250'],['TECM 4700','TECM 4700']],:selected => :course))%>
+
+
+
+  </div>
+  <div class="form-group">
+    <%= f.submit class: "btn btn-sm" %>
+  </div>
+      <% end %>
+      <% end %>
+
+</div>
+

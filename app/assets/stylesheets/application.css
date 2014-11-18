@@ -21,11 +21,17 @@
 {
     overflow-x: auto;
 }
+h2 {
+	border-bottom: 1px dotted gray;
+
+}
 .navbar {
 	font-family: raleway;
 	font-size: 16px;
 
-
+}
+.navbar a {
+	color: white;
 }
 .col-lg-12 {
 
@@ -83,3 +89,16 @@ li.home-button {
 p.thumbnail, h3.thumbnail {
 	color: white;
 }
+.admin-welcome {
+	color:white;
+	text-align: left;
+	margin-left: 15px;
+	margin-top: 15px;
+	border-bottom: 1px dotted;
+	
+}
+.navbar-collapse {
+	text-align: left;
+}
+
+
