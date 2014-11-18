@@ -1,7 +1,10 @@
 
 <br>
-<div class="col-md-6">
+<div class="col-md-8">
   <h2><%= @proposal.title %></h2>
+<p>
+  <strong>Proposal created by:</strong>
+</p>
 <p>
   <strong>Name:</strong>
   <%= @proposal.first_name %> <%= @proposal.last_name %>
@@ -19,10 +22,13 @@
   <%= @proposal.time %>
 </p>
 <p>
-  <strong>Abstract:</strong>
+  <strong>Abstract:</strong><br />
   <%= @proposal.abstract %>
 </p>
-
+<p>
+  <strong>Relevance of project to course (completed by instructor):</strong><br />
+  <%= @proposal.relevance %> 
+</p>
 <h2>Proposal Status</h2>
 <p>
   <strong>Status:</strong>
@@ -32,6 +38,8 @@
   <strong>Course Match:</strong>
   <%= @proposal.course %> 
 </p>
+
+
 <% if @proposal.user == current_user %>	
 	<%= link_to 'Edit', edit_proposal_path(@proposal) %> |
 <% end %>
@@ -51,9 +59,6 @@
   <div class="form-group">
     <%= f.label :course, "Match proposal to course:" %><br>
     <%= f.select(:course, options_for_select([['TECM 3000','TECM 3000'],['TECM 3100','TECM 3100'],['TECM 3200','TECM 3200'],['TECM 4100','TECM 4100'],['TECM 4180','TECM 4180'],['TECM 4190','TECM 4190'],['TECM 4200','TECM 4200'],['TECM 4250','TECM 4250'],['TECM 4700','TECM 4700']],:selected => :course))%>
-
-
-
   </div>
   <div class="form-group">
     <%= f.submit class: "btn btn-sm" %>
