@@ -20,8 +20,10 @@
 .table-responsive {
     overflow-x: auto;
 }
-h2 {
-	border-bottom: 1px dotted gray;
+.show h2 {
+	background-color: gray;
+	padding: 10px;
+	color: white;
 
 }
 .navbar {
@@ -105,4 +107,53 @@ td.title {
 	text-align: left;
 	width: 30%;
 	font-weight: bold;
+}
+.form-signin {
+	max-width:380px;
+	margin-right:auto;
+	margin-left:auto;
+	background-color: #fff;
+  	border: 1px solid rgba(0,0,0,0.1);  
+ 	padding: 15px 35px 45px;
+ 	margin: 0 auto;
+}
+.form-control {
+	  position: relative;
+	  font-size: 16px;
+	  height: auto;
+	  padding: 10px;
+		@include box-sizing(border-box);
+
+		&:focus {
+		  z-index: 2;
+		}
+	}
+	.form-signin h2{
+		margin-bottom: 20px;
+	}
+	.form-signin p {
+		margin-top: 20px;
+	}
+
+	input[type="text"] {
+	  margin-bottom: -1px;
+	  border-bottom-left-radius: 0;
+	  border-bottom-right-radius: 0;
+	}
+
+	input[type="password"] {
+	  margin-bottom: 20px;
+	  border-top-left-radius: 0;
+	  border-top-right-radius: 0;
+	}
+
+
+.proposal-form {
+	max-width: 700px;
+	margin-left:auto;
+	margin-right: auto;
+	background-color: #fff;
+  	border: 1px solid rgba(0,0,0,0.1);  
+ 	padding: 15px 35px 45px;
+ 	margin: 0 auto;
 }
