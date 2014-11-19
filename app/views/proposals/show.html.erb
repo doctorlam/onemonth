@@ -1,65 +1,77 @@
 
-<br>
 <div class="col-md-8">
   <h2><%= @proposal.title %></h2>
-<p>
-  <strong>Proposal created by:</strong>
-</p>
-<p>
-  <strong>Name:</strong>
-  <%= @proposal.first_name %> <%= @proposal.last_name %>
-</p>
-<p>
-  <strong>Organization or Company Name:</strong>
-  <%= @proposal.organization %>
-</p>
-<p>
-  <strong>Semester:</strong>
-  <%= @proposal.semester_id %>
-</p>
-<p>
-  <strong>Project Length:</strong>
-  <%= @proposal.time %>
-</p>
-<p>
-  <strong>Abstract:</strong><br />
-  <%= @proposal.abstract %>
-</p>
-<p>
-  <strong>Relevance of project to course (completed by instructor):</strong><br />
-  <%= @proposal.relevance %> 
-</p>
-<h2>Proposal Status</h2>
-<p>
-  <strong>Status:</strong>
-  <%= @proposal.status %> 
-</p>
-<p>
-  <strong>Course Match:</strong>
-  <%= @proposal.course %> 
-</p>
+  <table class= "table table-hover table-striped">
+    <tr> 
+      <td class ="title">Name:</td> 
+      <td><%= @proposal.first_name %> <%= @proposal.last_name %></td>
+    </tr>
 
+    <tr>
+      <td class ="title">Organization or Company Name:</td>
+      <td><%= @proposal.organization %></td>
+    </tr>
 
-<% if @proposal.user == current_user %>	
-	<%= link_to 'Edit', edit_proposal_path(@proposal) %> |
+    <tr>
+      <td class ="title">Semester:</td>
+      <td><%= @proposal.semester_id %></td>
+    </tr>
+    <tr>
+      <td class ="title">Project Length:</td>
+      <td><%= @proposal.time %></td>
+    </tr>
+  <tr>
+      <td class ="title">Abstract:</td>
+      <td><%= simple_format(@proposal.abstract) %></td>
+  </tr>
+  <tr>
+      <td class="title">Relevance of project to course (completed by instructor):</td>
+      <td><%= simple_format(@proposal.relevance) %></td>
+  
+ </table>
+ <% if @proposal.user == current_user %>  
+  <%= link_to 'Edit', edit_proposal_path(@proposal) %> |
 <% end %>
-	<%= link_to 'Back', proposals_path %>
+  <%= link_to 'Back', proposals_path %>
+</div>
+ <div class ="col-md-4">
+<h2>Proposal Status</h2>
+<table class="table table-hover">
+  <tr>
+    <td class="title">Status:</td>
+    <td><%= @proposal.status %></td>
+  </tr>
+  <tr>
+    <td class="title">Course Match:</td>
+    <td><%= @proposal.course %></td>
+  </tr>
+  <tr>
+    <td class="title">Feedback from undergraduate director:</td>
+    <td><%= simple_format(@proposal.feedback) %></td> 
+  </tr>
+</table>
+
 </div>
 <div class ="col-md-4">
 
 <%= form_for @proposal, html: { multipart: true } do |f| %>  
 <% if can? :manage, @proposal %>   
   <h2>Admin Action</h2>
-<div class="form-group">
-    <%= f.label :status, "Status" %><br>
-    <%= f.select(:status, options_for_select([['Pending','Pending'], ['Approved',
-      'Approved'],['Rejected','Rejected']],:selected => :status))%>
+    <div class="form-group">
+      <%= f.label :status, "Status" %><br>
+     <%= f.select :status, options_for_status, :selected => 'Pending' %>
+
 
   </div>
-  <div class="form-group">
-    <%= f.label :course, "Match proposal to course:" %><br>
-    <%= f.select(:course, options_for_select([['TECM 3000','TECM 3000'],['TECM 3100','TECM 3100'],['TECM 3200','TECM 3200'],['TECM 4100','TECM 4100'],['TECM 4180','TECM 4180'],['TECM 4190','TECM 4190'],['TECM 4200','TECM 4200'],['TECM 4250','TECM 4250'],['TECM 4700','TECM 4700']],:selected => :course))%>
+    <div class="form-group">
+      <%= f.label :course, "Match proposal to course:" %><br>
+      <%= f.select :course, options_for_course, :prompt => 'Select One' %>
   </div>
+  <div class="form-group">
+    <%= f.label :feedback, "Provide feedback for your decision (optional):" %><br>
+    <%= f.text_area :feedback, :rows => 10, class: "form-control" %>
+  </div>
+
   <div class="form-group">
     <%= f.submit class: "btn btn-sm" %>
   </div>

@@ -17,8 +17,7 @@
 .container-fluid {
 	padding:0;
 }
-.table-responsive
-{
+.table-responsive {
     overflow-x: auto;
 }
 h2 {
@@ -89,16 +88,21 @@ li.home-button {
 p.thumbnail, h3.thumbnail {
 	color: white;
 }
-.admin-welcome {
+p.admin-welcome {
 	color:white;
 	text-align: left;
 	margin-left: 15px;
 	margin-top: 15px;
-	border-bottom: 1px dotted;
+	font-style: italic;
+	font-size: 14px;
 	
 }
 .navbar-collapse {
 	text-align: left;
 }
 
-
+td.title {
+	text-align: left;
+	width: 30%;
+	font-weight: bold;
+}
