@@ -1,23 +1,43 @@
-<div class ="heading-banner">
-<div class="banner-content">
-<h1>Welcome to the Technical Communication Client Connector!</h1>
-<br>
+  <div class="row">
+  <div class="col-md-8">
+    <h2>Welcome to the BOLD Project Database!</h2>
 
-<p>This system was designed to connect clients with instructors of technical communication in hopes of creating a streamlined process for collaboration. Clients who have project work for undergraduate students can propose projects to be matched with instructors of technical communication.</p>
+      <p>BOLD, or Business Opportunity and Leadership Development, is a partnership program created to provide opportunities for businesses and non-profit organizations to with with university students. In this mutually beneficial program, students have an oppourtunity to work on real-world client projects, and clients are provided with value-added communication projects. BOLD projects have ranged from website design and development projects to comprehensive editing projects.</p>
 
-  <% if user_signed_in? %>
+      <p>THE BOLD Project Database was developed as a web-based system that connects clients with instructors of technical communication in hopes of creating a streamlined process for collaboration. Clients who have project work for undergraduate students can propose projects to be matched with instructors of technical communication.</p>
+      <h2>A Centralized Location for Clients and Instructors</h2>
 
-  <% else %>
-  <br>
-  <br>
-  <ul>
-    <li class="home-button"><%= link_to"Register", new_user_registration_path, class: "btn btn-default btn-lg" %></li>
-    <li class="home-button"><%= link_to"Sign in", new_user_session_path, class: "btn btn-default btn-lg" %></li>
-  </ul>
-  <% end %>
+      </div>
+  <div class="col-md-4">
+    <div class="form-signin-home">
+       <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= devise_error_messages! %>
+    <h2>Create an Account</h2>
+ 
+  <div class="form-group">
+    <%= f.label :email %>
+    <%= f.email_field :email, autofocus: true, class: "form-control" %>
   </div>
+
+  <div class="form-group">
+    <%= f.label :password %>
+    <% if @validatable %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %>
+    <%= f.password_field :password, autocomplete: "off", class:"form-control" %>
+  </div>
+  <div class ="form-group">
+    <%= f.label :role, "Are you a client or an instructor?"%>
+    <%= f.collection_select(:role, User::ROLES, :to_s, lambda{|i| i.to_s.humanize}) %>
 </div>
-<div class= "column-content">
+  <div class="actions">
+    <%= f.submit "Sign up", class: "btn btn-lg btn-primary btn-block" %>
+  </div>
+<% end %>
+</div>
+</div>
+</div> <!-- closing row class-->
+
 <div class="row">
   <div class="col-md-4">
     <div class="thumbnail">
@@ -49,5 +69,4 @@
       </div>
     </div>
   </div>
-</div>
 </div>

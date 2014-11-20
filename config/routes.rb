@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   resources :proposals
   devise_for :users
   root "pages#home"
-  get "welcome" => "pages#welcome"
   get "dashboard" => "pages#dashboard"
 
   # The priority is based upon order of creation: first created -> highest priority.

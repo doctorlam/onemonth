@@ -1,4 +1,4 @@
-<h1>My Active Proposals</h1>
+<h2><%= current_user.email %>'s Proposals</h2>
 <hr>
   <% if user_signed_in? %>
   <%= link_to 'Start a New Proposal!', new_proposal_path, class: "btn btn-default" %>

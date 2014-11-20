@@ -8,8 +8,11 @@
         <span class="icon-bar"></span>
       </button>
       
+    <div class="brand">
+      <%=link_to "{ BOLD } Projects Database", root_path %><br>
+      <p>Connecting client projects to university coursework</p>
+    </div>
 
-      <%=link_to "TC Client Connector", root_path, class:"navbar-brand" %>
       </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -20,12 +23,13 @@
         <!--Controlling the sign in and log out links in nav bar -->
         <% if user_signed_in? %>
         <% if current_user.admin? %>
+          <li><%= link_to "Create New Project", new_proposal_path %></li>
           <li><%= link_to "Manage Proposals", proposals_path %></li> 
           <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
           <p class="admin-welcome">You are signed in as an administrator.</p>
         
         <% else %> 
-       
+          <li><%= link_to "Create New Project", new_proposal_path %></li>
           <li><%= link_to "My Proposals", dashboard_path %></li>
           <li><%= link_to "Browse all Proposals", proposals_path %></li>
           <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>

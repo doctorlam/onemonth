@@ -21,9 +21,10 @@ def index
   end
 
   def create
- @proposal = current_user.proposals.build(proposal_params)
+    @proposal = current_user.proposals.build(proposal_params)
     @proposal.save
     respond_with(@proposal)    
+
   end
 
   def update
@@ -34,7 +35,7 @@ def index
 
   def destroy
      @proposal.destroy
-    respond_with(@proposal)
+     redirect_to dashboard_path
       
   end
 

@@ -13,7 +13,15 @@
  *= require_tree .
  *= require_self
  */
+p, h1, h2, h3, h4 {
+	color: #4C4C4D;
 
+}
+.home {
+	margin-bottom: 30px;
+	background-color:#383634 ;
+	padding: 0;
+}
 .container-fluid {
 	padding:0;
 }
@@ -21,9 +29,11 @@
     overflow-x: auto;
 }
 .show h2 {
-	background-color: gray;
+	background-color: #6C7A89;
 	padding: 10px;
 	color: white;
+	font-size: 20px;
+	font-family: droid serif ;
 
 }
 .navbar {
@@ -36,39 +46,44 @@
 }
 .col-lg-12 {
 
-	font-family: Open Sans;
+	font-family: open sans;
 	min-height: 700px;
 
 }
-.navbar-brand {
-	font-size: 28px;
-	font-family: Raleway;
+.brand {
+	padding: 15px;
+}
+.brand a,.brand a:hover {
+	font-size: 38px;
+	font-family: cabin sketch;
+	color: white;
+	text-decoration: none;
+	text-align:left;
+	text-transform: uppercase;
 	}
+.brand p {
+	font-size: 16px;
+	font-family: raleway;
+	color: #D8EBED;
+	text-transform: none;
+}
 
+
+	
 .panel-footer {
     clear:both;
     bottom: 0;
     width: 100%;
 	min-height: 200px;
-	color: white;
 	font-family: open sans;
 	background: #383634;
 }
-.heading-banner {
-	background: white;
-	text-align: center;
-	border-bottom: dotted #383634 2px;
-	margin-top: 50px;
+.panel-footer p {
+	color: #B4B7B8;
 
-	}
-.banner-content {
-	max-width: 800px;
-	margin-left:auto;
-	margin-right:auto;
-	margin-bottom: 60px;
-	margin-top: 60px;
-	
 }
+
+
 li.home-button {
 
 	display:inline;
@@ -112,6 +127,12 @@ td.title {
 	max-width:380px;
 	margin-right:auto;
 	margin-left:auto;
+	background-color: #fff;
+  	border: 1px solid rgba(0,0,0,0.1);  
+ 	padding: 15px 35px 45px;
+ 	margin: 0 auto;
+}
+.form-signin-home {
 	background-color: #fff;
   	border: 1px solid rgba(0,0,0,0.1);  
  	padding: 15px 35px 45px;
