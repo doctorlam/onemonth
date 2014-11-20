@@ -1,13 +1,19 @@
   <div class="row">
   <div class="col-md-8">
-    <h2>Welcome to the BOLD Project Database!</h2>
+    <div class="home-content">
+    <h2>Step 1 ==> Create an account</h2>
 
-      <p>BOLD, or Business Opportunity and Leadership Development, is a partnership program created to provide opportunities for businesses and non-profit organizations to with with university students. In this mutually beneficial program, students have an oppourtunity to work on real-world client projects, and clients are provided with value-added communication projects. BOLD projects have ranged from website design and development projects to comprehensive editing projects.</p>
+      <p>Provide an email address and password to create an account for the BOLD Projects Database. You will not receive any email or any other unwanted communication when you create this account.</p>
 
-      <p>THE BOLD Project Database was developed as a web-based system that connects clients with instructors of technical communication in hopes of creating a streamlined process for collaboration. Clients who have project work for undergraduate students can propose projects to be matched with instructors of technical communication.</p>
-      <h2>A Centralized Location for Clients and Instructors</h2>
+    <h2>Step 2 ==> Submit a new project proposal</h2>
 
+      <p>If you have a project idea that you think would be perfect for a technical communication course, complete the proposal form. Previous BOLD projects have included website redesigns, comprehensive edits of organizational documents, and marketing research reports.</p>
+
+    <h2>Step 3 ==> Connect with an instructor</h2>
+        <p>If your proposal is suitable for one of our courses, someone will approve and match your project to a particular course. Then, you'll be able to connect with an instructor to work out the major details of the project.</p>
+    
       </div>
+    </div>
   <div class="col-md-4">
     <div class="form-signin-home">
        <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
@@ -37,13 +43,15 @@
 </div>
 </div>
 </div> <!-- closing row class-->
-
+<div class="home-bottom">
 <div class="row">
+  <h2>Why be a BOLD partner?</h2>
   <div class="col-md-4">
     <div class="thumbnail">
       <%= image_tag 'code.fw.png' %>
       <div class="caption">
         <h3>Web-based Projects</h3>
+        <p>BOLD, or Business Opportunity and Leadership Development, is a partnership program created to provide opportunities for businesses and non-profit organizations to with with university students. In this mutually beneficial program, students have an oppourtunity to work on real-world client projects, and clients are provided with value-added communication projects. BOLD projects have ranged from website design and development projects to comprehensive editing projects.</p>
         <p>Students have worked on a variety web-related projects including full website redesigns for clients. Projects typically use the Wordpress content management system, but we are flexible to meet client needs.</p>
       </div>
     </div>
@@ -69,4 +77,5 @@
       </div>
     </div>
   </div>
+</div>
 </div>
