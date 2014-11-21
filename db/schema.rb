@@ -11,7 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141119140324) do
+ActiveRecord::Schema.define(version: 20141121150931) do
+
+  create_table "jointable_proposals_subjects", force: true do |t|
+    t.string "subjects"
+    t.string "proposals"
+  end
 
   create_table "proposals", force: true do |t|
     t.string   "title"
@@ -44,6 +49,11 @@ ActiveRecord::Schema.define(version: 20141119140324) do
   end
 
   add_index "proposals", ["user_id"], name: "index_proposals_on_user_id"
+
+  create_table "subjects", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false

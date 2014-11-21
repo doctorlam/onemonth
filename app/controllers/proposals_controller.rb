@@ -43,7 +43,7 @@ def index
    
     def proposal_params
       
-      params.require(:proposal).permit(:feedback, :role, :relevance, :course, :subject, :course_id, :semester_id, :time, :title, :abstract, :first_name, :last_name, :organization, :status)
+      params.require(:proposal).permit(:subject, :feedback, :role, :relevance, :course, :subject, :course_id, :semester_id, :time, :title, :abstract, :first_name, :last_name, :organization, :status)
 
     end
 end

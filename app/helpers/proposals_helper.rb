@@ -14,4 +14,6 @@ module ProposalsHelper
 	def options_for_semester_id
 		['Spring 2015', 'Summer 2015', 'Fall 2016', 'Spring 2016', 'Summer 2016']
 	end
+
+		
 end
