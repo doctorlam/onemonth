@@ -54,6 +54,8 @@ GEM
       warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.2.2)
+    filterrific (1.4.2)
+      rails (>= 3.1.0)
     hike (1.2.3)
     i18n (0.6.11)
     jbuilder (2.2.5)
@@ -63,6 +65,8 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.1)
+    listjs-rails (1.1.1)
+      railties (>= 3.1.0)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     mime-types (2.4.3)
@@ -149,8 +153,10 @@ DEPENDENCIES
   cancan
   coffee-rails (~> 4.0.0)
   devise
+  filterrific
   jbuilder (~> 2.0)
   jquery-rails
+  listjs-rails
   paperclip
   pg
   rails (= 4.1.7)

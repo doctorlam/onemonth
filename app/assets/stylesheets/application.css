@@ -29,16 +29,17 @@ p, h1, h2, h3, h4 {
     overflow-x: auto;
 }
 .show h2 {
-	background-color: #6C7A89;
+	background-color: #79797D;
 	padding: 10px;
 	color: white;
-	font-size: 20px;
-	font-family: droid serif ;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-family: raleway;
 
 }
 .navbar {
 	font-family: raleway;
-	font-size: 16px;
+	font-size: 17px;
 
 }
 .navbar a {
@@ -106,7 +107,7 @@ p.thumbnail, h3.thumbnail {
 	color: white;
 }
 p.admin-welcome {
-	color:white;
+	color:#D8EBED;
 	text-align: left;
 	margin-left: 15px;
 	margin-top: 15px;

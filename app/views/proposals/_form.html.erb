@@ -36,10 +36,10 @@
     <%= f.label :title, "Project Title" %><br>
     <%= f.text_field :title, class: "form-control" %>
   </div>
-
 <div class="form-group">
- 
-</div>
+    <%= f.label :subject, "Choose ONE category that best suits this project:" %><br>
+   <%= f.select :subject, options_for_subject, :prompt => 'Select One' %>
+  </div>
 
 
   <div class="form-group">

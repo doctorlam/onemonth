@@ -14,32 +14,58 @@
 <% end %>
 <br />
 <br />
+
+<div id="users">
+  <p>Enter a search term. Also, all columns are sortable.</p>
+  <input class="search" placeholder="Search" />
+  <!--
+  <button class="sort" data-sort="name">
+    Sort by name
+  </button>
+  <button class="sort" data-sort="organization">
+    Sort by organization
+  </button>
+    <button class="sort" data-sort="category">
+    Sort by category
+  </button>
+     <button class="sort" data-sort="semester">
+    Sort by semester
+  </button>
+   <button class="sort" data-sort="length">
+    Sort by length
+  </button>
+ <button class="sort" data-sort="status">
+    Sort by status
+  </button>
+-->
 <div class ="table-responsive">
 <table class ="table table-striped table-hover">
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Organization</th>
-      <th>Title</th>
-      <th>Semester</th>
-      <th>Project Length</th>
-      <th>Email</th>
-      <th>Status</th>
-      <th>Course</th>
+      <th class="sort" data-sort="name">Name</th>
+      <th class="sort" data-sort="organization">Organization</th>
+      <th class="sort" data-sort="title">Title</th>
+      <th class="sort" data-sort="category">Category</th>
+      <th class="sort" data-sort="semester">Semester</th>
+      <th class="sort" data-sort="length">Project Length</th>
+      <th class="sort" data-sort="email">Email</th>
+      <th class="sort" data-sort="status">Status</th>
+      <th class="sort" data-sort="course">Course</th>
     </tr>
   </thead>
 
-  <tbody>
+  <tbody class="list">
     <% @proposals.each do |proposal| %>
       <tr>
-        <td><%= link_to [proposal.first_name, proposal.last_name].join(" "), proposal %></td>
-        <td><%= proposal.organization %></td>
-        <td><%= proposal.title %></td>
-        <td><%= proposal.semester_id %></td>
-        <td><%= proposal.time %></td>
-        <td><%= proposal.user.email if proposal.user %></td>
-        <td><%= proposal.status if proposal.status %></td>
-        <td><%= proposal.course %></td>
+        <td class="name"><%= link_to [proposal.first_name, proposal.last_name].join(" "), proposal %></td>
+        <td class="organization"><%= proposal.organization %></td>
+        <td class="title"><%= proposal.title %></td>
+        <td class="category"><%= proposal.subject %></td>
+        <td class="semester"><%= proposal.semester_id %></td>
+        <td class="length"><%= proposal.time %></td>
+        <td class="email"><%= proposal.user.email if proposal.user %></td>
+        <td class="status"><%= proposal.status if proposal.status %></td>
+        <td class="course"><%= proposal.course %></td>
         <td><%= link_to 'View', proposal %></td>
         <% if can? :update, proposal %>
           <td><%= link_to 'Edit', edit_proposal_path(proposal) %></td>
@@ -53,7 +79,10 @@
     <% end %>
   </tbody>
 </table>
+
+</div>
 </div> 
+
 <br>
 
 

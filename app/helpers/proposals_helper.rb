@@ -15,5 +15,7 @@ module ProposalsHelper
 		['Spring 2015', 'Summer 2015', 'Fall 2016', 'Spring 2016', 'Summer 2016']
 	end
 
-		
+	def options_for_subject
+		['Editing', 'Web Design/Developement', 'Manuals or Procedures', 'Grant/proposal writing', 'Marketing Materials', 'Research Report', 'General Design', 'Other']
+	end
 end

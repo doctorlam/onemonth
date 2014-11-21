@@ -13,6 +13,8 @@ gem 'devise'
 gem 'paperclip'
 gem 'cancan'
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
+gem 'filterrific'
+gem 'listjs-rails'
 
 group :development, :test do 
 	gem 'sqlite3'
