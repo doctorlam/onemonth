@@ -15,6 +15,7 @@
  */
 p, h1, h2, h3, h4 {
 	color: #4C4C4D;
+	font-family: raleway;
 
 }
 .home {
@@ -40,10 +41,17 @@ p, h1, h2, h3, h4 {
 .navbar {
 	font-family: raleway;
 	font-size: 17px;
+	padding-bottom: 35px;
 
+}
+.navbar ul {
+	padding-top: 15px;
 }
 .navbar a {
 	color: white;
+}
+.navbar-toggle {
+	margin-top: 25px;
 }
 .col-lg-12 {
 
@@ -132,12 +140,23 @@ td.title {
   	border: 1px solid rgba(0,0,0,0.1);  
  	padding: 15px 35px 45px;
  	margin: 0 auto;
+ 	font-family: raleway;
+ 	font-weight: normal;
 }
 .form-signin-home {
 	background-color: #fff;
   	border: 1px solid rgba(0,0,0,0.1);  
  	padding: 15px 35px 45px;
  	margin: 0 auto;
+ 	font-family: raleway;
+ 	 font-weight: normal;
+
+
+}
+.form-signin-home h2, .form-signin h2 {
+	font-size: 24px;
+	text-align: center;
+	font-weight: bold;
 }
 .form-control {
 	  position: relative;
@@ -177,23 +196,72 @@ td.title {
  	margin: 0 auto;
 }
 .home-content {
-	max-width: 600px;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: #ecf0f1;
-	padding: 20px;
-	margin-top: -20px;
-	padding-bottom: 100px;
+	background-color: #2574A9;
+	margin-top: -25px;
+	min-height:85vh;
 }
+
 .home-content h1 {
-	font-family: raleway;
-	font-size: 24px;
+	font-family: open sans condensed;
+	font-size: 38px;
+	color: #D8EBED;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	line-height: 45px;
+
+
 }
 .home-content h2 {
 	font-family: cabin sketch;
 	font-size: 24px;
-	text-decoration: bold;
 	text-transform: uppercase;
+	color: #D8EBED;
+}
+.buttons {
+	margin-top: 20px;
+
+}
+.buttons .btn .btn-md .btn-primary {
+	background-color: white;
+}
+.home-button-left {
+	background-color: white;
+	text-align: center;
+	color: #2574A9;
+	height: 40px;
+	margin-right: 15px;
+	position: relative;
+	cursor: pointer;
+	border-radius: 3px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-family: raleway;
+	font-size: 14px;
+	font-weight: bold;
+	width: 120px;
+	padding: 8px 12px;
+
+}
+.home-button-right {
+	background-color: #2574A9;
+	text-align: center;
+	color: #FFF;
+	height: 40px;
+	width: 120px;
+	position: relative;
+	border: medium none;
+	cursor: pointer;
+	border-radius: 3px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-family: raleway;
+	font-size: 14px;
+	border: 1px white solid;
+	font-weight: bold;
+}
+
+.home-content p {	
+	color: #D8EBED;
 }
 .home-bottom {
 	border-top: 1px solid #ecf0f1;
