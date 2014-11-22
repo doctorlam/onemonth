@@ -212,7 +212,6 @@ td.title {
 	letter-spacing: 2px;
 	line-height: 45px;
 
-
 }
 .home-content h2 {
 	font-family: cabin sketch;
@@ -280,3 +279,24 @@ td.title {
 	margin-bottom: 40px;
 
 }
+
+@media (max-width: 1200px) {
+	
+		.top-text .col-lg-4 {
+			text-align: center;
+			margin-top: -80px;
+			border-top: 1px solid white;
+			border-bottom: 1px solid white;
+			padding-bottom: 50px;
+			padding-top: 25px;
+		}
+		
+	}
+@media (max-width: 480px) {
+	
+		.top-text h1 {
+			font-size: 30px;
+
+		}
+		
+	}
