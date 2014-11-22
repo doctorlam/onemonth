@@ -10,6 +10,8 @@
   <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="smoothscroll.js"></script> 
 
 </head>
 <body>
@@ -40,5 +42,126 @@ var options = {
 
 var userList = new List('users', options);
 </script>
+ <script src="../lib/jquery/jquery.js"></script>
+<script src="../src/jquery.smooth-scroll.js"></script>
+<script src="../lib/jquery.ba-bbq.js"></script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+
+  // hide #back-top first
+  $("#back-top").hide();
+  
+  // fade in #back-top
+  $(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $('#back-top').fadeIn();
+      } else {
+        $('#back-top').fadeOut();
+      }
+    });
+
+    // scroll body to 0px on click
+    $('#back-top a').click(function () {
+      $('body,html').animate({
+        scrollTop: 0
+      }, 800);
+      return false;
+    });
+  });
+
+});
+</script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/smoothscroll.js"></script> 
+<script>
+(function($) {
+    $.fn.SmoothAnchors = function() {
+
+        function scrollBodyTo(destination, hash) {
+
+            // Change the hash first, then do the scrolling. This retains the standard functionality of the back/forward buttons.
+            var scrollmem = $(document).scrollTop();
+            window.location.hash = hash;
+            $(document).scrollTop(scrollmem);
+            $("html,body").animate({
+                scrollTop: destination
+            }, 500);
+
+        }
+
+        if (typeof $().on == "function") {
+            $(document).on('click', 'a[href^="#"]', function() {
+
+                var href = $(this).attr("href");
+
+                if ($(href).length == 0) {
+
+                    var nameSelector = "[name=" + href.replace("#", "") + "]";
+
+                    if (href == "#") {
+                        scrollBodyTo(0, href);
+                    }
+                    else if ($(nameSelector).length != 0) {
+                        scrollBodyTo($(nameSelector).offset().top, href);
+                    }
+                    else {
+                        // fine, we'll just follow the original link. gosh.
+                        window.location = href;
+                    }
+                }
+                else {
+                    scrollBodyTo($(href).offset().top, href);
+                }
+                return false;
+            });
+        }
+        else {
+            $('a[href^="#"]').click(function() {
+                var href = $(this).attr("href");
+
+                if ($(href).length == 0) {
+
+                    var nameSelector = "[name=" + href.replace("#", "") + "]";
+
+                    if (href == "#") {
+                        scrollBodyTo(0, href);
+                    }
+                    else if ($(nameSelector).length != 0) {
+                        scrollBodyTo($(nameSelector).offset().top, href);
+                    }
+                    else {
+                        // fine, we'll just follow the original link. gosh.
+                        window.location = href;
+                    }
+                }
+                else {
+                    scrollBodyTo($(href).offset().top, href);
+                }
+                return false;
+            });
+        }
+    };
+})(jQuery);
+
+$(document).ready(function() {
+    $().SmoothAnchors();
+});
+      </script>
+      <script>
+      var originalNavClasses;
+
+function toggleNav() {
+    var elem = document.getElementById('navigation_list');
+    var classes = elem.className;
+    if (originalNavClasses === undefined) {
+        originalNavClasses = classes;
+    }
+    elem.className = /expanded/.test(classes) ? originalNavClasses : originalNavClasses + ' expanded';
+}
+        </script>
 </body>
 </html>

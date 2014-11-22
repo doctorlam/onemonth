@@ -15,7 +15,7 @@ gem 'cancan'
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'filterrific'
 gem 'listjs-rails'
-
+gem 'jquery-smooth-scroll-rails', '~> 0.0.5'
 group :development, :test do 
 	gem 'sqlite3'
 end

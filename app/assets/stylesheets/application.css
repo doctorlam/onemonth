@@ -200,6 +200,9 @@ td.title {
 	margin-top: -25px;
 	min-height:85vh;
 }
+.top-text {
+	margin-top: 70px;
+}
 
 .home-content h1 {
 	font-family: open sans condensed;
@@ -265,6 +268,7 @@ td.title {
 }
 .home-bottom {
 	border-top: 1px solid #ecf0f1;
+	min-height: 100vh;
 	
 }
 .home-bottom h2 {

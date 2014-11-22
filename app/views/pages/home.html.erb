@@ -1,9 +1,10 @@
 <div class="home-content row">
+  <div class="top-text">
     <div class="col-lg-4">
         <h1>Improve your organization's communication one class at a time</h1>
       <div class="buttons">
         <%= link_to "Sign up", new_user_registration_path, class: "btn home-button-left" %>
-         <button class="home-button-right">Learn more</button>
+       <a href="#more" class="smoothscroll"><button class="home-button-right">Learn more</button></a>
       </div>
 </div>
   <div class="col-md-8">
@@ -23,9 +24,11 @@
       </div>
     </div>
   </div>
+</div>
 <div class="home-bottom">
 <div class="row">
-  <h2>Why be a BOLD partner?</h2>
+
+  <h2><a name="more"></a>Why be a BOLD partner?</h2>
   <div class="col-md-4">
     <div class="thumbnail">
       <%= image_tag 'code.fw.png' %>
