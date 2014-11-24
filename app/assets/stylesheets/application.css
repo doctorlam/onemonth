@@ -82,9 +82,6 @@ h2.proposal {
 	color: #666666;
 	text-transform: none;
 }
-
-
-	
 .panel-footer {
     clear:both;
     bottom: 0;
@@ -95,9 +92,7 @@ h2.proposal {
 }
 .panel-footer p {
 	color: #B4B7B8;
-
 }
-
 
 li.home-button {
 
@@ -298,6 +293,7 @@ td.title {
 			text-align: center;
 			margin-top: -80px;
 			border-right: none;
+			border-top: none;
 		}
 		
 	}

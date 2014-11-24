@@ -16,46 +16,29 @@
       </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
       <ul class="nav navbar-nav navbar-right">
 
         <!--Controlling the sign in and log out links in nav bar -->
         <% if user_signed_in? %>
         <% if current_user.admin? %>
-        <div class="dropdown collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-           <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-    Admin Actions
-    <span class="caret"></span>
-  </button>
-   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <li role ="presentation" class="dropdown-header">Admin Account: <%= current_user.email %></li>
-          <li role="presentation"><%= link_to "Create New Project", new_proposal_path %></li>
-          <li role="presentation"><%= link_to "Manage Proposals", proposals_path %></li> 
-          <li role="presentation"><%= link_to "View projects I created", dashboard_path %></li>
-          <li role="presentation"><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
-      </ul>
-    </div>
+          <li><%= link_to "Create New Project", new_proposal_path %></li>
+          <li><%= link_to "Manage Proposals", proposals_path %></li> 
+          <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
+          <p class="admin-welcome">You are signed in as an administrator.</p>
         
         <% else %> 
-        <div class="dropdown">
-           <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-        What do you want to do?
-      <span class="caret"></span>
-  </button>
-   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <li role ="presentation" class="dropdown-header"><%= current_user.email %></li>
-          <li role="presentation"><%= link_to "Create a new project", new_proposal_path %></li>
-          <li role="presentation"><%= link_to "View my proposals", dashboard_path %></li>
-          <li role="presentation"><%= link_to "Browse all proposals", proposals_path %></li>
-          <li role="presentation"><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
-
-      </ul>
-    </div>
+          <li><%= link_to "Create New Project", new_proposal_path %></li>
+          <li><%= link_to "My Proposals", dashboard_path %></li>
+          <li><%= link_to "Browse all Proposals", proposals_path %></li>
+          <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
+          <p class="admin-welcome">You are signed in as <%= current_user.email %>!</p>
         <% end %>
         <% else %>
           <li><%= link_to "Register", new_user_registration_path %></li>
           <li><%= link_to "Sign in", new_user_session_path %></li>
         <% end %>
       </ul>
+    </div><!-- /.navbar-collapse -->
 </nav>

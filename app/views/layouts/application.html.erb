@@ -36,12 +36,33 @@
 </div>
 <script src="http://listjs.com/no-cdn/list.js"></script>
 <script type ="text/javascript">
-var options = {
-  valueNames: ['date', 'name', 'organization', 'title', 'category', 'semester', 'length', 'email', 'status', 'course']
-};
+    var options = {
+      valueNames: ['date', 'name', 'organization', 'title', 'category', 'semester', 'length', 'email', 'status', 'course']
+    };
 
-var userList = new List('users', options);
+    var userList = new List('users', options);
+
+ $('#status').change(function () {
+    var selection = this.value; 
+
+    // filter items in the list
+    userList.filter(function (item) {
+        if (item.values().status == selection) {
+            return true;
+        } else {
+            return false;
+        }
+    });
+
+});
+
+ $('#none').click(function() {
+ userList.filter();
+  return false;
+});
 </script>
+
+
  <script src="../lib/jquery/jquery.js"></script>
 <script src="../src/jquery.smooth-scroll.js"></script>
 <script src="../lib/jquery.ba-bbq.js"></script>
