@@ -1,6 +1,6 @@
-<h1>All Proposals</h1>
-<hr>
-<% if user_signed_in? %>
+<h2 class="proposal"><strong>All Proposals</strong> => A listing of every proposal submitted in the BOLD database.</h2>
+
+  <% if user_signed_in? %>
   <%= link_to 'New Proposal', new_proposal_path, class:"btn btn-default" %>
 <% end %>
 <br />
@@ -13,10 +13,10 @@
 <p>To manage a proposal, click <strong>"View"</strong> for any proposal. From there, you can read the proposal and approve or reject it. You can also assign it to a specific course.</p>
 <% end %>
 <br />
-<br />
+
 
 <div id="users">
-  <p>Enter a search term. Also, all columns are sortable.</p>
+  <p>Enter a search term</p>
   <input class="search" placeholder="Search" />
   <!--
   <button class="sort" data-sort="name">
@@ -42,6 +42,7 @@
 <table class ="table table-striped table-hover">
   <thead>
     <tr>
+      <th class="sort" data-sort="date">Date Created</th>
       <th class="sort" data-sort="name">Name</th>
       <th class="sort" data-sort="organization">Organization</th>
       <th class="sort" data-sort="title">Title</th>
@@ -57,9 +58,10 @@
   <tbody class="list">
     <% @proposals.each do |proposal| %>
       <tr>
+        <td class="date"><%= proposal.created_at %></td>
         <td class="name"><%= link_to [proposal.first_name, proposal.last_name].join(" "), proposal %></td>
         <td class="organization"><%= proposal.organization %></td>
-        <td class="title"><%= proposal.title %></td>
+        <td class="title"><%= link_to proposal.title, proposal %></td>
         <td class="category"><%= proposal.subject %></td>
         <td class="semester"><%= proposal.semester_id %></td>
         <td class="length"><%= proposal.time %></td>

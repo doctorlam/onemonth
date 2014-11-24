@@ -18,6 +18,13 @@ p, h1, h2, h3, h4 {
 	font-family: raleway;
 
 }
+h2.proposal {
+	font-size: 20px;
+	border-top: 1px dotted #666666;
+	border-bottom: 1px dotted #666666;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 .home {
 	margin-bottom: 30px;
 	background-color:#383634 ;
@@ -41,7 +48,6 @@ p, h1, h2, h3, h4 {
 .navbar {
 	font-family: raleway;
 	font-size: 17px;
-	padding-bottom: 35px;
 
 }
 .navbar ul {
@@ -63,15 +69,15 @@ p, h1, h2, h3, h4 {
 	padding: 15px;
 }
 .brand a,.brand a:hover {
-	font-size: 38px;
+	font-size: 30px;
 	font-family: cabin sketch;
-	color: #333333;
+	color: #666666;
 	text-decoration: none;
 	text-align:left;
 	text-transform: uppercase;
 	}
 .brand p {
-	font-size: 16px;
+	font-size: 14px;
 	font-family: raleway;
 	color: #666666;
 	text-transform: none;
@@ -115,7 +121,7 @@ p.thumbnail, h3.thumbnail {
 	color: white;
 }
 p.admin-welcome {
-	color:#D8EBED;
+	color:#666666;
 	text-align: left;
 	margin-left: 15px;
 	margin-top: 15px;
@@ -129,8 +135,6 @@ p.admin-welcome {
 
 td.title {
 	text-align: left;
-	width: 30%;
-	font-weight: bold;
 }
 .form-signin {
 	max-width:380px;
@@ -302,6 +306,9 @@ td.title {
 		.top-text h1 {
 			font-size: 30px;
 
+		}
+		h2.proposal {
+			font-size: 18px;
 		}
 		
 	}
