@@ -56,6 +56,20 @@
 
 });
 
+  $('#category').change(function () {
+    var selection = this.value; 
+
+    // filter items in the list
+    userList.filter(function (item) {
+        if (item.values().category == selection) {
+            return true;
+        } else {
+            return false;
+        }
+    });
+
+});
+
  $('#none').click(function() {
  userList.filter();
   return false;

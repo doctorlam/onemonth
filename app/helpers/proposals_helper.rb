@@ -16,6 +16,6 @@ module ProposalsHelper
 	end
 
 	def options_for_subject
-		['Editing', 'Web Design/Developement', 'Manuals or Procedures', 'Grant/proposal writing', 'Marketing Materials', 'Research Report', 'General Design', 'Other']
+		['Editing', 'Web Design/Development', 'Manuals or Procedures', 'Grant/proposal writing', 'Marketing Materials', 'Research Report', 'General Design', 'Other']
 	end
 end
