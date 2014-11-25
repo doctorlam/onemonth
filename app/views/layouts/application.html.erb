@@ -18,8 +18,9 @@
   <div class="container-fluid">
   <%= render "layouts/header" %>
 
-	<% flash.each do |name, msg| %>
+	   <% flash.each do |name, msg| %>
 		<%= content_tag(:div, msg, class: "alert alert-info") %>
+
 	<% end %>
   <div class ="col-lg-12">
 	 <%= yield %>
@@ -41,7 +42,6 @@
     };
 
     var userList = new List('users', options);
-
  $('#status').change(function () {
     var selection = this.value; 
 
@@ -49,11 +49,12 @@
     userList.filter(function (item) {
         if (item.values().status == selection) {
             return true;
-        } else {
+        } 
+
+        else {
             return false;
         }
     });
-
 });
 
   $('#category').change(function () {
@@ -67,13 +68,18 @@
             return false;
         }
     });
-
+  function displaymessage() {
+    $("select").val("0");
+}
 });
 
  $('#none').click(function() {
  userList.filter();
   return false;
+
 });
+
+
 </script>
 
 
