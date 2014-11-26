@@ -25,6 +25,16 @@ h2.proposal {
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+
+h3.form {
+		font-size: 20px;
+	padding: 10px 0 10px 10px;
+		color: white;
+		background-color: #79797D;
+		border-radius: 4px;
+;
+
+}
 .home {
 	margin-bottom: 30px;
 	background-color:#383634 ;
@@ -316,3 +326,14 @@ td.title {
 		}
 		
 	}
+.inline {
+	 line-height: 1.42857;
+    color: #555;
+    background-color: #FFF;
+    background-image: none;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+
+}

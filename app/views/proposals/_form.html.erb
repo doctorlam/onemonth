@@ -10,13 +10,7 @@
       </ul>
     </div>
   <% end %>
-  <% if current_user.admin? or current_user.role?('instructor') %>
-  <div class="form-group">
-    <%= f.label :course, "What course is this project for?" %><br>
-   <%= f.select :course, options_for_course, :prompt => 'Select One' %>
-  </div>
-    <% end %> 
-  
+   <h3 class="form">Tells us about yourself</h3> 
   <div class ="form-group">
    <%= f.label :first_name %><br>
     <%= f.text_field :first_name, class: "form-control" %>
@@ -26,12 +20,30 @@
    <%= f.label :last_name %>`<br>
     <%= f.text_field :last_name, class: "form-control" %>
 </div>
+<% if current_user.admin? or current_user.role?('instructor') %>
+
+<h3 class="form">Tell us about the client</h3>
 
 <div class ="form-group">
-   <%= f.label :organization, "Organization Name" %><br>
+   <%= f.label :organization, "Client's Organization Name" %><br>
     <%= f.text_field :organization, class: "form-control" %>
   </div>
+<div class ="form-group">
+   <%= f.label :client_name, "Enter name of point person at client's organization:" %><br>
+    <%= f.text_field :client_name, class: "form-control" %>
+  </div>
+  <div class ="form-group">
+   <%= f.label :client_phone, "Enter Phone number of point person" %><br>
+    <%= f.text_field :client_phone1, class: "inline", :maxlength => 3 %>
+     <%= f.text_field :client_phone2, class: "inline", :maxlength => 3 %>
+      <%= f.text_field :client_phone3, class: "inline", :maxlength => 4 %>
+  </div>
+   <div class ="form-group">
+   <%= f.label :client_email, "Enter email number of point person" %><br>
+    <%= f.text_field :client_email, class: "form-control" %>
+  </div>
 
+  <h3 class="form">Tell us about the project idea</h3>
 <div class="form-group">
     <%= f.label :title, "Project Title" %><br>
     <%= f.text_field :title, class: "form-control" %>
@@ -55,10 +67,59 @@
     <%= f.label :abstract, "Abstract (Describe the major tasks students will complete)" %><br>
     <%= f.text_area :abstract, :rows => 10, class: "form-control" %>
   </div>
- <% if current_user.admin? or current_user.role?('instructor') %>
     <%= f.label :relevance, "How is this client project relevant to the learning objectives of the course?" %><br>
     <%= f.text_area :relevance, :rows => 10, class: "form-control" %>
- <% end %>
+      <div class="form-group">
+    <%= f.label :course, "What course is this project for?" %><br>
+   <%= f.select :course, options_for_course, :prompt => 'Select One' %>
+  </div>
+  <% else %>
+  <div class ="form-group">
+   <%= f.label :client_phone, "Phone Number" %><br>
+    <%= f.text_field :client_phone1, class: "inline", :maxlength => 3 %>
+     <%= f.text_field :client_phone2, class: "inline", :maxlength => 3 %>
+      <%= f.text_field :client_phone3, class: "inline", :maxlength => 4 %>
+  </div>
+  <div class ="form-group">
+   <%= f.label :client_email, "Preferred Email" %><br>
+    <%= f.text_field :client_email, class: "form-control" %>
+  </div>
+ <h3 class="form">Tells us about your organization</h3> 
+<div class ="form-group">
+   <%= f.label :organization, "Organization Name" %><br>
+    <%= f.text_field :organization, class: "form-control" %>
+  </div>
+
+<div class ="form-group">
+   <%= f.label :client_name, "If you won't be the point person on this project, please enter his or her email:" %><br>
+    <%= f.text_field :client_name, class: "form-control" %>
+  </div>
+  <h3 class="form">Tell us about the project idea</h3>
+<div class="form-group">
+    <%= f.label :title, "Project Title" %><br>
+    <%= f.text_field :title, class: "form-control" %>
+  </div>
+<div class="form-group">
+    <%= f.label :subject, "Choose ONE category that best suits this project:" %><br>
+   <%= f.select :subject, options_for_subject, :prompt => 'Select One' %>
+  </div>
+
+
+  <div class="form-group">
+    <%= f.label :semester_id, "Semester" %><br>
+    <%= f.select :semester_id, options_for_semester_id, :prompt => 'Select One' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :time, "Approximate length of project in weeks (A semester is 15 weeks)" %><br>
+   <%= f.select :time, options_for_time, :prompt => 'Select One' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :abstract, "Abstract (Describe the major tasks students will complete)" %><br>
+    <%= f.text_area :abstract, :rows => 10, class: "form-control" %>
+  </div>
+  <% end %>
+  
   <% if current_user.admin? %>
 <div class="form-group">
     <%= f.label :status, "Status" %><br>

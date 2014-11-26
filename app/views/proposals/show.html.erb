@@ -36,6 +36,27 @@
       <td><%= simple_format(@proposal.relevance) %></td>
   
  </table>
+ <% if current_user.admin? %>
+  <h2>Client Contact Information</h2>
+  <table class= "table table-hover table-striped">
+    <tr> 
+      <td class ="title">Point Person:</td> 
+      <td><%= @proposal.client_name %></td>
+
+    </tr>
+
+    <tr>
+      <td class ="title">Client Email:</td>
+      <td><%= @proposal.client_email %></td>
+    </tr>
+
+    <tr>
+      <td class ="title">Client Phone Number:</td>
+      <td><%= @proposal.client_phone1 %> <%= @proposal.client_phone2 %> <%= @proposal.client_phone3 %></td>
+    </tr>
+<% end %>
+     
+ </table>
  <% if @proposal.user == current_user or current_user.admin? %>  
   <%= link_to 'Edit', edit_proposal_path(@proposal) %> |
 <% end %>

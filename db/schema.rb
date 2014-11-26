@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141121150931) do
+ActiveRecord::Schema.define(version: 20141126211252) do
 
   create_table "jointable_proposals_subjects", force: true do |t|
     t.string "subjects"
@@ -46,6 +46,11 @@ ActiveRecord::Schema.define(version: 20141121150931) do
     t.string   "course"
     t.text     "relevance"
     t.text     "feedback"
+    t.string   "client_name"
+    t.string   "client_email"
+    t.integer  "client_phone1"
+    t.integer  "client_phone2"
+    t.integer  "client_phone3"
   end
 
   add_index "proposals", ["user_id"], name: "index_proposals_on_user_id"
