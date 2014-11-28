@@ -65,6 +65,7 @@ h3.form {
 .navbar a {
 	border-right: 1px dotted #BFBFBF;
 }
+
 .navbar-toggle {
 	margin-top: 25px;
 }
@@ -88,6 +89,7 @@ h3.form {
 	text-decoration: none;
 	text-align:left;
 	text-transform: uppercase;
+	border-right: none;
 	}
 .brand p {
 	font-size: 14px;
