@@ -10,6 +10,7 @@ def index
   end
 
   def show
+
     
   end
 
@@ -18,12 +19,14 @@ def index
   end
 
   def edit
+
   end
 
   def create
     @proposal = current_user.proposals.build(proposal_params)
     @proposal.save
-    respond_with(@proposal)    
+    respond_with(@proposal) 
+   
 
   end
 
@@ -34,9 +37,10 @@ def index
   end
 
   def destroy
-     @proposal.destroy
-     redirect_to dashboard_path
-      
+    @proposal.destroy
+    redirect_to proposals_path
+    flash[:success] = "Proposal deleted."
+
   end
 
   
