@@ -33,13 +33,15 @@ def index
   def update
    @proposal.update(proposal_params)
     respond_with(@proposal)
+        flash[:success] = "Proposal sucessfully updated."
+
       
   end
 
   def destroy
     @proposal.destroy
     redirect_to proposals_path
-    flash[:success] = "Proposal deleted."
+    flash[:success] = "Proposal sucessfully deleted."
 
   end
 

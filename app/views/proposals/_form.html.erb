@@ -123,7 +123,7 @@
   <% if current_user.admin? %>
 <div class="form-group">
     <%= f.label :status, "Status" %><br>
-    <%= f.select :status, options_for_status %>
+    <%= f.select :status, options_for_status, :selected => 'Pending' %>
   </div>
   <% end %>
 
