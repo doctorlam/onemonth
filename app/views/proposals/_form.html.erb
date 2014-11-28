@@ -126,10 +126,12 @@
     <%= f.label :status, "Status" %><br>
     <%= f.select :status, options_for_status, :selected => 'Pending' %>
   </div>
-  <% end %>
-
-   
-   
+  <% else %>
+<div class="hidden">
+      <%= f.label :status, "Status" %><br>
+      <%= f.select :status, options_for_select(['Pending']) %>
+ </div>
+<% end %>
 
 <div class="form-group">
     <%= f.submit class: "btn btn-lg btn-primary btn-block" %>
