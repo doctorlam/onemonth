@@ -31,10 +31,11 @@
       <td class ="title">Abstract:</td>
       <td><%= simple_format(@proposal.abstract) %></td>
   </tr>
+<% if current_user.admin? or current_user.role?('instructor') %>
   <tr>
       <td class="title">Relevance of project to course (completed by instructor):</td>
       <td><%= simple_format(@proposal.relevance) %></td>
-  
+  <% end %>
  </table>
  <% if current_user.admin? %>
   <h2>Client Contact Information</h2>

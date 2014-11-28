@@ -1,6 +1,6 @@
 module ProposalsHelper
 	def options_for_status
-		['Pending', 'Approved', 'Rejected']
+		['Pending', 'Approved', 'Rejected', 'Completed']
 	end
 
 	def options_for_course
