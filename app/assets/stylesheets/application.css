@@ -13,34 +13,14 @@
  *= require_tree .
  *= require_self
  */
+
+ /* Global Styles */
 p, h1, h2, h3, h4 {
 	color: #4C4C4D;
 	font-family: raleway;
-
 }
 p {
 	font-size: 16px;
-}
-h2.proposal {
-	font-size: 20px;
-	border-top: 1px dotted #666666;
-	border-bottom: 1px dotted #666666;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-
-h3.form {
-		font-size: 20px;
-	padding: 10px 0 10px 10px;
-		color: white;
-		background-color: #79797D;
-		border-radius: 4px;
-;
-
-}
-.home {
-	background-color:#383634 ;
-	padding: 0;
 }
 .container-fluid {
 	padding:0;
@@ -48,20 +28,24 @@ h3.form {
 .table-responsive {
     overflow-x: auto;
 }
-.show h2 {
-	background-color: #79797D;
-	padding: 10px;
-	color: white;
-	font-size: 18px;
-	text-transform: uppercase;
-	font-family: raleway;
-
+.home {
+	background-color:#383634 ;
+	padding: 0;
 }
+.col-lg-12 {
+
+	font-family: open sans;
+	min-height: 700px;
+}
+.hidden {
+	display: hidden;
+}
+
+/* Navigation Bar Styles */
 .navbar {
 	font-family: raleway;
 	font-size: 14px;
 	padding-right: 4px;
-
 }
 
 .navbar a {
@@ -75,12 +59,8 @@ h3.form {
 	background-color: #BFBFBF;
 	border: none;
 }
-.col-lg-12 {
 
-	font-family: open sans;
-	min-height: 700px;
-
-}
+/* Brand styles */
 .brand {
 	padding: 15px;
 }
@@ -99,15 +79,31 @@ h3.form {
 	color: #666666;
 	text-transform: none;
 }
-.panel-footer {
-    clear:both;
-    width: 100%;
-	min-height: 200px;
-	font-family: open sans;
-	background-color: #383634;
+
+/* Proposal styles */
+h2.proposal {
+	font-size: 20px;
+	border-top: 1px dotted #666666;
+	border-bottom: 1px dotted #666666;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
-.panel-footer p {
-	color: #B4B7B8;
+
+h3.form {
+	font-size: 20px;
+	padding: 10px 0 10px 10px;
+	color: white;
+	background-color: #79797D;
+	border-radius: 4px;
+}
+.show h2 {
+	background-color: #79797D;
+	padding: 10px;
+	color: white;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-family: raleway;
+
 }
 
 li.home-button {
@@ -170,8 +166,6 @@ td.title {
  	margin: 0 auto;
  	font-family: raleway;
  	 font-weight: normal;
-
-
 }
 .form-signin-home h2, .form-signin h2 {
 	font-size: 24px;
@@ -184,27 +178,25 @@ td.title {
 	  height: auto;
 	  padding: 10px;
 	
-		
 	}
-	.form-signin h2{
+.form-signin h2{
 		margin-bottom: 20px;
 	}
-	.form-signin p {
+.form-signin p {
 		margin-top: 20px;
 	}
 
-	input[type="text"] {
+input[type="text"] {
 	  margin-bottom: -1px;
 	  border-bottom-left-radius: 0;
 	  border-bottom-right-radius: 0;
 	}
 
-	input[type="password"] {
+input[type="password"] {
 	  margin-bottom: 20px;
 	  border-top-left-radius: 0;
 	  border-top-right-radius: 0;
 	}
-
 
 .proposal-form {
 	max-width: 700px;
@@ -215,6 +207,9 @@ td.title {
  	padding: 15px 35px 45px;
  	margin: 0 auto;
 }
+
+/* Landing Page Styles */
+
 .home-content {
 	background-color: #6C9396;
 	margin-top: -25px;
@@ -310,58 +305,8 @@ td.title {
 	
 }
 
-
-@media (max-width: 990px) {
-	
-		.top-text .col-md-4 {
-			text-align: center;
-			margin-top: -80px;
-			border-right: none;
-			border-top: none;
-		}
-		.top-content {
-	margin-left: 0px;
-	margin-top: 0px;
-	width: 100%;
-	padding-bottom: 35px;
-}
-	
-		.top-content h2 {
-			font-size: 24px;
-			line-height: 30px;
-		}
-		
-	}
-@media (max-width: 768px) {
-	select {
-			display: block;
-			margin-bottom: 5px;
-			width: 100%;
-			margin-top: 5px;
-		}
-	input.search {
-		width: 100%;
-	}
-
-
-}
-@media (max-width: 480px) {
-	
-		.top-text h1 {
-			font-size: 30px;
-
-		}
-		h2.proposal {
-			font-size: 18px;
-		}
-
-		.top-content h2 {
-			font-size: 20px;
-	}
-
-}
 .inline {
-	 line-height: 1.42857;
+	line-height: 1.42857;
     color: #555;
     background-color: #FFF;
     background-image: none;
@@ -369,10 +314,6 @@ td.title {
     border-radius: 4px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
     transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
-
-}
-.hidden {
-	display: hidden;
 }
 
 .what-is-bold .row {
@@ -427,4 +368,66 @@ span.number  {
     text-align: center;
     font-size: 28px;
     font-family: cabin sketch;
+}
+/* Footer Styles */
+.panel-footer {
+    clear:both;
+    width: 100%;
+	min-height: 200px;
+	font-family: open sans;
+	background-color: #383634;
+}
+.panel-footer p {
+	color: #B4B7B8;
+}
+
+/* Responsive Layout Styles */
+@media (max-width: 990px) {
+	
+		.top-text .col-md-4 {
+			text-align: center;
+			margin-top: -80px;
+			border-right: none;
+			border-top: none;
+		}
+		.top-content {
+	margin-left: 0px;
+	margin-top: 0px;
+	width: 100%;
+	padding-bottom: 35px;
+}
+	
+		.top-content h2 {
+			font-size: 24px;
+			line-height: 30px;
+		}
+		
+	}
+@media (max-width: 768px) {
+	select {
+			display: block;
+			margin-bottom: 5px;
+			width: 100%;
+			margin-top: 5px;
+		}
+	input.search {
+		width: 100%;
+	}
+
+
+}
+@media (max-width: 480px) {
+	
+		.top-text h1 {
+			font-size: 30px;
+
+		}
+		h2.proposal {
+			font-size: 18px;
+		}
+
+		.top-content h2 {
+			font-size: 20px;
+	}
+
 }
