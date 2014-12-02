@@ -72,11 +72,27 @@
     $("select").val("0");
 }
 });
+  $('#course').change(function () {
+    var selection = this.value; 
+
+    // filter items in the list
+    userList.filter(function (item) {
+        if (item.values().course == selection) {
+            return true;
+        } 
+        else {
+            return false;
+        }
+    });
+});
 
  $('#none').click(function() {
+  $('#status').val('all');
+  $('#category').val('all');
+  $('#course').val('all');
  userList.filter();
   return false;
-
+ 
 });
 
 

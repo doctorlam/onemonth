@@ -231,12 +231,17 @@ td.title {
 		border-right: 1px solid white;
 }
 .top-content {
-	margin-left: 50px;
-	margin-top: -15px;
+	margin-left: 70px;
+	margin-top: -30px;
 
 }
 
-
+.top-content h2 {
+	line-height: 60px;
+	}
+.top-content p {
+	margin-left: 85px;
+}
 .home-content h1 {
 	font-family: open sans condensed;
 	font-size: 38px;
@@ -247,12 +252,10 @@ td.title {
 
 }
 .home-content h2 {
-	padding-top: 10px;
 	font-family: cabin sketch;
 	font-size: 26px;
 	text-transform: uppercase;
 	color: #D8EBED;
-	margin-left: 80px;
 }
 
 .buttons {
@@ -300,7 +303,8 @@ td.title {
 
 .home-content p {	
 	color: #D8EBED;
-margin-left: 80px;}
+
+}
 .home-bottom {
 	border-top: 1px solid #ecf0f1;
 	
@@ -320,8 +324,12 @@ margin-left: 80px;}
 	margin-top: 0px;
 	width: 100%;
 	padding-bottom: 35px;
-
 }
+	
+		.top-content h2 {
+			font-size: 24px;
+			line-height: 30px;
+		}
 		
 	}
 @media (max-width: 480px) {
@@ -333,8 +341,12 @@ margin-left: 80px;}
 		h2.proposal {
 			font-size: 18px;
 		}
-		
+
+		.top-content h2 {
+			font-size: 20px;
+
 	}
+}
 .inline {
 	 line-height: 1.42857;
     color: #555;
@@ -357,8 +369,7 @@ margin-left: 80px;}
 }
 
 .what-is-left {
-		min-height: 300px;
-		border-radius: 5px;
+
 	}
 
 .home-bottom p, ul, li {
@@ -368,7 +379,8 @@ margin-left: 80px;}
 }
 .three-columns .row {
 	background-color: #BFBCBA;
-	min-height: 600px;
+	min-height: 500px;
+	padding-top: 40px;
 
 }
 .home-bottom h2 {
@@ -387,6 +399,7 @@ margin-left: 80px;}
 
 }
 span.number  {
+	margin-right: 20px;
     display: block;
     height: 60px;
     width: 60px;

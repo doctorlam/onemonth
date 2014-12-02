@@ -19,14 +19,14 @@
   <p>Explore the database!</p>
   <input class="search" placeholder="Search" />
 <select name="status" id="status">
-    <option id ="all">All Statuses</option>
+    <option value ="all">Select a status</option>
     <option value="Pending">Pending</option>
-    <option value="Approved">Approved</option>
-    <option value="Rejected">Rejected</option>
-    <option value="Completed">Completed</option>
+    <option value="Approved", "all">Approved</option>
+    <option value="Rejected" ,"all">Rejected</option>
+    <option value="Completed" ,"all">Completed</option>
 </select> 
 <select name="category" id="category">
-    <option selected="selected" value="">All Categories</option>
+    <option selected="selected" value="all">Select a category</option>
     <option value="Web Design/Development">Web Design/Development</option>
     <option value="Editing">Editing</option>
     <option value="Manuals or Procedures">Manuals or Procedures</option>
@@ -34,9 +34,21 @@
     <option value="Marketing Materials">Marketing Materials</option>
     <option value="Others">Others</option>
 </select> 
+<select name="course" id="course">
+    <option selected="selected" value="all">Select a course</option>
+    <option value="TECM 3000">TECM 3000</option>
+    <option value="TECM 3100">TECM 3100</option>
+    <option value="TECM 3200">TECM 3200</option>
+    <option value="TECM 4100">TECM 4100</option>
+    <option value="TECM 4180">TECM 4180</option>
+    <option value="TECM 4190">TECM 4190</option>
+    <option value="TECM 4200">TECM 4200</option>
+    <option value="TECM 4190">TECM 4190</option>
+    <option value="TECM 4250">TECM 4250</option>
+    <option value="TECM 4700">TECM 4700</option>
+</select> 
 
-
-<button id="none">Show all</button>
+<button id="none">Clear all filters</button>
   <!--
   <button class="sort" data-sort="name">
     Sort by name
