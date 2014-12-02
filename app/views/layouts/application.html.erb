@@ -39,9 +39,15 @@
 <script type ="text/javascript">
     var options = {
       valueNames: ['date', 'name', 'organization', 'title', 'category', 'semester', 'length', 'email', 'status', 'course']
-    };
 
+    };
+ 
     var userList = new List('users', options);
+
+    $(document).ready(function() {
+    userList.sort('date', { asc: true });
+});
+    
  $('#status').change(function () {
     var selection = this.value; 
 

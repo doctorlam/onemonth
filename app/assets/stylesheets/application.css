@@ -332,6 +332,19 @@ td.title {
 		}
 		
 	}
+@media (max-width: 768px) {
+	select {
+			display: block;
+			margin-bottom: 5px;
+			width: 100%;
+			margin-top: 5px;
+		}
+	input.search {
+		width: 100%;
+	}
+
+
+}
 @media (max-width: 480px) {
 	
 		.top-text h1 {
@@ -344,8 +357,8 @@ td.title {
 
 		.top-content h2 {
 			font-size: 20px;
-
 	}
+
 }
 .inline {
 	 line-height: 1.42857;
@@ -375,7 +388,7 @@ td.title {
 .home-bottom p, ul, li {
 	font-size: 16px;
 	font-family: open sans;
-	color: #383838;
+	color: #615F60;
 }
 .three-columns .row {
 	background-color: #BFBCBA;
@@ -386,7 +399,7 @@ td.title {
 .home-bottom h2 {
 	font-family: open sans condensed;
 	font-size: 36px;
-	color: #383838;
+	color: #615F60;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	line-height: 45px;
@@ -395,7 +408,7 @@ td.title {
 }
 .home-bottom h3 {
 	font-family: open sans condensed;
-	color: #383838;
+	color: #615F60;
 
 }
 span.number  {
