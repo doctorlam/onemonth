@@ -18,6 +18,9 @@ p, h1, h2, h3, h4 {
 	font-family: raleway;
 
 }
+p {
+	font-size: 16px;
+}
 h2.proposal {
 	font-size: 20px;
 	border-top: 1px dotted #666666;
@@ -227,6 +230,11 @@ td.title {
 		padding-top: 20px;
 		border-right: 1px solid white;
 }
+.top-content {
+	margin-left: 50px;
+	margin-top: -15px;
+
+}
 
 
 .home-content h1 {
@@ -239,11 +247,14 @@ td.title {
 
 }
 .home-content h2 {
+	padding-top: 10px;
 	font-family: cabin sketch;
-	font-size: 24px;
+	font-size: 26px;
 	text-transform: uppercase;
 	color: #D8EBED;
+	margin-left: 80px;
 }
+
 .buttons {
 	margin-top: 20px;
 
@@ -289,7 +300,7 @@ td.title {
 
 .home-content p {	
 	color: #D8EBED;
-}
+margin-left: 80px;}
 .home-bottom {
 	border-top: 1px solid #ecf0f1;
 	
@@ -304,6 +315,13 @@ td.title {
 			border-right: none;
 			border-top: none;
 		}
+		.top-content {
+	margin-left: 0px;
+	margin-top: 0px;
+	width: 100%;
+	padding-bottom: 35px;
+
+}
 		
 	}
 @media (max-width: 480px) {
@@ -344,9 +362,9 @@ td.title {
 	}
 
 .home-bottom p, ul, li {
-	font-size: 17px;
+	font-size: 16px;
 	font-family: open sans;
-	color: #353536;
+	color: #383838;
 }
 .three-columns .row {
 	background-color: #BFBCBA;
@@ -356,7 +374,7 @@ td.title {
 .home-bottom h2 {
 	font-family: open sans condensed;
 	font-size: 36px;
-	color: #666666;
+	color: #383838;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	line-height: 45px;
@@ -365,6 +383,22 @@ td.title {
 }
 .home-bottom h3 {
 	font-family: open sans condensed;
-	color: #666666;
+	color: #383838;
 
+}
+span.number  {
+    display: block;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    float:left;
+
+    -moz-border-radius: 30px; /* or 50% */
+    border-radius: 30px; /* or 50% */
+
+    background-color: #8AA6A8 ;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    font-family: cabin sketch;
 }
