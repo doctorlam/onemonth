@@ -317,9 +317,10 @@ input[type="password"] {
 }
 
 .what-is-bold .row {
-		background-image: url(light_grey.png);
+	background-image: url(light_grey.png);
 	min-height: 400px;
 	border-bottom: 1px white solid;
+	padding: 15px;
 }
 
 .what-is-left {
@@ -333,7 +334,6 @@ input[type="password"] {
 }
 .three-columns .row {
 	background-color: #BFBCBA;
-	min-height: 500px;
 	padding-top: 40px;
 
 }
