@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141126211252) do
+ActiveRecord::Schema.define(version: 20141204134552) do
 
   create_table "jointable_proposals_subjects", force: true do |t|
     t.string "subjects"
@@ -51,6 +51,7 @@ ActiveRecord::Schema.define(version: 20141126211252) do
     t.integer  "client_phone1"
     t.integer  "client_phone2"
     t.integer  "client_phone3"
+    t.boolean  "agreement"
   end
 
   add_index "proposals", ["user_id"], name: "index_proposals_on_user_id"

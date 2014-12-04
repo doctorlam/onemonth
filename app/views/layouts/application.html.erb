@@ -38,7 +38,7 @@
 <script src="http://listjs.com/no-cdn/list.js"></script>
 <script type ="text/javascript">
     var options = {
-      valueNames: ['date', 'name', 'organization', 'title', 'category', 'semester', 'length', 'email', 'status', 'course']
+        valueNames: ['date', 'name', 'organization', 'title', 'category', 'semester', 'length', 'email', 'status', 'course']
 
     };
  
@@ -91,11 +91,26 @@
         }
     });
 });
+  $('#semester').change(function () {
+    var selection = this.value; 
 
- $('#none').click(function() {
+    // filter items in the list
+    userList.filter(function (item) {
+        if (item.values().semester == selection) {
+            return true;
+        } 
+        else {
+            return false;
+        }
+    });
+});
+
+  $('#none').click(function() {
   $('#status').val('all');
   $('#category').val('all');
   $('#course').val('all');
+  $('#semester').val('all');
+
  userList.filter();
   return false;
  

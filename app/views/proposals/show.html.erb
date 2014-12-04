@@ -28,7 +28,7 @@
       <td><%= @proposal.time %></td>
     </tr>
   <tr>
-      <td class ="title">Abstract:</td>
+      <td class ="title">Project Description:</td>
       <td><%= simple_format(@proposal.abstract) %></td>
   </tr>
 <% if current_user.admin? or current_user.role?('instructor') %>
@@ -54,6 +54,10 @@
     <tr>
       <td class ="title">Client Phone Number:</td>
       <td><%= @proposal.client_phone1 %> <%= @proposal.client_phone2 %> <%= @proposal.client_phone3 %></td>
+    </tr>
+     <tr>
+      <td class ="title">Client Agreeemnt?</td>
+      <td><%= @proposal.agreement %></td>
     </tr>
 <% end %>
      

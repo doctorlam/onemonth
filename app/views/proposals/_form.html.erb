@@ -65,7 +65,7 @@
   </div>
 
   <div class="form-group">
-    <%= f.label :abstract, "Abstract (Describe the major tasks students will complete. Note: You can format this section with line breaks, etc.)" %><br>
+    <%= f.label :abstract, "Describe the major tasks students will complete. (Note: You can format this section with line breaks, etc.)" %><br>
     <%= f.text_area :abstract, :rows => 10, class: "form-control" %>
   </div>
     <%= f.label :relevance, "How is this client project relevant to the learning objectives of the course?" %><br>
@@ -102,13 +102,13 @@
   </div>
 <div class="form-group">
     <%= f.label :subject, "Choose ONE category that best suits this project:" %><br>
-   <%= f.select :subject, options_for_subject, :prompt => 'Select One' %>
+   <%= f.select :subject, options_for_subject, :prompt => 'Select a category' %>
   </div>
 
 
   <div class="form-group">
     <%= f.label :semester_id, "Semester" %><br>
-    <%= f.select :semester_id, options_for_semester_id, :prompt => 'Select One' %>
+    <%= f.select :semester_id, options_for_semester_id, :prompt => 'Select a semester' %>
   </div>
   <div class="form-group">
     <%= f.label :time, "Approximate length of project in weeks (A semester is 15 weeks)" %><br>
@@ -116,9 +116,16 @@
   </div>
 
   <div class="form-group">
-    <%= f.label :abstract, "Abstract (Describe the major tasks students will complete)" %><br>
+    <%= f.label :abstract, "Describe the major tasks students will complete (Note: You can format this section with line breaks, etc.)" %><br>
     <%= f.text_area :abstract, :rows => 10, class: "form-control" %>
   </div>
+    <h3 class="form">Client Agreement</h3>
+
+  <div class="form-group">
+  
+    <%= f.check_box :agreement, :as => :boolean, input_html: {checked: true}, class: "check-box" %>
+    <%= f.label :agreement, "I understand that this is an educational partnership and am willing to provide professional development to students if needed.", class: "check-box-label" %>
+</div>
   <% end %>
   
   <% if current_user.admin? %>
