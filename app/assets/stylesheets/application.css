@@ -316,7 +316,7 @@ input[type="password"] {
 }
 
 .what-is-bold .row {
-	background: image-url('light_grey.png');
+	background-image: url('assets/light_grey.png');
 	min-height: 500px;
 	border-bottom: 1px white solid;
 	padding: 15px;
