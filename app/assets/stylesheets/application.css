@@ -113,7 +113,7 @@ li.home-button {
 }
 .thumbnail{
 	text-align: center;
-	background: image-url('light_grey.png');
+	background: url('light_grey.png');
 	border: none;
 	width: 100%;
 }
@@ -316,7 +316,7 @@ input[type="password"] {
 }
 
 .what-is-bold .row {
-	background-image: url('assets/light_grey.png');
+	background-image: url('light_grey.png');
 	min-height: 500px;
 	border-bottom: 1px white solid;
 	padding: 15px;
@@ -339,7 +339,7 @@ input[type="password"] {
 }
 .three-columns .row {
 	
-	background-image: url('assets/images/light_grey.png');
+	background-image: url('light_grey.png');
 	min-height: 500px;
 
 }
