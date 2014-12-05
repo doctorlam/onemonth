@@ -16,7 +16,6 @@
 
  /* Global Styles */
 p, h1, h2, h3, h4 {
-	color: #4C4C4D;
 	font-family: raleway;
 }
 p {
@@ -114,7 +113,7 @@ li.home-button {
 }
 .thumbnail{
 	text-align: center;
-	background-color:#BFBCBA;
+	background-image: url(light_grey.png);
 	border: none;
 	width: 100%;
 }
@@ -318,8 +317,15 @@ input[type="password"] {
 
 .what-is-bold .row {
 	background-image: url(light_grey.png);
-	min-height: 400px;
+	min-height: 500px;
 	border-bottom: 1px white solid;
+	padding: 15px;
+}
+.what-is-bold h2 {
+	font-family: cabin sketch;
+	color: #333;
+	border-top: 1px dotted #333 ;
+	border-bottom: 1px dotted #333 ;
 	padding: 15px;
 }
 
@@ -330,17 +336,23 @@ input[type="password"] {
 .home-bottom p, ul, li {
 	font-size: 16px;
 	font-family: open sans;
-	color: #615F60;
 }
 .three-columns .row {
-	background-color: #BFBCBA;
-	padding-top: 40px;
+	
+	background-image: url(light_grey.png);
+	min-height: 500px;
+
+}
+.three-columns h2 {
+	font-family: cabin sketch;
+	color: #333;
+	border-top: 1px dotted #333 ;
+	border-bottom: 1px dotted #333 ;
+	padding: 15px;
 
 }
 .home-bottom h2 {
-	font-family: open sans condensed;
 	font-size: 36px;
-	color: #615F60;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	line-height: 45px;
@@ -349,7 +361,6 @@ input[type="password"] {
 }
 .home-bottom h3 {
 	font-family: open sans condensed;
-	color: #615F60;
 
 }
 span.number  {
@@ -439,4 +450,72 @@ span.number  {
 .check-box {
 
 	float:left;
+}
+.mission .row {
+	color: #FEFFFE;
+	background-color: #404040;
+
+}
+.column {
+	min-height: 400px;
+	padding: 0 0 15px 15px;
+}
+
+.mission h2 {
+	font-family: cabin sketch;
+	color: #F55505;
+	border-top: 1px dotted #F55505 ;
+	border-bottom: 1px dotted #F55505 ;
+	padding: 15px;
+
+}
+.mission h3 {
+	text-align: center;
+		color: #F55505;
+
+}
+#back-top {
+	position: fixed;
+	bottom: 30px;
+	margin-left: 90%;
+	z-index: 1;
+}
+
+#back-top a {
+	width: 70px;
+	display: block;
+	text-align: center;
+	font: 11px/100% Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #bbb;
+
+	/* transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover {
+	color: #000;
+}
+
+/* arrow icon (span tag) */
+#back-top span {
+	width: 56px;
+	height: 56px;
+	display: block;
+	background: #ddd url(up-arrow.png) no-repeat center center;
+
+	/* rounded corners */
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+
+	/* transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover span {
+	background-color: #6C9396;
 }
