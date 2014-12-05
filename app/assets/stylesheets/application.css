@@ -113,7 +113,7 @@ li.home-button {
 }
 .thumbnail{
 	text-align: center;
-	background-image: image-url(light_grey.png);
+	background: image-url('light_grey.png');
 	border: none;
 	width: 100%;
 }
@@ -339,7 +339,7 @@ input[type="password"] {
 }
 .three-columns .row {
 	
-	background-image: url(light_grey.png);
+	background-image: url('light_grey.png');
 	min-height: 500px;
 
 }
