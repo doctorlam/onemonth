@@ -454,23 +454,25 @@ span.number  {
 .mission .row {
 	color: #FEFFFE;
 	background-color: #404040;
+	min-height: 500px;
+
 
 }
 .column {
-	min-height: 400px;
 	padding: 0 0 15px 15px;
 }
 
 .mission h2 {
 	font-family: cabin sketch;
-	color: #F55505;
-	border-top: 1px dotted #F55505 ;
-	border-bottom: 1px dotted #F55505 ;
+	color: #FEFFFE;
+	border-top: 1px dotted #95A5A6 ;
+	border-bottom: 1px dotted #95A5A6 ;
 	padding: 15px;
 
 }
 .mission h3 {
 	text-align: center;
-		color: #F55505;
+		color: #FEFFFE;
+		padding-bottom: 20px;
 
 }
