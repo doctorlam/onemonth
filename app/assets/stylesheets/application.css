@@ -461,6 +461,7 @@ span.number  {
 	color: #C5C7C5;
 	background-color: #404040;
 	min-height: 500px;
+	text-align:center;
 
 
 }
@@ -479,5 +480,6 @@ span.number  {
 	text-align: center;
 		color: #C5C7C5;
 		padding-bottom: 20px;
+
 
 }
