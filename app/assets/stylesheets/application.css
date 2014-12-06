@@ -15,6 +15,10 @@
  */
 
  /* Global Styles */
+.navbar {
+	background-image: url('light_grey.png');
+}
+
 p, h1, h2, h3, h4 {
 	font-family: raleway;
 }
@@ -324,9 +328,8 @@ input[type="password"] {
 .what-is-bold h2 {
 	font-family: cabin sketch;
 	color: #333;
-	border-top: 1px dotted #333;
 	border-bottom: 1px dotted #333;
-	padding: 15px;
+	padding-bottom:15px;
 }
 
 .what-is-left {
@@ -346,7 +349,6 @@ input[type="password"] {
 .three-columns h2 {
 	font-family: cabin sketch;
 	color: #333;
-	border-top: 1px dotted #333;
 	border-bottom: 1px dotted #333;
 	padding: 15px;
 
@@ -386,7 +388,7 @@ span.number  {
     width: 100%;
 	min-height: 200px;
 	font-family: open sans;
-	background-color: #383634;
+	background-color: #404040;
 }
 .panel-footer p {
 	color: #B4B7B8;
@@ -452,7 +454,7 @@ span.number  {
 	float:left;
 }
 .mission .row {
-	color: #FEFFFE;
+	color: #C5C7C5;
 	background-color: #404040;
 	min-height: 500px;
 
@@ -464,15 +466,14 @@ span.number  {
 
 .mission h2 {
 	font-family: cabin sketch;
-	color: #FEFFFE;
-	border-top: 1px dotted #95A5A6 ;
-	border-bottom: 1px dotted #95A5A6 ;
+	color: #C5C7C5;
+	border-bottom: 1px dotted #C5C7C5 ;
 	padding: 15px;
 
 }
 .mission h3 {
 	text-align: center;
-		color: #FEFFFE;
+		color: #C5C7C5;
 		padding-bottom: 20px;
 
 }
