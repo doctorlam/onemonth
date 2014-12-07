@@ -34,6 +34,7 @@ p {
 }
 .table-responsive {
     overflow-x: auto;
+    margin-top: 20px;
 }
 .home {
 	background-color:#383634 ;
@@ -480,6 +481,17 @@ span.number  {
 	text-align: center;
 		color: #C5C7C5;
 		padding-bottom: 20px;
-
-
+}
+.number {
+	 background-color: white;
+    background-image: none;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555555;
+    font-size: 14px;
+    height: 34px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
 }

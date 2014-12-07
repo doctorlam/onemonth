@@ -16,6 +16,6 @@ end
 	end
 
 	def options_for_subject
-		['Editing', 'General Design','Grant/proposal writing', 'Manuals or Procedures', 'Marketing Materials', 'Research Report', 'Web Design/Development','Other']
+		['Editing', 'General Design','Grant/proposal writing', 'Manuals or Procedures', 'Marketing Materials', 'Research Study and Report', 'Web Design/Development','Other']
 	end
 end
