@@ -450,8 +450,9 @@ span.number  {
 
 }
 .check-box-label {
-	width: 95%;
-	padding-bottom: 20px;
+	width: 80%;
+	padding-bottom: 10px;
+	padding-left: 10px;
 }
 .check-box {
 
