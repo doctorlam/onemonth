@@ -18,6 +18,7 @@ gem 'listjs-rails'
 gem 'jquery-smooth-scroll-rails', '~> 0.0.5'
 group :development, :test do 
 	gem 'sqlite3'
+	gem 'foreman'
 end
 
 group :production do
