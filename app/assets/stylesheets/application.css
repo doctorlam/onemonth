@@ -220,8 +220,12 @@ input[type="password"] {
 /* Landing Page Styles */
 
 .home-content {
-	background-color: #6C9396;
 	margin-top: -25px;
+	background-color: #6C9396;
+
+}
+.hero-image {
+	   
 }
 .top-text {
 	margin-top: 70px;
@@ -246,6 +250,7 @@ input[type="password"] {
 .top-content p {
 	margin-left: 85px;
 }
+
 .home-content h1 {
 	font-family: open sans condensed;
 	font-size: 38px;
