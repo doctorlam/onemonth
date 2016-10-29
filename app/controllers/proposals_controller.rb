@@ -24,6 +24,7 @@ def index
 
   def create
     @proposal = current_user.proposals.build(proposal_params)
+    @proposal.user_id = current_user.id
     @proposal.save
     respond_with(@proposal) 
    

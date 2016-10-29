@@ -1,8 +1,15 @@
 Rails.application.routes.draw do
-  resources :proposals
+  resources :claims
+
+  resources :proposals do
+  resources :claims, only: [:new, :create]
+end  
   devise_for :users
   root "pages#home"
   get "dashboard" => "pages#dashboard"
+  get 'client' => "journeys#client"
+  get 'client_history' => "claims#client_history"
+  get 'instructor_history' => "claims#instructor_history"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

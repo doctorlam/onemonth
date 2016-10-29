@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141204134552) do
+ActiveRecord::Schema.define(version: 20161029214120) do
+
+  create_table "claims", force: true do |t|
+    t.text     "explanation"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "proposal_id"
+    t.integer  "user_id"
+    t.integer  "client_id"
+    t.integer  "instructor_id"
+  end
 
   create_table "jointable_proposals_subjects", force: true do |t|
     t.string "subjects"
@@ -52,6 +62,7 @@ ActiveRecord::Schema.define(version: 20141204134552) do
     t.integer  "client_phone2"
     t.integer  "client_phone3"
     t.boolean  "agreement"
+    t.integer  "claim_id"
   end
 
   add_index "proposals", ["user_id"], name: "index_proposals_on_user_id"
