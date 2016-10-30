@@ -7,7 +7,6 @@ class ProposalsController < ApplicationController
   end
 
 def index
-
     @proposals = Proposal.all
     respond_with(@proposals)
 

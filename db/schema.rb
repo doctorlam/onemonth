@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161030001706) do
+ActiveRecord::Schema.define(version: 20161030013319) do
 
   create_table "claims", force: true do |t|
     t.text     "explanation"
@@ -89,6 +89,7 @@ ActiveRecord::Schema.define(version: 20161030001706) do
     t.datetime "updated_at"
     t.boolean  "admin"
     t.string   "role"
+    t.string   "name"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

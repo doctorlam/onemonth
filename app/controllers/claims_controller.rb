@@ -4,7 +4,7 @@ class ClaimsController < ApplicationController
 
   def creator_history
     @claims = Claim.all.where(creator: current_user).order("created_at DESC")
-        @proposals = Proposal.all
+    @proposals = Proposal.all
 
   end
   
@@ -61,6 +61,6 @@ class ClaimsController < ApplicationController
     end
 
     def claim_params
-      params.require(:claim).permit(:explanation, :proposal_id, :user_id)
+      params.require(:claim).permit(:explanation, :proposal_id, :user_id, :first_name)
     end
 end
