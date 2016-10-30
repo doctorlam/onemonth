@@ -31,12 +31,18 @@
       <td class ="title">Project Description:</td>
       <td><%= simple_format(@proposal.abstract) %></td>
   </tr>
+
+
 <% if current_user.admin? or current_user.role?('instructor') %>
   <tr>
       <td class="title">Relevance of project to course (completed by instructor):</td>
       <td><%= simple_format(@proposal.relevance) %></td>
+          
   <% end %>
  </table>
+   <div class="center">
+      <%= link_to "Claim This Proposal!", new_proposal_claim_path(@proposal), class: "btn btn-primary" %>
+    </div>
  <% if current_user.admin? %>
   <h2>Client Contact Information</h2>
   <table class= "table table-hover table-striped">
@@ -59,6 +65,7 @@
       <td class ="title">Client agreeement checked?</td>
       <td><%= @proposal.agreement %></td>
     </tr>
+
 <% end %>
      
  </table>
@@ -87,9 +94,7 @@
 </table>
 </div>
 </div>
-<div class="center">
-      <%= link_to "Claim Proposal!", new_proposal_claim_path(@proposal), class: "btn btn-primary" %>
-    </div>
+
 <div class="show">
 <div class ="col-md-4">
 

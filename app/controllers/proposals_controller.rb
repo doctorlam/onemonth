@@ -2,6 +2,10 @@ class ProposalsController < ApplicationController
     load_and_authorize_resource :except => [:create]
     respond_to :html, :xml, :json
    
+ def client
+    @proposals = Proposal.where(user: current_user).order("created_at DESC")
+  end
+
 def index
 
     @proposals = Proposal.all
@@ -15,7 +19,7 @@ def index
   end
 
   def new
-    
+    @proposal = Proposal.new
   end
 
   def edit
@@ -23,7 +27,7 @@ def index
   end
 
   def create
-    @proposal = current_user.proposals.build(proposal_params)
+    @proposal = Proposal.new(proposal_params)
     @proposal.user_id = current_user.id
     @proposal.save
     respond_with(@proposal) 
@@ -50,7 +54,7 @@ def index
    
     def proposal_params
       
-      params.require(:proposal).permit(:agreement, :client_name, :client_email, :client_phone1, :client_phone2, :client_phone3, :feedback, :role, :relevance, :course, :subject, :course_id, :semester_id, :time, :title, :abstract, :first_name, :last_name, :organization, :status, :subject)
+      params.require(:proposal).permit(:claim, :user_id, :agreement, :client_name, :client_email, :client_phone1, :client_phone2, :client_phone3, :feedback, :role, :relevance, :course, :subject, :course_id, :semester_id, :time, :title, :abstract, :first_name, :last_name, :organization, :status, :subject)
 
     end
  

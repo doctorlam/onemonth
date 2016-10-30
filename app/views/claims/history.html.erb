@@ -1,0 +1,27 @@
+<div class="center">
+  <h2>Who's Claimed your Proposal?</h2>
+</div>
+
+
+<div class="table-responsive">
+<table class="table table-bordered">
+  <tr>
+    <th class="center">Email</th>
+    <th class="center">Date Claimed</th>
+    <th class="center">Notes</th>
+  </tr>
+
+  <% @claims.each do |claim| %>
+    <tr>
+     
+      <td class="center"><%= claim.client.email %></td>
+      <td class="center"><%= claim.created_at.strftime("%B %-d, %Y") %></td>
+      <td class="center"><%= claim.explanation %>
+    </tr>
+  <% end %>
+</table>
+</div>
+<br>
+<% if user_signed_in? %>
+  <%= link_to 'New Proposal', new_proposal_path, class: "btn btn-primary" %>
+<% end %>
