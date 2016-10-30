@@ -3,8 +3,8 @@ class User < ActiveRecord::Base
    devise :database_authenticatable, :registerable,
           :recoverable, :rememberable, :trackable, :validatable
  	has_many :proposals
- 	has_many :instructor_claims, class_name: "Claim", foreign_key: "client_id"
-  	has_many :client_claims, class_name: "Claim", foreign_key: "instructor_id"
+ 	has_many :creations, class_name: "Claim", foreign_key: "creator_id"
+  	has_many :proposal_claims, class_name: "Claim", foreign_key: "claimer_id"
  	belongs_to :admin
  	has_many :roles
  	 def role?(base_role)

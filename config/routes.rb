@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 end  
   root "pages#home"
   get "dashboard" => "pages#dashboard"
-  get 'client' => "journeys#client"
-  get 'history' => "claims#history"
+  get 'creator_history' => "claims#creator_history"
+  get 'claimer_history' => "claims#claimer_history"
 
 end

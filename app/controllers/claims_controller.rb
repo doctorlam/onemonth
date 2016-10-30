@@ -2,12 +2,16 @@ class ClaimsController < ApplicationController
   before_action :set_claim, only: [:show, :edit, :update, :destroy]
   respond_to :html
 
-  def history
-    @claims = Claim.all.where(client: current_user).order("created_at DESC")
-    @claims = Claim.all.where(instructor: current_user).order("created_at DESC")
+  def creator_history
+    @claims = Claim.all.where(creator: current_user).order("created_at DESC")
+        @proposals = Proposal.all
+
+  end
+  
+  def claimer_history
+     @claims = Claim.all.where(claimer: current_user).order("created_at DESC")
     @proposals = Proposal.all
   end
-
 
   def index
     @claims = Claim.all
@@ -28,13 +32,14 @@ class ClaimsController < ApplicationController
   end
 
   def create
-    @claim = Claim.new(claim_params)
+     @claim = Claim.new(claim_params)
+ 
     @proposal = Proposal.find(params[:proposal_id])
-    @client = @proposal.user
+    @creator = @proposal.user
 
     @claim.proposal_id = @proposal.id
-    @claim.instructor_id = current_user.id
-    @claim.client_id = @client.id
+    @claim.claimer_id = current_user.id
+    @claim.creator_id = @creator.id
 
     @claim.save
     respond_with(@proposal)

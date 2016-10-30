@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161029231219) do
+ActiveRecord::Schema.define(version: 20161030001706) do
 
   create_table "claims", force: true do |t|
     t.text     "explanation"
@@ -21,6 +21,8 @@ ActiveRecord::Schema.define(version: 20161029231219) do
     t.integer  "user_id"
     t.integer  "client_id"
     t.integer  "instructor_id"
+    t.integer  "creator_id"
+    t.integer  "claimer_id"
   end
 
   create_table "jointable_proposals_subjects", force: true do |t|

@@ -2,7 +2,7 @@ class ProposalsController < ApplicationController
     load_and_authorize_resource :except => [:create]
     respond_to :html, :xml, :json
    
- def client
+ def creator
     @proposals = Proposal.where(user: current_user).order("created_at DESC")
   end
 
