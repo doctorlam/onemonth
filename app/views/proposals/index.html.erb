@@ -105,11 +105,8 @@
         <td class="category"><%= proposal.subject %></td>
         <td class="semester"><%= proposal.semester_id %></td>
         <td class="length"><%= proposal.time %></td>
-        <td class="email"><%= proposal.user.email if proposal.user %></td>
-        <% for claim in proposal.claims %>
-      
-          <td><%= claim.proposal.user.name %></td>
-          <% end %>
+        <td class="email"><%= proposal.user.email if proposal.user %></td>     
+        <td class="status"><%= proposal.status %></td>
         <td class="course"><%= proposal.course %></td>
         <td><%= link_to 'View', proposal %></td>
         <% if can? :update, proposal %>

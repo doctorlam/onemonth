@@ -40,7 +40,6 @@ class ClaimsController < ApplicationController
     @claim.proposal_id = @proposal.id
     @claim.claimer_id = current_user.id
     @claim.creator_id = @creator.id
-
     @claim.save
     respond_with(@proposal)
   end

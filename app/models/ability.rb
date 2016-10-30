@@ -5,6 +5,7 @@ class Ability
     user ||=User.new
   if user.nil?
     can :read, Proposal
+
   elsif user.admin?
     can :manage, Proposal
   else

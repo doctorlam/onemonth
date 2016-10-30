@@ -8,11 +8,12 @@ class User < ActiveRecord::Base
  	belongs_to :admin
  	has_many :roles
  	 def role?(base_role)
-  ROLES.index(base_role.to_s) <= ROLES.index(role)
-end
+  		ROLES.index(base_role.to_s) <= ROLES.index(role)
+	end
+ 	
  	def has_role?(*role_names)
-    self.roles.where(:name => role_names).present?
-  end
+    	self.roles.where(:name => role_names).present?
+  	end
 
  	ROLES = %w[client instructor]
  
