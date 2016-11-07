@@ -83,15 +83,16 @@
   <thead>
     <tr>
       <th class="sort" data-sort="date">Date Created</th>
-      <th class="sort" data-sort="name">Name</th>
-      <th class="sort" data-sort="organization">Organization</th>
-      <th class="sort" data-sort="title">Title</th>
+      <th class="sort" data-sort="name">Proposal Creator</th>
+      <th class="sort" data-sort="organization">Affiliation</th>
+      <th class="sort" data-sort="title">Proposal Title</th>
       <th class="sort" data-sort="category">Category</th>
       <th class="sort" data-sort="semester">Semester</th>
       <th class="sort" data-sort="length">Project Length</th>
-      <th class="sort" data-sort="email">Email</th>
-      <th class="sort" data-sort="status">Status</th>
       <th class="sort" data-sort="course">Course</th>
+      <th class="sort" data-sort="status">Claim Status</th>
+      <th colspan="3"></th>
+
     </tr>
   </thead>
 
@@ -105,9 +106,15 @@
         <td class="category"><%= proposal.subject %></td>
         <td class="semester"><%= proposal.semester_id %></td>
         <td class="length"><%= proposal.time %></td>
-        <td class="email"><%= proposal.user.email if proposal.user %></td>     
-        <td class="status"><%= proposal.status %></td>
         <td class="course"><%= proposal.course %></td>
+       
+     <td class="status"> 
+     <% for claim in proposal.claims %> 
+        <%= claim.claim_status %>
+      <% end %>
+      </td>
+ 
+
         <td><%= link_to 'View', proposal %></td>
         <% if can? :update, proposal %>
           <td><%= link_to 'Edit', edit_proposal_path(proposal) %></td>

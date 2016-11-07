@@ -13,12 +13,22 @@
  *= require_tree .
  *= require_self
  */
+/*custom font*/
 
- /* Global Styles */
-.navbar {
-	background-image: url('light_grey.png');
+
+
+body {
+	font-family: montserrat, arial, verdana;
+}
+.target {
+	min-height: 400px;
 }
 
+ /* Global Styles */
+header, .navbar {
+	background-image: url('light_grey.png');
+
+}
 
 h1, h2, h3, h4 {
 	font-family: raleway;
@@ -58,12 +68,9 @@ p {
 }
 
 .navbar a {
-	border-right: 1px dotted #BFBFBF;
 }
 
-.navbar-toggle {
-	margin-top: 25px;
-}
+
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus  {
 	background-color: #BFBFBF;
 	border: none;

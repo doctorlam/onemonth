@@ -81,7 +81,25 @@
 <table class="table table-hover">
   <tr>
     <td class="title">Status:</td>
-    <td><%= @proposal.status %></td>
+      <td><% for @claim in @proposal.claims %>
+          <%= @claim.claim_status %>
+      <% end %></td>
+
+  </tr>
+  
+  <tr>
+    <td class="title">Claimer's Email:</td>
+      <td><% for @claim in @proposal.claims %>
+          <%= @claim.claimer.email %>
+      <% end %></td>
+
+  </tr>
+  <tr>
+    <td class="title">Message from claimer:</td>
+      <td><% for @claim in @proposal.claims %>
+          <%= @claim.explanation %>
+      <% end %></td>
+
   </tr>
   <tr>
     <td class="title">Course Match:</td>

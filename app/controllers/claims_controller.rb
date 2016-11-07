@@ -4,8 +4,7 @@ class ClaimsController < ApplicationController
 
   def creator_history
     @claims = Claim.all.where(creator: current_user).order("created_at DESC")
-    @proposals = Proposal.all
-
+    @proposals = current_user.proposals
   end
   
   def claimer_history
@@ -40,13 +39,29 @@ class ClaimsController < ApplicationController
     @claim.proposal_id = @proposal.id
     @claim.claimer_id = current_user.id
     @claim.creator_id = @creator.id
-    @claim.save
-    respond_with(@proposal)
-  end
 
-  def update
-    @claim.update(claim_params)
-    respond_with(@claim)
+    respond_to do |format|
+      if @claim.save
+        format.html { redirect_to claimer_history_url, notice: 'Claim was successfully created.' }
+        format.json { render :show, status: :created, location: @claim }
+      else
+        format.html { render :new }
+        format.json { render json: @claim.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+  
+
+ def update
+    respond_to do |format|
+      if @claim.update(claim_params)
+        format.html { redirect_to claimer_history_url, notice: 'Claim was successfully updated.' }
+        format.json { render :show, status: :ok, location: @claim }
+      else
+        format.html { render :edit }
+        format.json { render json: @claim.errors, status: :unprocessable_entity }
+      end
+    end
   end
 
   def destroy
@@ -60,6 +75,6 @@ class ClaimsController < ApplicationController
     end
 
     def claim_params
-      params.require(:claim).permit(:explanation, :proposal_id, :user_id, :first_name)
+      params.require(:claim).permit(:claim_status, :explanation, :proposal_id, :user_id, :first_name)
     end
 end
