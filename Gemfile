@@ -16,6 +16,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'filterrific'
 gem 'listjs-rails'
 gem 'jquery-smooth-scroll-rails'
+	gem 'pg'
+
 group :production do 
 	gem 'pg'
 	gem 'rails_12factor'
