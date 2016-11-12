@@ -94,6 +94,13 @@
       <% end %></td>
 
   </tr>
+   <tr>
+    <td class="title">Claimer's Name:</td>
+      <td><% for @claim in @proposal.claims %>
+          <%= @claim.claimer.name %>
+      <% end %></td>
+
+  </tr>
   <tr>
     <td class="title">Message from claimer:</td>
       <td><% for @claim in @proposal.claims %>
@@ -126,6 +133,10 @@
       <%= f.label :course, "Match proposal to course:" %><br>
       <%= f.select :course, options_for_course, :prompt => 'Select One' %>
   </div>
+<div class="form-group">
+    <%= f.label :status, "Status" %><br>
+    <%= f.select :status, options_for_status, :selected => 'Pending' %>
+</div>
   <div class="form-group">
     <%= f.label :feedback, "Provide feedback for your decision (optional):" %><br>
     <%= f.text_area :feedback, :rows => 10, class: "form-control" %>
