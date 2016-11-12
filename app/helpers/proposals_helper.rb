@@ -12,7 +12,7 @@ end
 	end
 
 	def options_for_semester_id
-		['Spring 2015', 'Summer 2015', 'Fall 2016', 'Spring 2016', 'Summer 2016']
+		['Spring 2016', 'Summer 106', 'Fall 2017', 'Spring 2017', 'Summer 2017']
 	end
 
 	def options_for_subject
