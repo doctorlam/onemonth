@@ -11,6 +11,8 @@
     <th class="center">Email</th>
     <th class="center">Note to You</th>
     <th class="center">Date Claimed</th>
+    <th class="center">Course Match</th>
+
   </tr>
 
   <% @claims.each do |claim| %>
@@ -20,6 +22,8 @@
       <td class="center"><%= claim.claimer.email %></td>
       <td class="center"><%= claim.explanation %></td>
       <td class="center"><%= claim.created_at.strftime("%B %-d, %Y") %></td>
+      <td class="center"><%= claim.course %><%= claim.proposal.course %></td>
+
     </tr>
   <% end %>
 </table>

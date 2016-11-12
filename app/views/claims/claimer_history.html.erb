@@ -16,8 +16,8 @@
     <tr>
       <td class="center"><%= claim.creator.email %></td>
       <td class="center"><%= claim.created_at.strftime("%B %-d, %Y") %></td>
-      <td class="center"><%= claim.explanation %>
-      <td class="center"><%= claim.course %>
+      <td class="center"><%= claim.explanation %></td>
+      <td class="center"><%= claim.course %><%= claim.proposal.course %></td>
     </tr>
   <% end %>
 </table>
