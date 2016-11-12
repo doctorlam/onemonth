@@ -11,7 +11,7 @@ gem "bootstrap-sass"
 gem 'sdoc'      
 gem 'devise'
 gem 'paperclip'
-gem 'cancancan', '~> 1.10'
+gem 'cancan'
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'filterrific'
 gem 'listjs-rails'
