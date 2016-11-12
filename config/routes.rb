@@ -7,5 +7,5 @@ end
   get "dashboard" => "pages#dashboard"
   get 'creator_history' => "claims#creator_history"
   get 'claimer_history' => "claims#claimer_history"
-
+  get 'archived' => "pages#archived"
 end

@@ -8,7 +8,7 @@ class ProposalsController < ApplicationController
   end
 
 def index
-    @proposals = Proposal.all
+    @proposals = Proposal.where(status: 'Pending').order("created_at DESC")
     respond_with(@proposals)
 
   end
