@@ -18,7 +18,13 @@
     <%= f.label :explanation, "Write a short message and explain why you're interested in the project" %><br>
     <%= f.text_area :explanation, class: "form-control" %>
   </div>
+<% if current_user.admin? or current_user.role?("instructor") %>
 
+  <div class="form-group">
+      <%= f.label :course, "What course is this for?" %><br>
+      <%= f.select :course, options_for_course, :prompt => 'Select One' %>
+  </div>
+<% end %>
   <div class="actions">
     <%= f.submit %>
   </div>
