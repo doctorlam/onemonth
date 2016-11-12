@@ -81,9 +81,7 @@
 <table class="table table-hover">
   <tr>
     <td class="title">Status:</td>
-      <td><% for @claim in @proposal.claims %>
-          <%= @claim.claim_status %>
-      <% end %></td>
+    <td><%= @proposal.status %>
 
   </tr>
   
