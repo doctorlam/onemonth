@@ -16,18 +16,33 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'filterrific'
 gem 'listjs-rails'
 gem 'jquery-smooth-scroll-rails', '~> 0.0.5'
-group :development, :test do 
-	gem 'sqlite3'
-	gem 'foreman'
-end
-
-group :production do
+group :production do 
 	gem 'pg'
 	gem 'rails_12factor'
-end
-group :doc do
+end 
 
-	gem 'spring'      
+
+# Use ActiveModel has_secure_password
+# gem 'bcrypt', '~> 3.1.7'
+
+# Use Unicorn as the app server
+# gem 'unicorn'
+
+# Use Capistrano for deployment
+# gem 'capistrano-rails', group: :development
+
+group :development, :test do
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'byebug'
+  gem 'sqlite3'
+
 end
+
+group :development do
+  gem 'web-console', '~> 2.0'
+
+  gem 'spring'
+end
+
 
 
