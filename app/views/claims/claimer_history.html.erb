@@ -8,6 +8,8 @@
     <th class="center">Contact Info</th>
     <th class="center">Date Claimed</th>
     <th class="center">Note to Creator</th>
+    <th class="center">Course</th>
+
   </tr>
 
   <% @claims.each do |claim| %>
@@ -15,6 +17,7 @@
       <td class="center"><%= claim.creator.email %></td>
       <td class="center"><%= claim.created_at.strftime("%B %-d, %Y") %></td>
       <td class="center"><%= claim.explanation %>
+      <td class="center"><%= claim.course %>
     </tr>
   <% end %>
 </table>

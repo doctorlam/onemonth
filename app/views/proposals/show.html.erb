@@ -108,7 +108,10 @@
   </tr>
   <tr>
     <td class="title">Course Match:</td>
-    <td><%= @proposal.course %></td>
+    <td><%= @proposal.course %>
+    <% for @claim in @proposal.claims %>
+          <%= @claim.course %></td>
+      <% end %>
   </tr>
   <tr>
     <td class="title">Feedback from undergraduate director:</td>

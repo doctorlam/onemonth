@@ -75,6 +75,6 @@ class ClaimsController < ApplicationController
     end
 
     def claim_params
-      params.require(:claim).permit(:claim_status, :explanation, :proposal_id, :user_id, :first_name)
+      params.require(:claim).permit(:claim_status, :explanation, :proposal_id, :user_id, :first_name, :course)
     end
 end

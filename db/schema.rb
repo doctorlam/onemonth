@@ -11,9 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161030173920) do
+ActiveRecord::Schema.define(version: 20161112200806) do
 
-  create_table "claims", force: true do |t|
+  create_table "claims", force: :cascade do |t|
     t.text     "explanation"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -23,44 +23,45 @@ ActiveRecord::Schema.define(version: 20161030173920) do
     t.integer  "instructor_id"
     t.integer  "creator_id"
     t.integer  "claimer_id"
-    t.string   "claim_status"
+    t.string   "claim_status",  limit: 255
+    t.string   "course"
   end
 
-  create_table "jointable_proposals_subjects", force: true do |t|
-    t.string "subjects"
-    t.string "proposals"
+  create_table "jointable_proposals_subjects", force: :cascade do |t|
+    t.string "subjects",  limit: 255
+    t.string "proposals", limit: 255
   end
 
-  create_table "proposals", force: true do |t|
-    t.string   "title"
+  create_table "proposals", force: :cascade do |t|
+    t.string   "title",                 limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
-    t.string   "image_file_name"
-    t.string   "image_content_type"
+    t.string   "image_file_name",       limit: 255
+    t.string   "image_content_type",    limit: 255
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
-    t.string   "document_file_name"
-    t.string   "document_content_type"
+    t.string   "document_file_name",    limit: 255
+    t.string   "document_content_type", limit: 255
     t.integer  "document_file_size"
     t.datetime "document_updated_at"
-    t.string   "semester_id"
+    t.string   "semester_id",           limit: 255
     t.text     "abstract"
-    t.string   "course_id"
+    t.string   "course_id",             limit: 255
     t.boolean  "course_type"
     t.text     "deliverables"
-    t.string   "subject"
+    t.string   "subject",               limit: 255
     t.text     "narrative"
-    t.string   "first_name"
-    t.string   "last_name"
-    t.string   "organization"
-    t.string   "time"
-    t.string   "status"
-    t.string   "course"
+    t.string   "first_name",            limit: 255
+    t.string   "last_name",             limit: 255
+    t.string   "organization",          limit: 255
+    t.string   "time",                  limit: 255
+    t.string   "status",                limit: 255
+    t.string   "course",                limit: 255
     t.text     "relevance"
     t.text     "feedback"
-    t.string   "client_name"
-    t.string   "client_email"
+    t.string   "client_name",           limit: 255
+    t.string   "client_email",          limit: 255
     t.integer  "client_phone1"
     t.integer  "client_phone2"
     t.integer  "client_phone3"
@@ -70,27 +71,27 @@ ActiveRecord::Schema.define(version: 20161030173920) do
 
   add_index "proposals", ["user_id"], name: "index_proposals_on_user_id"
 
-  create_table "subjects", force: true do |t|
+  create_table "subjects", force: :cascade do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "users", force: true do |t|
-    t.string   "email",                  default: "", null: false
-    t.string   "encrypted_password",     default: "", null: false
-    t.string   "reset_password_token"
+  create_table "users", force: :cascade do |t|
+    t.string   "email",                  limit: 255, default: "", null: false
+    t.string   "encrypted_password",     limit: 255, default: "", null: false
+    t.string   "reset_password_token",   limit: 255
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          default: 0,  null: false
+    t.integer  "sign_in_count",                      default: 0,  null: false
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
-    t.string   "current_sign_in_ip"
-    t.string   "last_sign_in_ip"
+    t.string   "current_sign_in_ip",     limit: 255
+    t.string   "last_sign_in_ip",        limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "admin"
-    t.string   "role"
-    t.string   "name"
+    t.string   "role",                   limit: 255
+    t.string   "name",                   limit: 255
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
