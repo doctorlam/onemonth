@@ -1,11 +1,7 @@
-<header>
-
-<div class="brand">
-      <%=link_to "{ BOLD } Projects Initiative", root_path %><br>
-       <p>UNT's Department of Technical Communication</p>
-</div>
+<div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
 <nav class="navbar navbar-default" role="navigation">
+
 
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -14,15 +10,20 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+      <div class="brand">
+      <%=link_to "{ BOLD } Projects", root_path %><br>
+       <p>UNT's Department of Technical Communication</p>
+</div>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
     <% if user_signed_in? %>
 
         <ul class="nav navbar-nav navbar-left">
-             <li><%= link_to "View All Proposals", proposals_path %></li>
-              <li><%= link_to "Create New Project", new_proposal_path %></li>
+             <li><%= link_to "All Proposals", proposals_path %></li>
+              <li><%= link_to "New Proposal", new_proposal_path %></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
 
@@ -30,7 +31,8 @@
           <% if current_user.admin? %>
             <li><%= link_to "Manage Proposals", proposals_path %></li> 
             <li><%= link_to "Proposals I've Written", creator_history_path %></li>
-            <li><%= link_to "Create New Project", new_proposal_path %></li>
+            <li><%= link_to "Proposals I've Claimed", claimer_history_path %></li>
+            <li><%= link_to "New Proposal", new_proposal_path %></li>
             <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
           </ul>
 
@@ -49,8 +51,9 @@
           <li><%= link_to "Register", new_user_registration_path %></li>
           <li><%= link_to "Sign in", new_user_session_path %></li>
       </ul>
-              <% end %>
+    <% end %>
 
     </div><!-- /.navbar-collapse -->
 </div>
-</header>
+</nav>
+</div>

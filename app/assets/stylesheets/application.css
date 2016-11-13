@@ -16,7 +16,18 @@
 /*custom font*/
 
 
-
+html, body {
+  height: 100%;
+}
+.sticky {
+	min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -200px; 
+}
+.sticky:after {
+  content: "";
+  display: block;
+}
 body {
 	font-family: montserrat, arial, verdana;
 }
@@ -43,6 +54,7 @@ p {
 .container-fluid {
 	padding:0;
 }
+
 .table-responsive {
     overflow-x: auto;
     margin-top: 20px;
@@ -228,7 +240,13 @@ input[type="password"] {
 
 .home-content {
 	margin-top: -25px;
-	background-color: #6C9396;
+	background: url('hero.jpg'); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	background-repeat:no-repeat;
+	background-position: center center;
 
 }
 .hero-image {
@@ -271,7 +289,7 @@ input[type="password"] {
 	font-family: cabin sketch;
 	font-size: 26px;
 	text-transform: uppercase;
-	color: #D8EBED;
+	color: white;
 }
 
 .buttons {
@@ -318,7 +336,7 @@ input[type="password"] {
 }
 
 .home-content p {	
-	color: #D8EBED;
+	color: white;
 
 }
 .home-bottom {
@@ -401,10 +419,15 @@ span.number  {
     font-family: cabin sketch;
 }
 /* Footer Styles */
+
+.panel-footer, .sticky:after {
+	
+	height: 200px;
+
+}
 .panel-footer {
-    clear:both;
+	 clear:both;
     width: 100%;
-	min-height: 200px;
 	font-family: open sans;
 	background-color: #404040;
 }

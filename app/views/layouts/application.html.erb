@@ -16,17 +16,16 @@
 </head>
 <body>
 
-  <div class="container-fluid">
-  <%= render "layouts/header" %>
-
-	   <% flash.each do |name, msg| %>
+    <%= render "layouts/header" %>
+	 <% flash.each do |name, msg| %>
 		<%= content_tag(:div, msg, class: "alert alert-info") %>
 
 	<% end %>
-  </p>
-  <div class ="col-lg-12">
-	 <%= yield %>
-</div>
+  <div class="sticky">
+    <div class ="col-lg-12">
+  	   <%= yield %>
+    </div>
+</div><!--sticky-->
  <footer class ="panel-footer">
     <div class ="col-md-8">
      <p>Designed and built by Chris Lam in Ruby on Rails.</p>
@@ -36,7 +35,6 @@
      
     </div>
   </footer>
-</div>
 <script src="http://listjs.com/no-cdn/list.js"></script>
 <script type ="text/javascript">
     var options = {
