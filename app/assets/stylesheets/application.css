@@ -299,6 +299,9 @@ input[type="password"] {
 .buttons .btn .btn-md .btn-primary {
 	background-color: white;
 }
+a.btn-default:visited, a.btn-primary:visited {
+	color: #D8EBED !important;
+}
 .home-button-left {
 	background-color: white;
 	text-align: center;
