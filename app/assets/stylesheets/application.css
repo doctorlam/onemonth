@@ -16,18 +16,25 @@
 /*custom font*/
 
 
-html, body {
-  height: 100% !important;
+html {
+    position: relative;
+    min-height: 100%;
 }
-.sticky {
-	min-height: 100% !important;
-  /* equal to footer height */
-  margin-bottom: -200px !important; 
+body {
+    margin: 0 0 200px; /* bottom = footer height */
 }
-.sticky:after {
-  content: "";
-  display: block;
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 200px;
+    width: 100%;
 }
+.content {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
 body {
 	font-family: montserrat, arial, verdana;
 }
@@ -441,7 +448,7 @@ span.number  {
 }
 /* Footer Styles */
 
-.panel-footer, .sticky:after {
+.panel-footer {
 	
 	min-height: 200px;
 

@@ -27,8 +27,7 @@
       <th class="sort" data-sort="category">Category</th>
       <th class="sort" data-sort="semester">Semester</th>
       <th class="sort" data-sort="course">Course</th>
-      <th class="sort" data-sort="status">Claimed?</th>
-      <th class="sort" data-sort="status">Proposal Status</th>
+      <th class="sort" data-sort="status">Claim Status?</th>
 
       <th colspan="3"></th>
 
@@ -48,12 +47,11 @@
           <%= claim.course %>
       <% end %></td>
        
-     <td class="status"> 
+     <td class="status" > 
      <% for claim in proposal.claims %> 
-        <%= claim.claim_status %> by <%= claim.claimer.name %>
+        <p style="background:#c0392b; padding:5px; text-align:center; border-radius:5px; color: white"><%= claim.claim_status %> by "<%= claim.claimer.name %>"</p>
       <% end %>
       </td>
-      <td class="status"><%= proposal.status %></td>
 
  
 
@@ -70,10 +68,11 @@
     <% end %>
   </tbody>
 </table>
-  <%= link_to "View Old Projects", archived_path, class: 'btn btn-primary' %>
 
 </div>
 </div> 
+  <%= link_to "View Old Projects", archived_path, class: 'btn btn-primary' %>
+
 
 <br>
 

@@ -11,7 +11,6 @@
     </div>
   <% end %>
 <% if current_user.admin? or current_user.role?("instructor") %>
-<h1>New proposal</h1>
 
 <div class="step1 target">
 <p>Step 1 of 3</p>
@@ -96,10 +95,9 @@
   <% else %>
 
   <!--CLIENT FORM STARTS HERE!!!!!!!!!-->
-<h1>New proposal</h1>
 
 <div class="step1 target">
-<p>Step 1 of 3</p>
+<h3>Step 1 of 3</h3>
 
    <h3 class="form">Tell us about yourself</h3> 
   <div class ="form-group">
@@ -126,7 +124,7 @@
    </div>
 </div>
 <div class="step2 target" style="display: none;">
- <p>Step 2 of 3</p>
+ <h3>Step 2 of 3</h3>
 
  <h3 class="form">Tells us about your organization</h3> 
 <div class ="form-group">
@@ -144,7 +142,7 @@
      <a class="Smallbutton btn btn-primary" id="showStep3" data-target=".step3">Next</a></div>
 </div>
 <div class="step3 target" style="display: none;">
-<p>Step 3 of 3</p>
+<h3>Step 3 of 3</h3>
 
   <h3 class="form">Tell us about the project idea</h3>
 <div class="form-group">

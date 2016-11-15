@@ -14,8 +14,8 @@
   <%= f.hidden_field :claim_status, :value => "Claimed" %>
 
   <div class="form-group">
-    <%= f.label :explanation, "Write a short message and explain why you're interested in the project" %><br>
-    <%= f.text_area :explanation, class: "form-control" %>
+    <%= f.label :explanation, "Write a short message and explain why you're interested in the project. The creator of this project will be notified and will contact you to work out details." %><br>
+    <%= f.text_area :explanation, class: "form-control", cols: "30", rows: "10" %>
   </div>
 <% if current_user.role?("instructor") %>
   <div class="form-group">
