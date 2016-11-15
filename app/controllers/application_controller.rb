@@ -17,6 +17,7 @@ class ApplicationController < ActionController::Base
   	redirect_to root_url
   end 
 end
+
   def update_params
     if current_user.admin?
       params.require(:proposal).permit(:claim, :user_id, :agreement, :client_name, :client_email, :client_phone1, :client_phone2, :client_phone3, :feedback, :role, :relevance, :course, :subject, :course_id, :semester_id, :time, :title, :abstract, :first_name, :last_name, :organization, :status, :subject)

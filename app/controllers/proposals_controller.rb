@@ -1,6 +1,7 @@
 class ProposalsController < ApplicationController
     load_and_authorize_resource :except => [:create]
     respond_to :html, :xml, :json
+  before_filter :authenticate_user!
 
 
  def creator
