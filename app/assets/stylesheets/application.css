@@ -15,7 +15,11 @@
  */
 /*custom font*/
 
-
+.jumbotron {
+	text-align: center;
+	color: white;
+	background: #27ae60;
+}
 html {
     position: relative;
     min-height: 100%;

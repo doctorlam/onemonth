@@ -1,18 +1,15 @@
-<h2 class="proposal"><strong>All Proposals</strong> => A listing of every proposal submitted in the BOLD database.</h2>
-
-  <% if user_signed_in? %>
+<% if user_signed_in? %>
   <%= link_to 'New Proposal', new_proposal_path, class:"btn btn-default" %>
 <% end %>
-<br />
+<br>
+<h2 class="proposal"><strong>All Proposals</strong> => A listing of every proposal submitted in the BOLD database.</h2>
+
+  
+
 <% form_tag proposals_path do %>
 
 <% end %>
 <br />
-
-<% if current_user.admin? %>
-<p>To manage a proposal, click <strong>"View"</strong> for any proposal. From there, you can read the proposal and approve or reject it. You can also assign it to a specific course.</p>
-<% end %>
-
 
 <div id="users">
   
@@ -71,6 +68,7 @@
 
 </div>
 </div> 
+<br>
   <%= link_to "View Old Projects", archived_path, class: 'btn btn-primary' %>
 
 
