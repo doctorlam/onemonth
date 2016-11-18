@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :claims, only: [:new, :create]
 end  
   root "pages#home"
+  get 'home' => "pages#home"
   get "dashboard" => "pages#dashboard"
   get 'creator_history' => "claims#creator_history"
   get 'claimer_history' => "claims#claimer_history"
