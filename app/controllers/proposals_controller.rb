@@ -10,7 +10,6 @@ class ProposalsController < ApplicationController
 
 def index
     @search = Proposal.where(status: 'Pending').order("created_at DESC").search(params[:q])
-
     @proposals = @search.result
   
 end

@@ -1,8 +1,7 @@
 module ProposalsHelper
 	def options_for_status
 		['Pending', 'Approved', 'Rejected', 'Completed']
-	
-end
+	end
 	def options_for_course
 		['TECM 3100: Commerical Pubs','TECM 3200: Web Design', 'TECM 3550: Content Strategy', 'TECM 4180: Advanced Tech Comm','TECM 4190: Editing','TECM 4250: Manuals and Procedures','TECM 4700: Writing in the Sciences', 'TECM 4800: Content Analysis', 'TECM 5195: Graduate Editing', 'TECM 5280: Graduate Design', 'TECM 5290: Technical Training', 'OTHER']
 	end
@@ -16,6 +15,6 @@ end
 	end
 
 	def options_for_subject
-		['Editing', 'General Design','Grant/proposal writing', 'Manuals or Procedures', 'Marketing Materials', 'Research Study and Report', 'Web Design/Development','Other']
+		['Editing', 'Design','Grant/proposal writing', 'Manuals or Procedures', 'Marketing Materials', 'Research Study and Report', 'Web Design/Development', 'UX/Usability', 'Video', 'Other']
 	end
 end
