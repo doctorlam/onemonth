@@ -12,7 +12,22 @@
 <br />
 
 <div id="users">
-  
+<%= search_form_for @search do |f| %>
+    <h2>Filter Proposals</h2>
+      <%= f.select :subject_cont, options_for_subject, :prompt => 'Filter by category', class: "form-control" %>
+      <%= f.select :semester_id_cont, options_for_semester_id, :prompt => 'Filter by semester', class: "form-control" %>
+     
+            <%= link_to(proposals_path) do %>
+        <img class="icon icons8-Clear-Filters" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAACnklEQVRoQ+2a/TUFMRDF76sAHegAHTwlqAAd0IEOUAE60AEdoAIloALOPWfHmc0ms5NN9slzNv9g5W3ml7kz+Zi3AvAC4BDb0R4BnMRMXQH43g6GXytp86BpkGiHhiBlwkdB9gB8NmS4NmUXwEf3IAnyCuAAAH8eNwhDiKcujt9S8Uw6dnxWMEeNeUWSESHWqYkWN+13HtkBcA/gvBGYOwBnAL4A0Mak9LXemILpmVZgNAQ9QeknWxg4rcBkQZAulgH+GiYbIgXC53QlMwXbJYCbDcXMBYDrbiwmHVNO2iZrEWSQcXbYGPxMAnO2ovHGVvOil2dQF48zBkJbigcZAaryfg9ICMPVn2m6RtOxWCRfLwiNZoycdosSYdyBmCBmdmRC4c7iofP85MnJAakJUxXCSr/WzJR6pjrEVJASz8wCUQLCz+Zu/13b8alBkhsjehy9/c8Z39yO57zIu7J73qlPbp7+7DPLSbTEI2K4eZZWdN5+3gnp9VtAJsz04hGP1hZpLdKKH6896jH7LNJapPWPpfWuDmu5l+iyEY3ea+UGnnehS/XL3UWLfb3ddAvBHl6ieyoC4ZFg3QIIZzgHZgBBabYC4oWJQpSeEOfYxlueSULUBhm77/ImhRgMbdVVq0HBp4a0JOvIpQQvvWNp1AsSkxmf8eIieUyuAcJBeIt+1RWJCMHfb4M8ngMSwvBvV+ktd+2I9ackWH7gbSQbPUXvyPXqFBCRk7wvmZpreUSDUb8EYqVYy80sLwczEwY2/21WnucAEZtCudE4T4KJZSd+TleeB56ZE0R0ruU2BmKlWHPRnBtEvCNyk+yTijEzxVo7gE2BjCUTc7GLxM9AZi2A5EAI00BmLYC4vqIRcWkPpgUQqXwlv2di6FJg8AMg7OSRlJrakgAAAABJRU5ErkJggg==" width="20" height="20">
+      <% end %>
+      <br>
+      <br>
+    <div class="actions">
+      <%= f.submit "Filter", class: 'btn btn-default' %><br>
+    </div>
+<% end %>
+<br>
+<br>
 <div class ="table-responsive">
 <table class ="table table-striped table-hover">
   <thead>

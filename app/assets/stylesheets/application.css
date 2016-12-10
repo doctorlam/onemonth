@@ -14,7 +14,9 @@
  *= require_self
  */
 /*custom font*/
-
+a:hover {
+	background: transparent !important;
+}
 .jumbotron {
 	text-align: center;
 	color: white;

@@ -29,10 +29,8 @@
 
           <!--Controlling the sign in and log out links in nav bar -->
           <% if current_user.admin? %>
-            <li><%= link_to "Manage Proposals", proposals_path %></li> 
             <li><%= link_to "Proposals I've Written", creator_history_path %></li>
             <li><%= link_to "Proposals I've Claimed", claimer_history_path %></li>
-            <li><%= link_to "New Proposal", new_proposal_path %></li>
             <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
           </ul>
 

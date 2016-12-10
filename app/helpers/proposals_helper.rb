@@ -4,7 +4,7 @@ module ProposalsHelper
 	
 end
 	def options_for_course
-		['TECM 3000', 'TECM 3100','TECM 3200','TECM 4100','TECM 4180','TECM 4190','TECM 4200','TECM 4250','TECM 4700', 'None']
+		['TECM 3100: Commerical Pubs','TECM 3200: Web Design', 'TECM 3550: Content Strategy', 'TECM 4180: Advanced Tech Comm','TECM 4190: Editing','TECM 4250: Manuals and Procedures','TECM 4700: Writing in the Sciences', 'TECM 4800: Content Analysis', 'TECM 5195: Graduate Editing', 'TECM 5280: Graduate Design', 'TECM 5290: Technical Training', 'OTHER']
 	end
 
 	def options_for_time
