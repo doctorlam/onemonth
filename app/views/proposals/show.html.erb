@@ -1,34 +1,34 @@
 
 <div class="col-md-8">
   <div class="show">
-  <h2><%= @proposal.title %></h2>
+  <h2>Details for: "<%= @proposal.title %>"</h2>
   <table class= "table table-hover table-striped">
     <tr> 
-      <td class ="title">Name:</td> 
+      <td class ="title"><b>Contact Person:<b></td> 
       <td><%= @proposal.first_name %> <%= @proposal.last_name %></td>
     </tr>
 
     <tr>
-      <td class ="title">Organization or Company Name:</td>
+      <td class ="title"><b>Organization:</b></td>
       <td><%= @proposal.organization %></td>
     </tr>
 
     <tr>
-      <td class ="title">Semester:</td>
+      <td class ="title"><b>Semester:<b></td>
       <td><%= @proposal.semester_id %></td>
     </tr>
 
      <tr>
-      <td class ="title">Category:</td>
+      <td class ="title"><b>Category:<b></td>
       <td><%= @proposal.subject %></td>
     </tr>
 
     <tr>
-      <td class ="title">Project Length:</td>
+      <td class ="title"><b>Project Length:<b></td>
       <td><%= @proposal.time %></td>
     </tr>
   <tr>
-      <td class ="title">Project Description:</td>
+      <td class ="title"><b>Project Description:<b></td>
       <td><%= simple_format(@proposal.abstract) %></td>
   </tr>
 
@@ -41,7 +41,7 @@
   <% end %>
  </table>
    <div class="center">
-      <%= link_to "Claim This Proposal!", new_proposal_claim_path(@proposal), class: "btn btn-primary" %>
+      <%= link_to "Claim This Proposal!", new_proposal_claim_path(@proposal), class: "btn btn-claim" %>
     </div>
  <% if current_user.admin? %>
   <h2>Client Contact Information</h2>
@@ -76,9 +76,9 @@
 </div>
 </div>
 <div class="show">
- <div class ="col-md-4">
+ <div class ="col-md-4 status">
 <h2>Proposal Status</h2>
-<table class="table table-hover">
+<table class="table table-hover table-striped">
   <tr>
     <td class="title">Status:</td>
     <td><%= @proposal.status %>
@@ -113,15 +113,12 @@
           <%= @claim.course %></td>
       <% end %>
   </tr>
-  <tr>
-    <td class="title">Feedback from undergraduate director:</td>
-    <td><%= simple_format(@proposal.feedback) %></td> 
-  </tr>
+  
 </table>
 </div>
 </div>
 
-<div class="show">
+<div class="show admin-show">
 <div class ="col-md-4">
 
 <%= form_for @proposal, html: { multipart: true } do |f| %>  
@@ -138,10 +135,7 @@
     <%= f.label :status, "Status" %><br>
     <%= f.select :status, options_for_status, :selected => 'Pending' %>
 </div>
-  <div class="form-group">
-    <%= f.label :feedback, "Provide feedback for your decision (optional):" %><br>
-    <%= f.text_area :feedback, :rows => 10, class: "form-control" %>
-  </div>
+ 
 
   <div class="form-group">
     <%= f.submit class: "btn btn-default btn-block" %>
@@ -151,3 +145,4 @@
 
 </div>
 </div>
+<br>

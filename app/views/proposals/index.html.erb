@@ -63,7 +63,7 @@
 
  
 
-        <td><%= link_to 'View', proposal %></td>
+        <td><%= link_to 'View/Claim', proposal, class: 'btn btn-claim' %></td>
         <% if can? :update, proposal %>
           <td><%= link_to 'Edit', edit_proposal_path(proposal) %></td>
         <% end %>

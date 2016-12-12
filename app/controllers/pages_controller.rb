@@ -12,6 +12,6 @@ class PagesController < ApplicationController
   end
   def archived 
  	@search = Proposal.where(status: 'Completed').order("created_at DESC").search(params[:q])
-    @proposals = @search.result
+    @proposals = @search.result.where(status: 'Completed')
 end 
 end
