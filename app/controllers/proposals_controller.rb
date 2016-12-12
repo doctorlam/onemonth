@@ -3,7 +3,6 @@ class ProposalsController < ApplicationController
     respond_to :html, :xml, :json
   before_filter :authenticate_user!
 
-
  def creator
     @proposals = Proposal.where(user: current_user).order("created_at DESC")
   end
