@@ -18,6 +18,7 @@ gem 'listjs-rails'
 gem 'jquery-smooth-scroll-rails'
 gem 'pg'
 gem 'ransack'
+gem 'sendgrid'
 
 group :production do 
 	gem 'pg'
