@@ -20,7 +20,7 @@
 <% if current_user.role?("instructor") %>
   <div class="form-group">
       <%= f.label :course, "What course is this for?" %><br>
-      <%= f.select :course, options_for_course, :prompt => 'Select One' %>
+      <%= f.select :course, options_for_course, :prompt => 'Select One',  :include_blank => true %>
   </div>
 <% end %>
     <%= f.submit "Claim this Proposal", class: "btn btn-claim" %>

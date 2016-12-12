@@ -129,7 +129,7 @@
 
     <div class="form-group">
       <%= f.label :course, "Match proposal to course:" %><br>
-      <%= f.select :course, options_for_course, :prompt => 'Select One' %>
+      <%= f.select :course, options_for_course, :prompt => 'Select One',  :include_blank => true %>
   </div>
 <div class="form-group">
     <%= f.label :status, "Status" %><br>

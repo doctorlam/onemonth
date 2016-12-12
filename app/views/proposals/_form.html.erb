@@ -83,7 +83,7 @@
         <%= f.text_area :relevance, :rows => 10, class: "form-control" %>
           <div class="form-group">
         <%= f.label :course, "What course is this project for?" %><br>
-       <%= f.select :course, options_for_course, :prompt => 'Select One' %>
+       <%= f.select :course, options_for_course, :prompt => 'Select One',  :include_blank => true %>
         </div>
        <div id ="buttons">
          <a class="Smallbutton btn btn-primary" id="showStep2" data-target=".step2">Previous</a><br><br>
