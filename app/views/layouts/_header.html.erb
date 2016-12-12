@@ -31,6 +31,7 @@
           <% if current_user.admin? %>
             <li><%= link_to "Proposals I've Written", creator_history_path %></li>
             <li><%= link_to "Proposals I've Claimed", claimer_history_path %></li>
+            <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
             <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
           </ul>
 

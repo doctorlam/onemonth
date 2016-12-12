@@ -33,7 +33,7 @@
 -->
 <div class ="table-responsive">
 <table class ="table table-striped table-hover">
-  <thead>
+ <thead>
     <tr>
       <th class="sort" data-sort="date">Date Created</th>
       <th class="sort" data-sort="name">Proposal Creator</th>
@@ -41,38 +41,36 @@
       <th class="sort" data-sort="title">Proposal Title</th>
       <th class="sort" data-sort="category">Category</th>
       <th class="sort" data-sort="semester">Semester</th>
-      <th class="sort" data-sort="length">Project Length</th>
       <th class="sort" data-sort="course">Course</th>
-      <th class="sort" data-sort="status">Claimed?</th>
-      <th class="sort" data-sort="status">Proposal Status</th>
+      <th class="sort" data-sort="status">Claim Status?</th>
 
       <th colspan="3"></th>
 
     </tr>
   </thead>
 
-  <tbody class="list">
+   <tbody class="list">
     <% @proposals.each do |proposal| %>
       <tr>
-        <td class="date"><%= proposal.created_at %></td>
+        <td class="date"><%= proposal.created_at.strftime("%B %-d, %Y") %></td>
         <td class="name"><%= link_to [proposal.first_name, proposal.last_name].join(" "), proposal %></td>
         <td class="organization"><%= proposal.organization %></td>          
         <td class="title"><%= link_to proposal.title, proposal %></td>
         <td class="category"><%= proposal.subject %></td>
         <td class="semester"><%= proposal.semester_id %></td>
-        <td class="length"><%= proposal.time %></td>
-        <td class="course"><%= proposal.course %></td>
+        <td class="course"><%= proposal.course %><% for claim in proposal.claims %>
+          <%= claim.course %>
+      <% end %></td>
        
-     <td class="status"> 
+     <td class="status" > 
      <% for claim in proposal.claims %> 
-        <%= claim.claim_status %> by <%= claim.claimer.name %>
+        <p style="background:#c0392b; padding:5px; text-align:center; border-radius:5px; color: white"><%= claim.claim_status %> by "<%= claim.claimer.name %>"</p>
       <% end %>
       </td>
-      <td class="status"><%= proposal.status %></td>
 
  
 
-        <td><%= link_to 'View', proposal %></td>
+        <td><%= link_to 'View', proposal, class: 'btn btn-claim' %></td>
         <% if can? :update, proposal %>
           <td><%= link_to 'Edit', edit_proposal_path(proposal) %></td>
         <% end %>
@@ -85,7 +83,7 @@
     <% end %>
   </tbody>
 </table>
-<%= link_to "View Current Projects", proposals_path, class: 'btn btn-primary' %>
+<%= link_to "Back To Current Projects", proposals_path, class: 'btn btn-primary' %>
 </div>
 </div> 
 
