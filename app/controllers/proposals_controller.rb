@@ -27,8 +27,6 @@ end
   end
 
   def create
-    UserMailer.proposal_confirmation(@user).deliver
-
     @proposal = Proposal.new(proposal_params)
     @proposal.user_id = current_user.id
     @proposal.save
